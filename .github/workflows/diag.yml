@@ -1,0 +1,44 @@
+name: diag
+on:
+  push:
+    branches: [main]
+    paths: ['banco/diag.txt']
+  workflow_dispatch:
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - run: nproc; free -g
+      - run: |
+          python3 - <<'PY'
+          import requests,time,re
+          U=["https://www.planalto.gov.br/ccivil_03/leis/l7210.htm","http://www.planalto.gov.br/ccivil_03/leis/l7210.htm","https://planalto.gov.br/ccivil_03/leis/l7210.htm",
+             "https://www2.camara.leg.br/legin/fed/lei/1984/lei-7210-11-julho-1984-356938-normaatualizada-pl.html",
+             "https://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1984-07-11;7210",
+             "https://legis.senado.leg.br/norma/549734/publicacao/15681086"]
+          for u in U:
+              t=time.time()
+              try:
+                  r=requests.get(u,timeout=60,headers={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36","Accept-Language":"pt-BR"})
+                  r.encoding=r.apparent_encoding
+                  print("DIAG",r.status_code,round(time.time()-t,1),"s",len(r.text),"chars",len(re.findall(r"Art\.\s*\d",r.text)),"artigos",u)
+              except Exception as e: print("DIAG ERRO",type(e).__name__,str(e)[:120],round(time.time()-t,1),"s",u)
+          PY
+      - uses: actions/cache@v4
+        with:
+          path: ~/.ollama/models
+          key: ollama-qwen25-14b
+      - run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          (ollama serve > /tmp/ollama.log 2>&1 &) ; sleep 8
+          ollama pull qwen2.5:14b > /dev/null 2>&1; ollama list
+          python3 - <<'PY'
+          import requests,time,json
+          for i in range(2):
+              t=time.time()
+              r=requests.post("http://127.0.0.1:11434/api/chat",json={"model":"qwen2.5:14b","stream":False,"format":"json","options":{"temperature":0.1,"num_ctx":4096,"num_predict":200},
+                 "messages":[{"role":"user","content":"Julgue o item (Certo ou Errado): A Constituição Federal de 1988 admite a pena de morte em caso de guerra declarada. JSON: {\"resposta\":\"C\" ou \"E\",\"motivo\":\"...\"}"}]},timeout=1200)
+              print("DIAG OLLAMA",round(time.time()-t,1),"s",r.text[:400])
+          PY
+          tail -5 /tmp/ollama.log
