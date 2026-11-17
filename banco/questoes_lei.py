@@ -61,11 +61,14 @@ def escreve(tipo, v, un, ext):
     return str(v) + (" (" + e + ")" if ext else "") + " " + nome
 
 
-def lacuna(d, lei, mat, art, rng):
+def lacunas(d, lei, mat, art, rng):
     faixas = [(m.start(), m.end()) for m in RANGE.finditer(d)]
     tk = [t for t in tokens(d) if not any(a <= t[0] < b for a, b in faixas)]
-    if not tk: return None
-    i, f, tipo, v, un, ext = rng.choice(tk)
+    return [q for q in (lacuna(d, lei, mat, art, rng, t) for t in tk[:3]) if q]
+
+
+def lacuna(d, lei, mat, art, rng, t):
+    i, f, tipo, v, un, ext = t
     if tipo == "n":
         u = L.unidade(un); cand = [x for x in L.VAL[u] if x != v]
         cand.sort(key=lambda x: abs(x - v)); cand = cand[:6]
@@ -201,6 +204,29 @@ def lacuna_pena(d, lei, mat, art, rng):
     return [mat, enun, alts, c, "Gabarito: %s. Texto da lei (art. %s): \u201c%s\u201d" % (certo, art, d)]
 
 
+def incorreta(grupo, lei, mat, rng):
+    cand = [(a, d) for a, d in grupo if len(d) <= 320]
+    if len(cand) < 5: return None
+    rng.shuffle(cand)
+    errada = None; certas = []
+    for a, d in cand:
+        if errada is None:
+            e = L.errado(d, rng)
+            if not e:
+                op = trocas(d)
+                if op: i, f, novo, velho = rng.choice(op); e = (d[:i] + novo + d[f:], velho, novo)
+            if e: errada = (a, e[0], e[1], e[2]); continue
+        if len(certas) < 4: certas.append((a, d))
+    if errada is None or len(certas) < 4: return None
+    alts = [errada[1]] + [x[1] for x in certas]
+    if len({x[:50] for x in alts}) < 5: return None
+    ordem = list(range(5)); rng.shuffle(ordem); alts = [alts[k] for k in ordem]; c = ordem.index(0)
+    LET = "ABCDE"
+    com = "Incorreta: %s. O art. %s diz \u201c%s\u201d, e não \u201c%s\u201d. As demais reproduzem fielmente a lei (arts. %s)." % (
+        LET[c], errada[0], errada[2], errada[3], ", ".join(sorted({x[0] for x in certas}, key=lambda z: (num_art(z), z))))
+    return [mat, "Com base no que dispõe %s, assinale a opção INCORRETA." % lei, alts, c, com]
+
+
 def num_art(a):
     m = re.match(r"\d+", a); return int(m.group()) if m else 0
 
@@ -219,11 +245,14 @@ def main():
                 disp.append((a, d))
         n0 = len(out)
         for a, d in disp:                                   # modelo 1 (lacunas: valor, órgão, pena)
-            for fn in (lacuna, lacuna_orgao, lacuna_pena):
+            for q in lacunas(d, lei, mat, a, rng): out.append(q + [k, a])
+            for fn in (lacuna_orgao, lacuna_pena):
                 q = fn(d, lei, mat, a, rng)
                 if q: out.append(q + [k, a])
         for i in range(0, len(disp), 3):                     # modelo 2: janelas de artigos vizinhos
             q = assinale(disp[max(0, i - 6):i + 12], lei, mat, rng)
+            if q: out.append(q + [k, disp[i][0]])
+            q = incorreta(disp[max(0, i - 6):i + 12], lei, mat, rng)
             if q: out.append(q + [k, disp[i][0]])
         por[k] = len(out) - n0
         print(k, len(arts), "artigos,", len(disp), "dispositivos,", por[k], "questões", flush=True)
