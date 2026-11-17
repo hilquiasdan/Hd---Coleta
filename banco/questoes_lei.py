@@ -78,8 +78,7 @@ def lacuna(d, lei, mat, art, rng):
     alts = [certo] + [escreve(tipo, x, un, ext) for x in dist]
     if len(set(alts)) < 5: return None
     ordem = list(range(5)); rng.shuffle(ordem); alts = [alts[k] for k in ordem]; c = ordem.index(0)
-    t = d[:i] + "________" + d[f:]
-    if t[:1].isupper() and t[1:2].islower(): t = t[0].lower() + t[1:]
+    t = minus(d[:i] + "________" + d[f:])
     enun = "De acordo com %s, %s Assinale a opção que preenche corretamente a lacuna." % (lei, t)
     com = "Gabarito: %s. Texto da lei (art. %s): “%s” As demais opções trazem valores que não constam desse dispositivo." % (certo, art, d)
     return [mat, enun, alts, c, com]
@@ -95,6 +94,10 @@ def assinale(grupo, lei, mat, rng):
         if certa is None:
             certa = (a, d); continue
         e = L.errado(d, rng)
+        if not e:
+            op = trocas(d)
+            if op:
+                i, f, novo, velho = rng.choice(op); e = (d[:i] + novo + d[f:], velho, novo)
         if e and len(erradas) < 4:
             erradas.append((a, e[0], e[1], e[2]))
         if len(erradas) == 4: break
@@ -109,6 +112,91 @@ def assinale(grupo, lei, mat, rng):
         expl.append("%s está errada: o art. %s diz “%s”, e não “%s”." % (LET[j], a, velho, novo))
     enun = "Com base no que dispõe %s, assinale a opção correta." % lei
     return [mat, enun, alts, c, " ".join(expl)]
+
+
+ORG = [("juiz", "m"), ("Ministério Público", "m"), ("autoridade policial", "f"), ("diretor do estabelecimento", "m"), ("Defensoria Pública", "f"), ("Conselho Penitenciário", "m")]
+ART = {"m": {"o": "o", "do": "do", "pelo": "pelo", "ao": "ao", "no": "no", "a": "o", "da": "do", "pela": "pelo", "à": "ao", "na": "no"},
+       "f": {"o": "a", "do": "da", "pelo": "pela", "ao": "à", "no": "na", "a": "a", "da": "da", "pela": "pela", "à": "à", "na": "na"}}
+ORX = re.compile(r"(?<![\wÀ-ú])(o|a|do|da|pelo|pela|ao|à|no|na|O|A|Do|Da|Pelo|Pela|Ao|À|No|Na)\s+(juiz|Ministério Público|autoridade policial|diretor do estabelecimento|Defensoria Pública|Conselho Penitenciário)\b")
+PROPRIOS = {"Ministério", "União", "Estados", "Estado", "Distrito", "Município", "Municípios", "Congresso", "Senado", "Presidente", "Conselho", "Defensoria", "Poder", "Supremo", "Superior", "Tribunal", "Câmara", "Brasil", "Polícia", "Juiz"}
+
+
+def minus(t):
+    w = t.split(" ", 1)[0]
+    if w in PROPRIOS or (len(w) > 1 and w.isupper()): return t
+    if w[:1].isupper() and (len(w) == 1 or w[1:].islower()): return t[0].lower() + t[1:]
+    return t
+
+
+def com_artigo(prep, nome, g):
+    p = ART[g][prep.lower()]
+    return (p[0].upper() + p[1:] if prep[0].isupper() else p) + " " + nome
+
+
+def orgaos(d):
+    return [m for m in ORX.finditer(d)]
+
+
+PARES = [("reclusão", "detenção"), ("detenção", "reclusão"), ("aumentada", "diminuída"), ("diminuída", "aumentada"),
+         ("aumenta-se", "diminui-se"), ("diminui-se", "aumenta-se"), ("poderá", "deverá"), ("deverá", "poderá"),
+         ("poderão", "deverão"), ("deverão", "poderão"), ("privativamente", "concorrentemente"), ("exclusivamente", "preferencialmente")]
+RANGE = re.compile(r"de (\d+) \(([^)]+)\) (meses|anos?) a (\d+) \(([^)]+)\) (meses|anos?)|de (\d+) \(([^)]+)\) a (\d+) \(([^)]+)\) (meses|anos)")
+
+
+def faixa_txt(a, b, u1, u2):
+    ext = lambda v, u: L.EXT.get(v, str(v)) if not (u.startswith("ano") or u.startswith("mes")) else L.EXT.get(v, str(v)).replace("setenta e duas", "setenta e dois")
+    if u1 == u2: return "de %d (%s) a %d (%s) %s" % (a, ext(a, u1), b, ext(b, u2), u2)
+    return "de %d (%s) %s a %d (%s) %s" % (a, ext(a, u1), "mês" if a == 1 and u1.startswith("m") else u1, b, ext(b, u2), u2)
+
+
+def trocas(d):
+    """todas as trocas possíveis que a lei desmente: (início, fim, novo, velho)"""
+    out = []
+    ms = orgaos(d)
+    nomes = {m.group(2) for m in ms}
+    if len(ms) == 1:
+        m = ms[0]
+        for nome, g in ORG:
+            if nome not in d: out.append((m.start(), m.end(), com_artigo(m.group(1), nome, g), m.group(0)))
+    for a, b in PARES:
+        m = list(re.finditer(r"\b" + a + r"\b", d))
+        if len(m) == 1: out.append((m[0].start(), m[0].end(), b, a))
+    return out
+
+
+def lacuna_orgao(d, lei, mat, art, rng):
+    ms = orgaos(d)
+    if len(ms) != 1: return None
+    m = ms[0]; prep = m.group(1)
+    outros = [com_artigo(prep.lower(), n, g) for n, g in ORG if n != m.group(2) and n not in d]
+    if len(outros) < 4: return None
+    alts = [com_artigo(prep.lower(), m.group(2), dict(ORG)[m.group(2)])] + rng.sample(outros, 4)
+    ordem = list(range(5)); rng.shuffle(ordem); alts = [alts[k] for k in ordem]; c = ordem.index(0)
+    t = minus(d[:m.start()] + "________" + d[m.end():])
+    enun = "De acordo com %s, %s Assinale a opção que preenche corretamente a lacuna." % (lei, t)
+    return [mat, enun, alts, c, "Gabarito: %s. Texto da lei (art. %s): \u201c%s\u201d" % (m.group(0), art, d)]
+
+
+def lacuna_pena(d, lei, mat, art, rng):
+    m = RANGE.search(d)
+    if not m or "Pena" not in d[:m.start()]: return None
+    if m.group(1): a, b, u1, u2 = int(m.group(1)), int(m.group(4)), m.group(3), m.group(6)
+    else: a, b, u1, u2 = int(m.group(7)), int(m.group(9)), m.group(11), m.group(11)
+    am = a * (12 if u1.startswith("ano") else 1); bm = b * (12 if u2.startswith("ano") else 1)
+    if am >= bm: return None
+    cands = set()
+    for x, y in [(1, 3), (1, 4), (2, 4), (2, 5), (2, 6), (2, 8), (3, 8), (4, 8), (4, 10), (5, 10), (6, 12), (6, 20), (8, 15), (12, 30), (1, 2), (3, 6)]:
+        if (x * 12, y * 12) != (am, bm): cands.add(faixa_txt(x, y, "anos" if x > 1 else "ano", "anos"))
+    for x, y in [(6, 12), (3, 12), (6, 24), (1, 6), (3, 6)]:
+        if (x, y) != (am, bm): cands.add(faixa_txt(x, y, "meses", "meses" if y < 12 else "ano" if y == 12 else "anos").replace("12 (doze) ano", "1 (um) ano").replace("24 (vinte e quatro) anos", "2 (dois) anos").replace("12 (doze) meses", "1 (um) ano"))
+    cands = sorted(cands); certo = d[m.start():m.end()]
+    if len(cands) < 4: return None
+    alts = [certo] + rng.sample(cands, 4)
+    if len(set(alts)) < 5: return None
+    ordem = list(range(5)); rng.shuffle(ordem); alts = [alts[k] for k in ordem]; c = ordem.index(0)
+    t = minus(d[:m.start()] + "________" + d[m.end():])
+    enun = "Nos termos d%s, %s Assinale a opção que preenche corretamente a lacuna." % (lei[:1] == "o" and "o " + lei[2:] or "a " + lei[2:], t)
+    return [mat, enun, alts, c, "Gabarito: %s. Texto da lei (art. %s): \u201c%s\u201d" % (certo, art, d)]
 
 
 def num_art(a):
@@ -126,10 +214,11 @@ def main():
                 d = re.sub(r"\s+(?:T[ÍI]TULO|CAP[ÍI]TULO|SE[ÇC][ÃA]O|Se[çc][ãa]o|Subse[çc][ãa]o|LIVRO)\b.*$", "", d)
                 if len(d) >= 60: disp.append((a, d))
         n0 = len(out)
-        for a, d in disp:                                   # modelo 1
-            q = lacuna(d, lei, mat, a, rng)
-            if q: out.append(q + [k, a])
-        for i in range(0, len(disp), 6):                     # modelo 2: janelas de artigos vizinhos
+        for a, d in disp:                                   # modelo 1 (lacunas: valor, órgão, pena)
+            for fn in (lacuna, lacuna_orgao, lacuna_pena):
+                q = fn(d, lei, mat, a, rng)
+                if q: out.append(q + [k, a])
+        for i in range(0, len(disp), 3):                     # modelo 2: janelas de artigos vizinhos
             q = assinale(disp[max(0, i - 6):i + 12], lei, mat, rng)
             if q: out.append(q + [k, disp[i][0]])
         por[k] = len(out) - n0
