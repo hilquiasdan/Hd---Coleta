@@ -13,21 +13,19 @@ jobs:
       - run: |
           python3 - <<'PY'
           import requests,time,re
-          U=["https://www.planalto.gov.br/ccivil_03/leis/l7210.htm","http://www.planalto.gov.br/ccivil_03/leis/l7210.htm","https://planalto.gov.br/ccivil_03/leis/l7210.htm",
-             "https://www2.camara.leg.br/legin/fed/lei/1984/lei-7210-11-julho-1984-356938-normaatualizada-pl.html",
-             "https://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1984-07-11;7210",
-             "https://legis.senado.leg.br/norma/549734/publicacao/15681086"]
-          for u in (U[0],U[4]):
-              r=requests.get(u,timeout=60,headers={"User-Agent":"Mozilla/5.0"}); t=r.text
-              print("DIAG TITULO",u[:40],re.search(r"<title>(.*?)</title>",t,re.S|re.I).group(1)[:120] if re.search(r"<title>",t,re.I) else "-")
-              tx=re.sub(r"\s+"," ",re.sub(r"<[^>]+>"," ",t))
-              print("DIAG INICIO",tx[:300])
-              for m in list(re.finditer(r"Art\.",tx))[:3]+list(re.finditer(r"Art\.",tx))[-2:]: print("DIAG ART",tx[m.start():m.start()+140])
-          for u in U[3:]:
+          H={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) Chrome/124","Accept":"application/json, text/html"}
+          U=["https://normas.leg.br/api/normas?urn=urn:lex:br:federal:lei:1984-07-11;7210&tipo_documento=maior-detalhe",
+             "https://normas.leg.br/api/normas?urn=urn:lex:br:federal:lei:1984-07-11;7210",
+             "https://normas.leg.br/api/public/normas?urn=urn:lex:br:federal:lei:1984-07-11;7210&tipo_documento=maior-detalhe",
+             "https://legis.senado.leg.br/dadosabertos/legislacao/urn?urn=urn:lex:br:federal:lei:1984-07-11;7210",
+             "https://www2.camara.leg.br/legin/fed/lei/1984/lei-7210-11-julho-1984-356938-publicacaooriginal-1-pl.html",
+             "https://www.camara.leg.br/legislacao/busca?geral=7210&ano=1984&situacao=&abrangencia=&tipodocumento=Lei+Ordin%C3%A1ria&origem=&numero=7210"]
+          for u in U:
               t=time.time()
               try:
-                  r=requests.get(u,timeout=60,headers={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36","Accept-Language":"pt-BR"})
-                  r.encoding=r.apparent_encoding
-                  print("DIAG",r.status_code,round(time.time()-t,1),"s",len(r.text),"chars",len(re.findall(r"Art\.\s*\d",r.text)),"artigos",u)
-              except Exception as e: print("DIAG ERRO",type(e).__name__,str(e)[:120],round(time.time()-t,1),"s",u)
+                  r=requests.get(u,timeout=60,headers=H); r.encoding=r.apparent_encoding; tx=r.text
+                  print("DIAG",r.status_code,round(time.time()-t,1),"s",len(tx),"chars",len(re.findall(r"Art\.\s*\d",tx)),"art",r.headers.get("content-type","")[:30],u)
+                  print("DIAG AMOSTRA",re.sub(r"\s+"," ",tx)[:260])
+                  for m in re.findall(r'legin/fed/lei/1984/lei-7210[^"\' ]+',tx)[:5]: print("DIAG LINK",m)
+              except Exception as e: print("DIAG ERRO",type(e).__name__,str(e)[:100],u)
           PY
