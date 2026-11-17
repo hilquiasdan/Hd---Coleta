@@ -17,11 +17,12 @@ jobs:
              "https://www2.camara.leg.br/legin/fed/lei/1984/lei-7210-11-julho-1984-356938-normaatualizada-pl.html",
              "https://www.lexml.gov.br/urn/urn:lex:br:federal:lei:1984-07-11;7210",
              "https://legis.senado.leg.br/norma/549734/publicacao/15681086"]
-          r=requests.get(U[0],timeout=60,headers={"User-Agent":"Mozilla/5.0"}); h=r.content
-          import codecs
-          for enc in ("latin-1",):
-              t=h.decode(enc,"replace"); i=t.find("Art"); print("DIAG ENC",r.headers.get("content-type"),r.apparent_encoding)
-              for m in list(re.finditer(r"Art",t))[:4]: print("DIAG TRECHO",repr(t[m.start()-60:m.start()+80]))
+          for u in (U[0],U[4]):
+              r=requests.get(u,timeout=60,headers={"User-Agent":"Mozilla/5.0"}); t=r.text
+              print("DIAG TITULO",u[:40],re.search(r"<title>(.*?)</title>",t,re.S|re.I).group(1)[:120] if re.search(r"<title>",t,re.I) else "-")
+              tx=re.sub(r"\s+"," ",re.sub(r"<[^>]+>"," ",t))
+              print("DIAG INICIO",tx[:300])
+              for m in list(re.finditer(r"Art\.",tx))[:3]+list(re.finditer(r"Art\.",tx))[-2:]: print("DIAG ART",tx[m.start():m.start()+140])
           for u in U[3:]:
               t=time.time()
               try:
