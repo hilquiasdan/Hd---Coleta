@@ -1,0 +1,507 @@
+{
+"materias": {
+"Execução Penal": {
+"peso": 687.5,
+"temas": [
+[
+"Assistência (material, saúde, jurídica, educacional, social, religiosa)",
+204.0
+],
+[
+"Estabelecimentos penais (penitenciária, colônia, casa do albergado, cadeia, hospital)",
+164.0
+],
+[
+"Resoluções do CNPCP (revista, visitas, diretrizes)",
+131.5
+],
+[
+"Progressão e regressão de regime",
+112.0
+],
+[
+"Faltas disciplinares e sanções",
+106.5
+],
+[
+"Saúde no sistema prisional (PNAISP)",
+101.0
+],
+[
+"Órgãos da execução (CNPCP, juiz, MP, conselhos, patronato, defensoria)",
+100.5
+],
+[
+"Direitos e deveres do preso",
+92.0
+],
+[
+"Sistema Penitenciário Federal (Lei 11.671)",
+79.5
+],
+[
+"Trabalho do preso",
+76.5
+],
+[
+"Egresso",
+74.5
+],
+[
+"Mulheres presas (PNAMPE, gestantes, filhos)",
+67.5
+],
+[
+"Educação no sistema prisional (PEESP)",
+39
+],
+[
+"Remição (trabalho, estudo, leitura)",
+37.5
+]
+]
+},
+"Direito Penal": {
+"peso": 316.5,
+"temas": [
+[
+"Crimes contra o patrimônio (furto, roubo, extorsão, estelionato, receptação)",
+75.5
+],
+[
+"Crimes contra a pessoa (homicídio, feminicídio, lesão, ameaça)",
+64.5
+],
+[
+"Dolo, culpa e erro",
+56.5
+],
+[
+"Crimes contra a administração pública (peculato, concussão, corrupção, prevaricação)",
+47.0
+],
+[
+"Tentativa, consumação, desistência e arrependimento",
+44.0
+],
+[
+"Concurso de pessoas e de crimes",
+27.5
+],
+[
+"Teoria do crime: tipicidade, ilicitude e culpabilidade",
+27.5
+],
+[
+"Penas: espécies, aplicação, substituição, sursis",
+26.5
+],
+[
+"Crimes contra a fé pública (falsidades)",
+22.5
+],
+[
+"Crimes contra a dignidade sexual",
+9.0
+],
+[
+"Extinção da punibilidade e prescrição",
+6.0
+],
+[
+"Aplicação da lei penal (tempo, espaço, retroatividade)",
+3.5
+],
+[
+"Crimes contra a paz pública e incolumidade",
+3.0
+],
+[
+"Imputabilidade penal",
+1.5
+]
+]
+},
+"Direito Processual Penal": {
+"peso": 245.5,
+"temas": [
+[
+"Inquérito policial",
+103.0
+],
+[
+"Ação penal (pública, privada, representação, ANPP)",
+95.5
+],
+[
+"Prisões (flagrante, preventiva, temporária) e audiência de custódia",
+72.5
+],
+[
+"Provas (cadeia de custódia, perícia, testemunhas, interrogatório)",
+69.0
+],
+[
+"Competência",
+30.5
+],
+[
+"Princípios e aplicação da lei processual",
+22.5
+],
+[
+"Citação, intimação e ritos",
+18.5
+],
+[
+"Liberdade provisória, fiança e cautelares diversas",
+13.5
+],
+[
+"Juizados Especiais Criminais e TCO",
+5.0
+]
+]
+},
+"Direito Constitucional": {
+"peso": 278.5,
+"temas": [
+[
+"Poderes (Legislativo, Executivo, Judiciário) e processo legislativo",
+88.0
+],
+[
+"Direitos e garantias fundamentais (art. 5.º)",
+62.0
+],
+[
+"Organização do Estado (União, estados, municípios, competências)",
+51.0
+],
+[
+"Segurança pública (art. 144) e polícia penal",
+45.0
+],
+[
+"Direitos sociais, nacionalidade e direitos políticos",
+39.0
+],
+[
+"Princípios fundamentais (arts. 1.º a 4.º)",
+20.0
+],
+[
+"Funções essenciais à justiça (MP, defensoria, advocacia)",
+19.5
+],
+[
+"Remédios constitucionais (HC, MS, MI, HD, ação popular)",
+11.5
+],
+[
+"Administração pública na CF (art. 37 a 41, servidores, acumulação)",
+11.5
+],
+[
+"Defesa do Estado (estado de defesa, sítio, Forças Armadas)",
+10.5
+]
+]
+},
+"Direito Administrativo": {
+"peso": 145.5,
+"temas": [
+[
+"Agentes públicos e regime disciplinar (PAD, sindicância, penalidades)",
+61.5
+],
+[
+"Licitações e contratos (Lei 14.133)",
+37.5
+],
+[
+"Controle da administração e processo administrativo",
+33.0
+],
+[
+"Responsabilidade civil do Estado",
+24.0
+],
+[
+"Atos administrativos (atributos, elementos, anulação e revogação)",
+22.5
+],
+[
+"Poderes administrativos (polícia, hierárquico, disciplinar, abuso)",
+21.0
+],
+[
+"Organização administrativa (direta, indireta, autarquias, OS)",
+19.5
+],
+[
+"Improbidade administrativa",
+16.5
+],
+[
+"Serviços públicos e bens públicos",
+16.5
+],
+[
+"Princípios da administração (LIMPE e outros)",
+10.5
+]
+]
+},
+"Legislação Especial": {
+"peso": 261.5,
+"temas": [
+[
+"Lei de Drogas (11.343)",
+64.0
+],
+[
+"Estatuto do Desarmamento (10.826)",
+63.0
+],
+[
+"Tortura (9.455)",
+39.0
+],
+[
+"Abuso de autoridade (13.869)",
+27.5
+],
+[
+"Crimes hediondos (8.072)",
+26.0
+],
+[
+"Organizações criminosas (12.850) e colaboração premiada",
+22.5
+],
+[
+"Pessoa idosa, crimes ambientais e de trânsito",
+20.0
+],
+[
+"Lavagem de dinheiro (9.613)",
+16
+],
+[
+"Maria da Penha e violência contra a mulher",
+14.5
+],
+[
+"ECA (8.069)",
+12.0
+],
+[
+"Racismo e injúria racial (7.716)",
+7.0
+],
+[
+"Interceptação telefônica (9.296)",
+6
+]
+]
+},
+"Noções de Direitos Humanos e Participação Social": {
+"peso": 177.0,
+"temas": [
+[
+"Participação social e conselhos (CNPCP, penitenciário, comunidade)",
+57
+],
+[
+"Teoria geral e características dos direitos humanos",
+41.5
+],
+[
+"Declaração Universal (1948)",
+29.5
+],
+[
+"PNDH-3 e política nacional",
+23.0
+],
+[
+"Regras de Mandela e tratamento de presos",
+23.0
+],
+[
+"Tratados internacionais na CF (§ 3.º do art. 5.º, EC 45)",
+20.0
+],
+[
+"Pacto de São José / Convenção Americana e Corte IDH",
+18.0
+],
+[
+"Responsabilidade do Estado e afirmação histórica",
+13
+],
+[
+"Tortura e tratamentos cruéis (convenções da ONU)",
+5.5
+]
+]
+}
+},
+"exemplos": {
+"Execução Penal": [
+{
+"t": "O DEPEN deve prestar apoio técnico, financeiro, logístico e de pessoal aos órgãos estaduais de administração prisional, com ênfase nas áreas de educação, capacitação profissional de servidores, trabalho, saúde, alimentação e engenharia.",
+"g": "E"
+},
+{
+"t": "Ao serviço de assistência social cabe promover a recreação no estabelecimento prisional e providenciar a obtenção de documentos dos presos assim como os benefícios da previdência social a que essas pessoas tiverem direito.",
+"g": "C"
+},
+{
+"t": "São considerados egressos o liberado definitivo, pelo prazo de um ano a contar da saída do estabelecimento, bem como o liberado condicional, durante o período de prova.",
+"g": "C"
+},
+{
+"t": "Considere que uma mãe deseje levar seu filho de dois anos para visitar o pai dele, que se encontra preso em um presídio federal. Nesse caso, a visita não será permitida, uma vez que é proibida a visitação de crianças em ambiente prisional.",
+"g": "E"
+},
+{
+"t": "Entre os eixos norteadores do SUSP estão a gestão unificada de informação concernente a segurança pública, a valorização das perícias e a prevenção da violência.",
+"g": "C"
+}
+],
+"Direito Penal": [
+{
+"t": "A prática de furto contra empresa prestadora de serviço de segurança privada é expressamente prevista no Código Penal como causa de aumento de pena por tal crime.",
+"g": "C"
+},
+{
+"t": "Segundo o entendimento jurisprudencial dominante, ainda que fixada a pena base no mínimo legal, a gravidade abstrata do delito pode justificar o estabelecimento de regime prisional mais gravoso que o previsto em lei em razão da sanção imposta.",
+"g": "E"
+},
+{
+"t": "Sob o prisma formal, crime corresponde à concepção do direito acerca do delito, em uma visão legislativa do fenômeno; sob o prisma material, o conceito de crime é pré-jurídico, ou seja, é a concepção da sociedade a respeito do que pode e deve ser proibido.",
+"g": "C"
+},
+{
+"t": "O erro de proibição indireto consiste em um descriminante putativo por erro de proibição, a exemplo da situação em que o agente sabe que a conduta é típica, mas supõe estar presente, em sua ação, uma norma permissiva.",
+"g": "C"
+},
+{
+"t": "É nulo o flagrante no qual um agente, previamente informado da possibilidade da ocorrência de um crime, promove diligências com o intuito de prender o indivíduo que irá praticar o fato criminoso.",
+"g": "E"
+}
+],
+"Direito Processual Penal": [
+{
+"t": "No âmbito do inquérito policial, cuja natureza é inquisitiva, não se faz necessária a aplicação plena do princípio do contraditório, conforme a jurisprudência dominante.",
+"g": "C"
+},
+{
+"t": "De acordo com o entendimento do Supremo Tribunal Federal, no processo penal militar, o interrogatório do réu deve ser realizado ao final da instrução criminal, como ocorre no procedimento penal comum ordinário.",
+"g": "C"
+},
+{
+"t": "O termo circunstanciado pode ser realizado por bombeiro militar, desde que lei estadual especifique tal atribuição e que o procedimento seja homologado pela autoridade policial.",
+"g": "E"
+},
+{
+"t": "Arquivamento de inquérito policial é medida excepcional, admitida somente quando dos autos emergirem, de plano, a atipicidade da conduta, a existência de causa de extinção da punibilidade e a ausência de indícios de autoria sobre a materialidade do delito, sendo necessário exame aprofundado e exauriente das provas.",
+"g": "E"
+},
+{
+"t": "Em respeito ao princípio da transparência, as denúncias e representações submetidas à apreciação do TCE/PA deverão ser de caráter público desde a sua apresentação.",
+"g": "E"
+}
+],
+"Direito Constitucional": [
+{
+"t": "Se uma empregada, antes do término do cumprimento de aviso prévio de desligamento sem justa causa, apresentar ao empregador atestado médico probatório de que, na data da dispensa, ela já estava grávida, tal fato não lhe dará o direito à estabilidade prevista no texto constitucional, pois, quando foi dado o aviso prévio, o empregador desconhecia o estado gravídico da empregada.",
+"g": "E"
+},
+{
+"t": "De acordo com a LRF, é vedada a realização de transferência voluntária ao ente federativo que exceder o limite da despesa total com pessoal no primeiro quadrimestre do último ano do mandato do titular do Poder Executivo, mas não é vedada a contratação de operação de crédito.",
+"g": "E"
+},
+{
+"t": "Apesar de o ordenamento jurídico vedar a extradição de brasileiros, brasileiro devidamente naturalizado poderá ser extraditado se comprovado seu envolvimento com o tráfico ilícito de entorpecentes.",
+"g": "C"
+},
+{
+"t": "Compete aos tribunais regionais federais julgar, em grau de recurso, as causas decididas pelos juízes estaduais no exercício da competência federal da área de sua jurisdição.",
+"g": "C"
+},
+{
+"t": "A publicidade dos atos, dos programas, das obras, dos serviços e das campanhas dos órgãos públicos pode incluir nomes e imagens de autoridades, ainda que isso caracterize promoção pessoal.",
+"g": "E"
+}
+],
+"Direito Administrativo": [
+{
+"t": "De acordo com a Resolução n.º 302/2002 do Conselho Nacional do Meio Ambiente (CONAMA), a aprovação do plano ambiental de conservação e uso do entorno dos reservatórios artificiais será precedida da realização de consulta pública, sob pena de nulidade do ato administrativo.",
+"g": "C"
+},
+{
+"t": "No Tribunal Regional Federal da 1.ª Região, compete aos gestores garantir que analistas e técnicos judiciários, estagiários e prestadores de serviço sigam os preceitos estabelecidos no referido Código de Conduta.",
+"g": "C"
+},
+{
+"t": "O Estado intervém no mercado por meio de diferentes regulamentações a fim de amenizar ou resolver os problemas gerados pelas externalidades, visando garantir aos cidadãos o acesso aos serviços básicos, conforme assegurado pela Constituição.",
+"g": "C"
+},
+{
+"t": "Entidades privadas no exercício da função pública, ainda que tenham personalidade jurídica de direito privado, sujeitam-se ao processo licitatório para celebrar contratos administrativos.",
+"g": "C"
+},
+{
+"t": "Situação hipotética: A associação de moradores de determinado bairro de uma capital brasileira decidiu realizar os bailes de carnaval em uma praça pública da cidade. Assertiva: Nessa situação, a referida associação poderá fazer uso da praça pública, independentemente de autorização, mediante prévio aviso à autoridade competente.",
+"g": "E"
+}
+],
+"Legislação Especial": [
+{
+"t": "A ação judicial promovida pelo Ministério Público no caso em apreço carece de respaldo no artigo reproduzido, pois seu conteúdo deve ser interpretado de forma restritiva, limitando-se a penalidade prevista às circunstâncias em que haja descumprimento da ordem da autoridade judiciária ou conselho tutelar por pais ou responsáveis; tal dispositivo, portanto, não se aplica a pessoas jurídicas de direito privado, de acordo com a regra hermenêutica que orienta a interpretação de leis e normas consagrada pelo brocardo jurídico odiosa restringenda, favorablia amplianda.",
+"g": "E"
+},
+{
+"t": "Situação hipotética: Após grave colisão de veículos, pessoas que transitavam pelo local — condutores de outros veículos e pedestres alheios ao evento — deixaram, sem justificativa, de prestar imediato socorro às vítimas. Assertiva: Nessa situação, os terceiros não envolvidos no acidente não responderão pelo crime de omissão de socorro previsto no Código de Trânsito Brasileiro.",
+"g": "C"
+},
+{
+"t": "Para efeito de configuração do crime de tráfico ilícito de entorpecentes, o produto apreendido deve compreender substância natural, semissintética ou sintética capaz de causar dependência, e estar especificado em lei ou devidamente relacionado em lista elaborada pelo poder público como sendo de natureza ilícita.",
+"g": "E"
+},
+{
+"t": "A fim de dar celeridade às investigações e em face da gravidade da situação investigada, é possível a infiltração de agentes de polícia em tarefas da investigação, independentemente de prévia autorização judicial.",
+"g": "E"
+},
+{
+"t": "Um adolescente apreendido em flagrante de ato infracional análogo ao crime de roubo foi imediatamente conduzido a uma delegacia especializada. Nessa situação, a autoridade policial deverá lavrar o boletim de ocorrência circunstanciado, e, na presença dos pais ou do responsável, o adolescente, após assinar termo de compromisso e de responsabilidade, deverá ser imediatamente posto em liberdade.",
+"g": "E"
+}
+],
+"Noções de Direitos Humanos e Participação Social": [
+{
+"t": "Os direitos humanos e os direitos fundamentais visam à proteção e à promoção da dignidade da pessoa humana, sendo os direitos humanos consagrados no plano internacional e os direitos fundamentais consagrados no plano interno, notadamente na Constituição Federal.",
+"g": "C"
+},
+{
+"t": "É cabível a atuação concorrente do DP interamericano nos processos em que a representação legal da vítima na CIDH estiver a cargo — mediante o devido credenciamento — do defensor nacional de direitos humanos.",
+"g": "E"
+},
+{
+"t": "A Declaração Universal dos Direitos Humanos faz referências expressas apenas aos indivíduos do sexo masculino, razão pela qual se fez necessária a edição de outros instrumentos normativos para garantir os direitos das mulheres e das crianças.",
+"g": "E"
+},
+{
+"t": "Embora contivesse a Lei de Talião, que instituía a vingança como forma de justiça, o Código de Hammurabi, primeiro conjunto de leis escritas do qual há registro histórico, trazia algumas noções elementares do que atualmente se considera direitos humanos.",
+"g": "C"
+},
+{
+"t": "De acordo com o STF, a expressão \"grave violação dos direitos humanos\" remete especificamente ao rol taxativo e restritivo de atentados de grande monta aos direitos humanos previstos nos instrumentos normativos internacionais de proteção a cuja aplicabilidade o Brasil formalmente aderiu.",
+"g": "E"
+}
+]
+}
+}
