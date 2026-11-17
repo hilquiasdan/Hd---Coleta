@@ -124,7 +124,10 @@ def main():
         tent += 1
         m, tema = escolhe_tema(rng); arts = artigos_do_tema(m, tema, rng)
         if not arts:
-            motivos["sem lei seca para o tema"] = motivos.get("sem lei seca para o tema", 0) + 1; continue
+            motivos["sem lei seca para o tema"] = motivos.get("sem lei seca para o tema", 0) + 1
+            if motivos["sem lei seca para o tema"] > 60 and not any(cm.baixa_lei(k) for k in cm.LEIS):
+                print("nenhuma lei disponível; parando"); break
+            continue
         art = rng.choice(arts[:3]); gab = "C" if (tent + parte) % 2 else "E"
         r = cria(m, tema, art, gab, D["exemplos"].get(m, []))
         def sai_(mot):

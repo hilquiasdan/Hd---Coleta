@@ -21,25 +21,25 @@ CACHE_LEIS = os.path.join(AQUI, "cache", "leis")
 
 P = "https://www.planalto.gov.br/ccivil_03/"
 LEIS = {
-    "cf": (P + "constituicao/constituicao.htm", ["cf", "constituicao", "constituicao federal", "cf/88", "crfb"]),
-    "cp": (P + "decreto-lei/del2848compilado.htm", ["cp", "codigo penal", "decreto-lei 2.848", "dl 2.848"]),
-    "cpp": (P + "decreto-lei/del3689compilado.htm", ["cpp", "codigo de processo penal", "decreto-lei 3.689"]),
-    "lep": (P + "leis/l7210.htm", ["lep", "lei de execucao penal", "lei 7.210", "lei 7210"]),
-    "l8429": (P + "leis/l8429.htm", ["lei 8.429", "lei de improbidade", "lia", "lei 8429"]),
-    "l8112": (P + "leis/l8112cons.htm", ["lei 8.112", "lei 8112", "estatuto dos servidores"]),
-    "l9784": (P + "leis/l9784.htm", ["lei 9.784", "lei 9784", "lei do processo administrativo"]),
-    "l11343": (P + "_ato2004-2006/2006/lei/l11343.htm", ["lei 11.343", "lei de drogas", "lei 11343"]),
-    "l8072": (P + "leis/l8072.htm", ["lei 8.072", "lei dos crimes hediondos", "lei 8072"]),
-    "l9455": (P + "leis/l9455.htm", ["lei 9.455", "lei de tortura", "lei 9455"]),
-    "l10826": (P + "leis/2003/l10.826.htm", ["lei 10.826", "estatuto do desarmamento", "lei 10826"]),
-    "l13869": (P + "_ato2019-2022/2019/lei/l13869.htm", ["lei 13.869", "lei de abuso de autoridade", "lei 13869"]),
-    "l12850": (P + "_ato2011-2014/2013/lei/l12850.htm", ["lei 12.850", "lei de organizacoes criminosas", "lei 12850"]),
-    "l8069": (P + "leis/l8069.htm", ["eca", "lei 8.069", "estatuto da crianca e do adolescente", "lei 8069"]),
-    "l11340": (P + "_ato2004-2006/2006/lei/l11340.htm", ["lei 11.340", "lei maria da penha", "lei 11340"]),
-    "l9099": (P + "leis/l9099.htm", ["lei 9.099", "lei dos juizados especiais", "lei 9099"]),
-    "l12527": (P + "_ato2011-2014/2011/lei/l12527.htm", ["lei 12.527", "lai", "lei de acesso a informacao", "lei 12527"]),
-    "l7716": (P + "leis/l7716.htm", ["lei 7.716", "lei 7716", "lei do racismo"]),
-    "l14133": (P + "_ato2019-2022/2021/lei/l14133.htm", ["lei 14.133", "lei 14133", "lei de licitacoes"]),
+    "cf": ("urn:lex:br:federal:constituicao:1988-10-05;1988", ["cf", "constituicao", "constituicao federal", "cf/88", "crfb"]),
+    "cp": ("urn:lex:br:federal:decreto.lei:1940-12-07;2848", ["cp", "codigo penal", "decreto-lei 2.848", "dl 2.848"]),
+    "cpp": ("urn:lex:br:federal:decreto.lei:1941-10-03;3689", ["cpp", "codigo de processo penal", "decreto-lei 3.689"]),
+    "lep": ("urn:lex:br:federal:lei:1984-07-11;7210", ["lep", "lei de execucao penal", "lei 7.210", "lei 7210"]),
+    "l8429": ("urn:lex:br:federal:lei:1992-06-02;8429", ["lei 8.429", "lei de improbidade", "lia", "lei 8429"]),
+    "l8112": ("urn:lex:br:federal:lei:1990-12-11;8112", ["lei 8.112", "lei 8112", "estatuto dos servidores"]),
+    "l9784": ("urn:lex:br:federal:lei:1999-01-29;9784", ["lei 9.784", "lei 9784", "lei do processo administrativo"]),
+    "l11343": ("urn:lex:br:federal:lei:2006-08-23;11343", ["lei 11.343", "lei de drogas", "lei 11343"]),
+    "l8072": ("urn:lex:br:federal:lei:1990-07-25;8072", ["lei 8.072", "lei dos crimes hediondos", "lei 8072"]),
+    "l9455": ("urn:lex:br:federal:lei:1997-04-07;9455", ["lei 9.455", "lei de tortura", "lei 9455"]),
+    "l10826": ("urn:lex:br:federal:lei:2003-12-22;10826", ["lei 10.826", "estatuto do desarmamento", "lei 10826"]),
+    "l13869": ("urn:lex:br:federal:lei:2019-09-05;13869", ["lei 13.869", "lei de abuso de autoridade", "lei 13869"]),
+    "l12850": ("urn:lex:br:federal:lei:2013-08-02;12850", ["lei 12.850", "lei de organizacoes criminosas", "lei 12850"]),
+    "l8069": ("urn:lex:br:federal:lei:1990-07-13;8069", ["eca", "lei 8.069", "estatuto da crianca e do adolescente", "lei 8069"]),
+    "l11340": ("urn:lex:br:federal:lei:2006-08-07;11340", ["lei 11.340", "lei maria da penha", "lei 11340"]),
+    "l9099": ("urn:lex:br:federal:lei:1995-09-26;9099", ["lei 9.099", "lei dos juizados especiais", "lei 9099"]),
+    "l12527": ("urn:lex:br:federal:lei:2011-11-18;12527", ["lei 12.527", "lai", "lei de acesso a informacao", "lei 12527"]),
+    "l7716": ("urn:lex:br:federal:lei:1989-01-05;7716", ["lei 7.716", "lei 7716", "lei do racismo"]),
+    "l14133": ("urn:lex:br:federal:lei:2021-04-01;14133", ["lei 14.133", "lei 14133", "lei de licitacoes"]),
 }
 
 
@@ -57,37 +57,53 @@ def norm_lei(nome):
     return None
 
 
+NORMAS = "https://normas.leg.br/api/public/normas?urn=%s&tipo_documento=maior-detalhe"
+
+
 def baixa_lei(k):
+    """Texto atualizado da lei pela API pública do Congresso (normas.leg.br, licença CC BY 4.0).
+    Só aceita a versão atual (compilação vigente); se não houver, a lei fica de fora (nada desatualizado)."""
     os.makedirs(CACHE_LEIS, exist_ok=True)
     arq = os.path.join(CACHE_LEIS, k + ".json")
     if os.path.exists(arq):
         return json.load(open(arq))
-    url = LEIS[k][0]
-    time.sleep(3)
+    if _FALHOU.get(k):
+        return None
     try:
-        r = requests.get(url, timeout=60, headers={"User-Agent": "HD-Concursos-estudo/1.0"})
-    except requests.RequestException:
-        return None
-    if r.status_code in (403, 429):
-        print("BLOQUEADO", url, r.status_code); return None
-    if r.status_code != 200:
-        return None
-    r.encoding = r.apparent_encoding or "latin-1"
-    h = re.sub(r"(?is)<(strike|s|del)\b.*?</\1>", " ", r.text)  # tira texto revogado
+        time.sleep(3)
+        r = requests.get(NORMAS % LEIS[k][0], timeout=60, headers={"User-Agent": "HD-Concursos-estudo/1.0", "Accept": "application/json"})
+        if r.status_code in (403, 429):
+            print("BLOQUEADO", k, r.status_code); _FALHOU[k] = 1; return None
+        enc = [e for e in (r.json().get("encoding") or []) if e.get("version") == "Current" and e.get("contentUrl")]
+        if not enc:
+            print("sem texto atualizado:", k); _FALHOU[k] = 1; return None
+        time.sleep(3)
+        x = requests.get(enc[0]["contentUrl"].replace("/api/binario/", "/api/public/binario/"), timeout=90, headers={"User-Agent": "HD-Concursos-estudo/1.0"})
+        if x.status_code != 200:
+            print("falhou texto", k, x.status_code); _FALHOU[k] = 1; return None
+        x.encoding = x.apparent_encoding or "utf-8"
+    except Exception as e:
+        print("erro lei", k, str(e)[:80]); _FALHOU[k] = 1; return None
+    h = re.sub(r"(?is)<(strike|del)\b.*?</\1>", " ", x.text)  # texto revogado riscado fica de fora
     t = re.sub(r"(?s)<[^>]+>", " ", h)
     t = re.sub(r"&nbsp;|&#160;", " ", t)
     t = re.sub(r"\s+", " ", t)
     arts = {}
-    pedacos = re.split(r"(?=\bArt\.\s*\d)", t)
-    for p in pedacos:
+    for p in re.split(r"(?=\bArt\.\s*\d)", t):
         m = re.match(r"Art\.\s*(\d+(?:\.\d+)?)\s*[º°o]?\s*(?:-\s*([A-Z])\b)?", p)
         if not m:
             continue
         num = m.group(1).replace(".", "") + ("-" + m.group(2) if m.group(2) else "")
         if num not in arts:
             arts[num] = p[:3000]
+    if len(arts) < 5:
+        print("texto sem artigos:", k); _FALHOU[k] = 1; return None
     json.dump(arts, open(arq, "w"), ensure_ascii=False)
+    print("lei", k, len(arts), "artigos", flush=True)
     return arts
+
+
+_FALHOU = {}
 
 
 def palavras(s):
