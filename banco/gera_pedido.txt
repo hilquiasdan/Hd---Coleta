@@ -1,3 +1,3 @@
-nome: piloto1
+nome: piloto2
 partes: 10
 alvo: 3

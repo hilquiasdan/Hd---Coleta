@@ -79,7 +79,7 @@ def cria(m, tema, art, gab, exemplos):
         "Escreva UM item inédito de Certo ou Errado sobre esse trecho, com GABARITO %s.\n"
         "Regras: nível de concurso difícil; prefira uma situação hipotética com personagem (ex.: 'Carlos, preso em regime fechado, ...') "
         "ou a cobrança de exceção, prazo, competência ou condição; o item deve poder ser julgado SÓ com o trecho de lei acima; "
-        "%s; não copie frases da lei (reescreva); não use 'de acordo com o texto'; entre 250 e 650 caracteres.\n"
+        "%s; não copie frases da lei (reescreva); não cite número de artigo nem nome da lei no item e não use 'de acordo com'; a regra cobrada deve ser exatamente a do trecho, atribuída ao órgão ou à pessoa certa, sem misturar dispositivos; entre 250 e 650 caracteres.\n"
         'JSON: {"item":"...","gabarito":"C" ou "E","explicacao":"2 a 5 frases explicando o gabarito com base no artigo",'
         '"fundamento":[{"lei":"%s","artigo":"%s"}],"pegadinha":"qual detalhe o item cobra"}'
     ) % (m, tema, nome_lei(k), a, txt[:1800], ex, "CERTO" if gab == "C" else "ERRADO",
@@ -100,6 +100,19 @@ def julga_com_lei(item, txt):
         return str(json.loads(out).get("resposta", "")).strip().upper()[:1]
     except Exception:
         return ""
+
+
+def revisor(item, gab, txt):
+    """revisor exigente: procura qualquer erro de fato, de lógica ou de redação"""
+    out = cm.ollama([{"role": "system", "content": "Você é revisor rigoroso de provas da banca Cebraspe. Seu trabalho é achar defeitos. Responda SOMENTE em JSON."},
+                     {"role": "user", "content": "TRECHO DE LEI:\n" + txt[:1800] + "\n\nITEM:\n" + item + "\nGABARITO PROPOSTO: " + ("CERTO" if gab == "C" else "ERRADO") +
+                      "\n\nVerifique com rigor: (1) o gabarito está certo segundo o trecho? (2) o item mistura dispositivos, atribui a regra ao órgão ou à pessoa errada, "
+                      "ou acrescenta condição que a lei não prevê? (3) a situação é realista (quem faz o quê é juridicamente possível)? (4) a redação é clara? "
+                      'JSON: {"aprovado":true ou false,"problemas":["..."]}'}])
+    try:
+        d = json.loads(out); return bool(d.get("aprovado")) and not [p for p in (d.get("problemas") or []) if str(p).strip()]
+    except Exception:
+        return False
 
 
 def ambiguo(item, txt):
@@ -137,10 +150,13 @@ def main():
         if str(r.get("gabarito", "")).upper()[:1] != gab: sai_("gabarito diferente do pedido"); continue
         if not (220 <= len(item) <= 900): sai_("tamanho"); continue
         if not COMPLEXO.search(item): sai_("simples demais (sem caso, exceção, prazo ou competência)"); continue
+        if re.search(r"\bart(?:igo)?\.?\s*\d|de acordo com (?:a|o)|conforme (?:a|o) (?:lei|legisla|artigo|c[oó]digo)|segundo o artigo", item, re.I): sai_("cita artigo ou lei no enunciado"); continue
+        if len(cm.palavras(tema) & cm.palavras(item)) < 1: sai_("fora do tema sorteado"); continue
         if palavras_seq(item, art[3]): sai_("copia a lei"); continue
         if any(parecido(item, o) for o in oficiais + [x["item"] for x in feitas]): sai_("parecida com outra questão"); continue
         if julga_com_lei(item, art[3]) != gab: sai_("teste cego falhou"); continue
         if ambiguo(item, art[3]): sai_("pode ter dupla interpretação"); continue
+        if not revisor(item, gab, art[3]): sai_("reprovada pelo revisor"); continue
         it = {"k": "x", "tipo": "CE", "g": gab, "texto": item, "ctx": "", "materia": m}
         ok, mot, funds = cm.verifica(it, {"conclusao": gab, "comentario": r.get("explicacao", ""), "fundamento": r.get("fundamento") or []},
                                      [(0, art[1], art[2], art[3])])
