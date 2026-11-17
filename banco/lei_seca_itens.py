@@ -81,6 +81,9 @@ def dispositivos(art_txt):
     for d in out:
         d = re.sub(r"\s+", " ", d).strip(" ;")
         d = re.sub(r"\s*[A-ZÁÉÍÓÚÂÊÔÃÕÇ][a-záéíóúâêôãõç]+(?: [a-záéíóúâêôãõç]+){0,6}\.$", lambda m: "" if re.search(r"(?:multa|anos?|meses)\.\s*$", d[:m.start()+1] + ".") else m.group(0), d)
+        mp = re.search(r"Pena\s*-.*?(?:multa|anos?|meses|m[eê]s)\b[^.]*\.", d)
+        if mp: d = d[:mp.end()]
+        d = re.sub(r"\s*\.\s*\.$", ".", d)
         if 60 <= len(d) <= 520 and "§" not in d and not re.search(r"\b(revogad|vetad)|\(VETADO\)|\bart\.\s*\d", d, re.I) and re.search(r"[a-z]{4}", d):
             res.append(d.rstrip(".") + ".")
     return res
