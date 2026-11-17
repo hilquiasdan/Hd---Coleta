@@ -9,7 +9,7 @@ como a explicação "inventar". Saída: lista de itens com status "pendente" (re
 
 Uso: python lei_seca_itens.py SAIDA.json
 """
-import json, random, re, sys
+import json, random, re, sys, html as H
 import comenta as cm
 
 LEIS = {  # lei: (nome no comando, faixas de artigos que caem na prova; None = todos)
@@ -54,15 +54,19 @@ def no_intervalo(a, faixas):
 
 def dispositivos(art_txt):
     """separa caput, incisos e parágrafos; incisos levam junto o fim do caput (até os dois-pontos)"""
-    t = LIMPA.sub("", art_txt)
+    t = H.unescape(art_txt).replace("&#xa0", " ")
+    t = re.split(r"\bBras[ií]lia,\s*\d", t)[0]
+    t = re.sub(r"\xa0\s*[A-ZÁÉÍÓÚÂÊÔÃÕÇ][^.;:\xa0]{2,80}\.?\s*$", "", t)  # título do artigo seguinte
+    t = t.replace("\xa0", " ")
+    t = LIMPA.sub("", t)
     t = re.sub(r"\s+", " ", t).strip()
     t = re.sub(r"^Art\.\s*\d+[\dA-Z\-º°o\.]*\s*", "", t)
     if re.search(r"\b(revogad|vetad)", t[:60], re.I):
         return []
-    partes = re.split(r"\s(?=(?:§\s*\d+[º°o]?|Parágrafo único\.)\s)", t)
+    partes = re.split(r"\s(?=(?:§\s*\d+[º°o]?(?:-[A-Z])?\.?|Parágrafo único\.)\s)", t)
     out = []
     for p in partes:
-        p = re.sub(r"^(?:§\s*\d+[º°o]?\.?|Parágrafo único\.)\s*", "", p).strip()
+        p = re.sub(r"^(?:§\s*\d+[º°o]?(?:-[A-Z])?\.?|Parágrafo único\.)\s*", "", p).strip()
         inc = re.split(r"\s(?=[IVXL]{1,6}\s*[-–]\s)", p)
         cab = inc[0].strip()
         if len(inc) == 1:
@@ -76,7 +80,8 @@ def dispositivos(art_txt):
     res = []
     for d in out:
         d = re.sub(r"\s+", " ", d).strip(" ;")
-        if 60 <= len(d) <= 520 and not re.search(r"\b(revogad|vetad)|\(VETADO\)|\bart\.\s*\d", d, re.I) and re.search(r"[a-z]{4}", d):
+        d = re.sub(r"\s*[A-ZÁÉÍÓÚÂÊÔÃÕÇ][a-záéíóúâêôãõç]+(?: [a-záéíóúâêôãõç]+){0,6}\.$", lambda m: "" if re.search(r"(?:multa|anos?|meses)\.\s*$", d[:m.start()+1] + ".") else m.group(0), d)
+        if 60 <= len(d) <= 520 and "§" not in d and not re.search(r"\b(revogad|vetad)|\(VETADO\)|\bart\.\s*\d", d, re.I) and re.search(r"[a-z]{4}", d):
             res.append(d.rstrip(".") + ".")
     return res
 
@@ -114,8 +119,17 @@ def errado(d, rng):
             opc.append((m.start(), m.end(), troca, pal))
     if not opc:
         return None
-    i, f, novo, velho = rng.choice(opc)
-    return d[:i] + novo + d[f:], velho, novo
+    rng.shuffle(opc)
+    for i, f, novo, velho in opc:
+        t = d[:i] + novo + d[f:]
+        ok = True
+        for m in re.finditer(r"de (\d+) \([^)]*\) (meses|m[eê]s|anos?|dias?)? ?a (\d+) \([^)]*\) (meses|m[eê]s|anos?|dias?)", t):
+            a = int(m.group(1)) * (12 if (m.group(2) or m.group(4)).startswith("ano") else 1)
+            b = int(m.group(3)) * (12 if m.group(4).startswith("ano") else 1)
+            if a >= b: ok = False
+        if ok:
+            return t, velho, novo
+    return None
 
 
 def main():
@@ -133,13 +147,14 @@ def main():
                 e = errado(d, rng)
                 if not e:
                     continue  # só entra dispositivo que permite um par Certo/Errado com troca precisa
+                art_nome = ("do " if nome.startswith("C") else "da ") + nome
                 base = {"materia_lei": k, "lei": nome, "artigo": a, "tipo": "CE", "origem": "lei_seca_hd", "status": "pendente",
                         "ctx": "Julgue o item a seguir com base na %s." % nome, "trecho": d}
                 if rng.random() < .5:
-                    itens.append(dict(base, item=d, g="C", explicacao="Certo. O item reproduz fielmente o art. %s da %s: “%s”" % (a, nome, d)))
+                    itens.append(dict(base, item=d, g="C", explicacao="Certo. O item reproduz fielmente o art. %s %s: “%s”" % (a, art_nome, d)))
                 else:
                     t, velho, novo = e
-                    itens.append(dict(base, item=t, g="E", explicacao="Errado. O art. %s da %s diz “%s”, e não “%s”. Texto da lei: “%s”" % (a, nome, velho, novo, d)))
+                    itens.append(dict(base, item=t, g="E", explicacao="Errado. O art. %s %s diz “%s”, e não “%s”. Texto da lei: “%s”" % (a, art_nome, velho, novo, d)))
     json.dump(itens, open(sai, "w"), ensure_ascii=False, indent=1)
     c = {}
     for x in itens: c[x["materia_lei"]] = c.get(x["materia_lei"], 0) + 1
