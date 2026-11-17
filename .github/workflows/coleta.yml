@@ -20,6 +20,7 @@ jobs:
       nome: ${{ steps.s.outputs.nome }}
       derun: ${{ steps.s.outputs.derun }}
       rodada: ${{ steps.s.outputs.rodada }}
+      proc: ${{ steps.s.outputs.proc }}
     steps:
       - uses: actions/checkout@v4
       - id: s
@@ -28,8 +29,10 @@ jobs:
           echo "sites=$(python3 -c "import json,sys;print(json.dumps(sys.argv[1].split()))" "$L")" >> $GITHUB_OUTPUT
           echo "lista=$L" >> $GITHUB_OUTPUT; echo "nome=$N" >> $GITHUB_OUTPUT; echo "rodada=${R:-1}" >> $GITHUB_OUTPUT
           echo "derun=$(sed -n 's/^de_run: *//p' banco/lote.txt)" >> $GITHUB_OUTPUT
+          echo "proc=$(sed -n 's/^so_processar: *//p' banco/lote.txt)" >> $GITHUB_OUTPUT
   coleta:
     needs: prepara
+    if: needs.prepara.outputs.proc != 'sim'
     runs-on: ubuntu-latest
     timeout-minutes: 340
     strategy:
@@ -63,7 +66,7 @@ jobs:
           retention-days: 14
   avalia:
     needs: [prepara, coleta]
-    if: always()
+    if: always() && needs.prepara.outputs.proc != 'sim'
     runs-on: ubuntu-latest
     outputs:
       processar: ${{ steps.a.outputs.processar }}
@@ -93,7 +96,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
   processa:
     needs: [prepara, avalia]
-    if: needs.avalia.outputs.processar == 'sim'
+    if: always() && (needs.avalia.outputs.processar == 'sim' || needs.prepara.outputs.proc == 'sim')
     runs-on: ubuntu-latest
     timeout-minutes: 350
     strategy:
@@ -103,7 +106,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
+        if: needs.prepara.outputs.proc != 'sim'
         with: {path: art, pattern: 'coleta-*'}
+      - uses: actions/download-artifact@v4
+        if: needs.prepara.outputs.proc == 'sim'
+        with:
+          path: art
+          pattern: 'coleta-*'
+          run-id: ${{ needs.prepara.outputs.derun }}
+          github-token: ${{ github.token }}
       - run: |
           mkdir -p banco/cache banco/coleta
           for d in art/*/; do cp -rn "$d"cache/* banco/cache/ 2>/dev/null || true; cp "$d"coleta/*.json banco/coleta/ 2>/dev/null || true; done
@@ -119,7 +130,7 @@ jobs:
             banco/rel_${{ matrix.parte }}.json
   junta:
     needs: [prepara, processa]
-    if: always() && needs.processa.result != 'skipped'
+    if: always() && (needs.processa.result == 'success' || needs.processa.result == 'failure')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

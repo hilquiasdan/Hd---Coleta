@@ -1,4 +1,5 @@
 nome: fgv
-sites:fgv aocp fepese upenet
+sites: fgv aocp fepese upenet
 rodada: 3
 de_run: 44145248393
+so_processar: sim
