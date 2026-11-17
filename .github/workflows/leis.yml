@@ -1,0 +1,10 @@
+name: leis
+on: workflow_dispatch
+jobs:
+  leis:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests
+      - run: cd banco && python -c "import comenta as c; r={k:len(c.baixa_lei(k) or {}) for k in c.LEIS}; print('LEIS',r); a=c.baixa_lei('lep'); print('LEP112', a.get('112','')[:300])"
