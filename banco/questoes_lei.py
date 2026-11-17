@@ -14,8 +14,8 @@ import lei_seca_itens as L
 LEIS = {  # lei: (como citar, matéria, faixas de artigos)
     "lep": ("a Lei n.º 7.210/1984 (Lei de Execução Penal)", "Execução Penal", None),
     "cp": ("o Código Penal", "Direito Penal", [(1, 361)]),
-    "cpp": ("o Código de Processo Penal", "Direito Processual Penal", [(1, 62), (69, 91), (155, 250), (282, 350)]),
-    "cf": ("a Constituição Federal de 1988", "Direito Constitucional", [(1, 17), (37, 41), (136, 144)]),
+    "cpp": ("o Código de Processo Penal", "Direito Processual Penal", [(1, 62), (69, 91), (155, 250), (282, 350), (351, 405), (406, 497)]),
+    "cf": ("a Constituição Federal de 1988", "Direito Constitucional", [(1, 17), (18, 43), (92, 135), (136, 144)]),
     "l8112": ("a Lei n.º 8.112/1990", "Direito Administrativo", [(1, 182)]),
     "l9784": ("a Lei n.º 9.784/1999", "Direito Administrativo", None),
     "l8429": ("a Lei n.º 8.429/1992 (Lei de Improbidade Administrativa)", "Direito Administrativo", None),
