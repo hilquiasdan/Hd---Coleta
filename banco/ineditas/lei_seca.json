@@ -7,10 +7,10 @@
   "origem": "lei_seca_hd",
   "status": "pendente",
   "ctx": "Julgue o item a seguir com base na Lei n.º 7.210/1984 (Lei de Execução Penal).",
-  "trecho": "O Estado deverá recorrer à cooperação da comunidade nas atividades de execução da pena e da medida de segurança. TÍTULO II DO CONDENADO E DO INTERNADO.",
-  "item": "O Estado poderá recorrer à cooperação da comunidade nas atividades de execução da pena e da medida de segurança. TÍTULO II DO CONDENADO E DO INTERNADO.",
+  "trecho": "O Estado deverá recorrer à cooperação da comunidade nas atividades de execução da pena e da medida de segurança.",
+  "item": "O Estado poderá recorrer à cooperação da comunidade nas atividades de execução da pena e da medida de segurança.",
   "g": "E",
-  "explicacao": "Errado. O art. 4 da Lei n.º 7.210/1984 (Lei de Execução Penal) diz “deverá”, e não “poderá”. Texto da lei: “O Estado deverá recorrer à cooperação da comunidade nas atividades de execução da pena e da medida de segurança. TÍTULO II DO CONDENADO E DO INTERNADO.”"
+  "explicacao": "Errado. O art. 4 da Lei n.º 7.210/1984 (Lei de Execução Penal) diz “deverá”, e não “poderá”. Texto da lei: “O Estado deverá recorrer à cooperação da comunidade nas atividades de execução da pena e da medida de segurança.”"
  },
  {
   "materia_lei": "lep",
@@ -1580,10 +1580,10 @@
   "origem": "lei_seca_hd",
   "status": "pendente",
   "ctx": "Julgue o item a seguir com base na Código Penal.",
-  "trecho": "Durante a permanência poderão ser ministrados ao condenado cursos e palestras ou atribuídas atividades educativas. Seção III Da Pena de Multa.",
-  "item": "Durante a permanência poderão ser ministrados ao condenado cursos e palestras ou atribuídas atividades educativas. Seção III Da Pena de Multa.",
+  "trecho": "Durante a permanência poderão ser ministrados ao condenado cursos e palestras ou atribuídas atividades educativas.",
+  "item": "Durante a permanência poderão ser ministrados ao condenado cursos e palestras ou atribuídas atividades educativas.",
   "g": "C",
-  "explicacao": "Certo. O item reproduz fielmente o art. 48 do Código Penal: “Durante a permanência poderão ser ministrados ao condenado cursos e palestras ou atribuídas atividades educativas. Seção III Da Pena de Multa.”"
+  "explicacao": "Certo. O item reproduz fielmente o art. 48 do Código Penal: “Durante a permanência poderão ser ministrados ao condenado cursos e palestras ou atribuídas atividades educativas.”"
  },
  {
   "materia_lei": "cp",
@@ -2308,10 +2308,10 @@
   "origem": "lei_seca_hd",
   "status": "pendente",
   "ctx": "Julgue o item a seguir com base na Código Penal.",
-  "trecho": "A pena de multa cominada aos crimes previstos neste Capítulo seguirá a metodologia de cálculo prevista neste Código e não poderá ser inferior a 2% (dois por cento) do valor do contrato licitado ou celebrado com contratação direta. CAPÍTULO III DOS CRIMES CONTRA A ADMINISTRAÇÃO DA JUSTIÇA.",
-  "item": "A pena de multa cominada aos crimes previstos neste Capítulo seguirá a metodologia de cálculo prevista neste Código e não poderá ser inferior a 2% (dois por cento) do valor do contrato licitado ou celebrado com contratação direta. CAPÍTULO III DOS CRIMES CONTRA A ADMINISTRAÇÃO DA JUSTIÇA.",
+  "trecho": "A pena de multa cominada aos crimes previstos neste Capítulo seguirá a metodologia de cálculo prevista neste Código e não poderá ser inferior a 2% (dois por cento) do valor do contrato licitado ou celebrado com contratação direta.",
+  "item": "A pena de multa cominada aos crimes previstos neste Capítulo seguirá a metodologia de cálculo prevista neste Código e não poderá ser inferior a 2% (dois por cento) do valor do contrato licitado ou celebrado com contratação direta.",
   "g": "C",
-  "explicacao": "Certo. O item reproduz fielmente o art. 337-P do Código Penal: “A pena de multa cominada aos crimes previstos neste Capítulo seguirá a metodologia de cálculo prevista neste Código e não poderá ser inferior a 2% (dois por cento) do valor do contrato licitado ou celebrado com contratação direta. CAPÍTULO III DOS CRIMES CONTRA A ADMINISTRAÇÃO DA JUSTIÇA.”"
+  "explicacao": "Certo. O item reproduz fielmente o art. 337-P do Código Penal: “A pena de multa cominada aos crimes previstos neste Capítulo seguirá a metodologia de cálculo prevista neste Código e não poderá ser inferior a 2% (dois por cento) do valor do contrato licitado ou celebrado com contratação direta.”"
  },
  {
   "materia_lei": "cp",
@@ -3530,10 +3530,10 @@
   "origem": "lei_seca_hd",
   "status": "pendente",
   "ctx": "Julgue o item a seguir com base na Código de Processo Penal.",
-  "trecho": "Decretada a prisão preventiva, deverá o órgão emissor da decisão revisar a necessidade de sua manutenção a cada 90 (noventa) dias, mediante decisão fundamentada, de ofício, sob pena de tornar a prisão ilegal. CAPÍTULO IV DA PRISÃO DOMICILIAR.",
-  "item": "Decretada a prisão preventiva, deverá o órgão emissor da decisão revisar a necessidade de sua manutenção a cada 30 (trinta) dias, mediante decisão fundamentada, de ofício, sob pena de tornar a prisão ilegal. CAPÍTULO IV DA PRISÃO DOMICILIAR.",
+  "trecho": "Decretada a prisão preventiva, deverá o órgão emissor da decisão revisar a necessidade de sua manutenção a cada 90 (noventa) dias, mediante decisão fundamentada, de ofício, sob pena de tornar a prisão ilegal.",
+  "item": "Decretada a prisão preventiva, deverá o órgão emissor da decisão revisar a necessidade de sua manutenção a cada 30 (trinta) dias, mediante decisão fundamentada, de ofício, sob pena de tornar a prisão ilegal.",
   "g": "E",
-  "explicacao": "Errado. O art. 316 do Código de Processo Penal diz “90 (noventa) dias”, e não “30 (trinta) dias”. Texto da lei: “Decretada a prisão preventiva, deverá o órgão emissor da decisão revisar a necessidade de sua manutenção a cada 90 (noventa) dias, mediante decisão fundamentada, de ofício, sob pena de tornar a prisão ilegal. CAPÍTULO IV DA PRISÃO DOMICILIAR.”"
+  "explicacao": "Errado. O art. 316 do Código de Processo Penal diz “90 (noventa) dias”, e não “30 (trinta) dias”. Texto da lei: “Decretada a prisão preventiva, deverá o órgão emissor da decisão revisar a necessidade de sua manutenção a cada 90 (noventa) dias, mediante decisão fundamentada, de ofício, sob pena de tornar a prisão ilegal.”"
  },
  {
   "materia_lei": "cpp",
@@ -3816,10 +3816,10 @@
   "origem": "lei_seca_hd",
   "status": "pendente",
   "ctx": "Julgue o item a seguir com base na Código de Processo Penal.",
-  "trecho": "Em qualquer fase da investigação policial ou do processo penal, a pedido da autoridade policial, do Ministério Público ou da vítima, o juiz poderá determinar a proibição do autor de exercer atividades que envolvam contato direto com pessoa em situação de vulnerabilidade, quando houver prova da existência do crime, indício suficiente de autoria e perigo gerado pelo estado de liberdade do imputado. TÍTULO X DAS CITAÇÕES E INTIMAÇÕES.",
-  "item": "Em qualquer fase da investigação policial ou do processo penal, a pedido da autoridade policial, do Ministério Público ou da vítima, o juiz poderá determinar a proibição do autor de exercer atividades que envolvam contato direto com pessoa em situação de vulnerabilidade, quando houver prova da existência do crime, indício suficiente de autoria e perigo gerado pelo estado de liberdade do imputado. TÍTULO X DAS CITAÇÕES E INTIMAÇÕES.",
+  "trecho": "Em qualquer fase da investigação policial ou do processo penal, a pedido da autoridade policial, do Ministério Público ou da vítima, o juiz poderá determinar a proibição do autor de exercer atividades que envolvam contato direto com pessoa em situação de vulnerabilidade, quando houver prova da existência do crime, indício suficiente de autoria e perigo gerado pelo estado de liberdade do imputado.",
+  "item": "Em qualquer fase da investigação policial ou do processo penal, a pedido da autoridade policial, do Ministério Público ou da vítima, o juiz poderá determinar a proibição do autor de exercer atividades que envolvam contato direto com pessoa em situação de vulnerabilidade, quando houver prova da existência do crime, indício suficiente de autoria e perigo gerado pelo estado de liberdade do imputado.",
   "g": "C",
-  "explicacao": "Certo. O item reproduz fielmente o art. 350-B do Código de Processo Penal: “Em qualquer fase da investigação policial ou do processo penal, a pedido da autoridade policial, do Ministério Público ou da vítima, o juiz poderá determinar a proibição do autor de exercer atividades que envolvam contato direto com pessoa em situação de vulnerabilidade, quando houver prova da existência do crime, indício suficiente de autoria e perigo gerado pelo estado de liberdade do imputado. TÍTULO X DAS CITAÇÕES E INTIMAÇÕES.”"
+  "explicacao": "Certo. O item reproduz fielmente o art. 350-B do Código de Processo Penal: “Em qualquer fase da investigação policial ou do processo penal, a pedido da autoridade policial, do Ministério Público ou da vítima, o juiz poderá determinar a proibição do autor de exercer atividades que envolvam contato direto com pessoa em situação de vulnerabilidade, quando houver prova da existência do crime, indício suficiente de autoria e perigo gerado pelo estado de liberdade do imputado.”"
  },
  {
   "materia_lei": "l11343",
@@ -3894,10 +3894,10 @@
   "origem": "lei_seca_hd",
   "status": "pendente",
   "ctx": "Julgue o item a seguir com base na Lei n.º 11.343/2006 (Lei de Drogas).",
-  "trecho": "Prescrevem em 2 (dois) anos a imposição e a execução das penas, observado, no tocante à interrupção do prazo, o disposto nos arts. 107 e seguintes do Código Penal. TÍTULO IV DA REPRESSÃO À PRODUÇÃO NÃO AUTORIZADA E AO TRÁFICO ILÍCITO DE DROGAS.",
-  "item": "Prescrevem em 1 (um) ano a imposição e a execução das penas, observado, no tocante à interrupção do prazo, o disposto nos arts. 107 e seguintes do Código Penal. TÍTULO IV DA REPRESSÃO À PRODUÇÃO NÃO AUTORIZADA E AO TRÁFICO ILÍCITO DE DROGAS.",
+  "trecho": "Prescrevem em 2 (dois) anos a imposição e a execução das penas, observado, no tocante à interrupção do prazo, o disposto nos arts. 107 e seguintes do Código Penal.",
+  "item": "Prescrevem em 1 (um) ano a imposição e a execução das penas, observado, no tocante à interrupção do prazo, o disposto nos arts. 107 e seguintes do Código Penal.",
   "g": "E",
-  "explicacao": "Errado. O art. 30 da Lei n.º 11.343/2006 (Lei de Drogas) diz “2 (dois) anos”, e não “1 (um) ano”. Texto da lei: “Prescrevem em 2 (dois) anos a imposição e a execução das penas, observado, no tocante à interrupção do prazo, o disposto nos arts. 107 e seguintes do Código Penal. TÍTULO IV DA REPRESSÃO À PRODUÇÃO NÃO AUTORIZADA E AO TRÁFICO ILÍCITO DE DROGAS.”"
+  "explicacao": "Errado. O art. 30 da Lei n.º 11.343/2006 (Lei de Drogas) diz “2 (dois) anos”, e não “1 (um) ano”. Texto da lei: “Prescrevem em 2 (dois) anos a imposição e a execução das penas, observado, no tocante à interrupção do prazo, o disposto nos arts. 107 e seguintes do Código Penal.”"
  },
  {
   "materia_lei": "l11343",
@@ -4453,10 +4453,10 @@
   "origem": "lei_seca_hd",
   "status": "pendente",
   "ctx": "Julgue o item a seguir com base na Lei n.º 13.869/2019 (Lei de Abuso de Autoridade).",
-  "trecho": "A ação privada subsidiária será exercida no prazo de 6 (seis) meses, contado da data em que se esgotar o prazo para oferecimento da denúncia. CAPÍTULO IV DOS EFEITOS DA CONDENAÇÃO E DAS PENAS RESTRITIVAS DE DIREITOS.",
-  "item": "A ação privada subsidiária será exercida no prazo de 6 (seis) meses, contado da data em que se esgotar o prazo para oferecimento da denúncia. CAPÍTULO IV DOS EFEITOS DA CONDENAÇÃO E DAS PENAS RESTRITIVAS DE DIREITOS.",
+  "trecho": "A ação privada subsidiária será exercida no prazo de 6 (seis) meses, contado da data em que se esgotar o prazo para oferecimento da denúncia.",
+  "item": "A ação privada subsidiária será exercida no prazo de 6 (seis) meses, contado da data em que se esgotar o prazo para oferecimento da denúncia.",
   "g": "C",
-  "explicacao": "Certo. O item reproduz fielmente o art. 3 da Lei n.º 13.869/2019 (Lei de Abuso de Autoridade): “A ação privada subsidiária será exercida no prazo de 6 (seis) meses, contado da data em que se esgotar o prazo para oferecimento da denúncia. CAPÍTULO IV DOS EFEITOS DA CONDENAÇÃO E DAS PENAS RESTRITIVAS DE DIREITOS.”"
+  "explicacao": "Certo. O item reproduz fielmente o art. 3 da Lei n.º 13.869/2019 (Lei de Abuso de Autoridade): “A ação privada subsidiária será exercida no prazo de 6 (seis) meses, contado da data em que se esgotar o prazo para oferecimento da denúncia.”"
  },
  {
   "materia_lei": "l13869",
@@ -5792,10 +5792,10 @@
   "origem": "lei_seca_hd",
   "status": "pendente",
   "ctx": "Julgue o item a seguir com base na Lei n.º 8.112/1990.",
-  "trecho": "O servidor que não for redistribuído ou colocado em disponibilidade poderá ser mantido sob responsabilidade do órgão central do SIPEC, e ter exercício provisório, em outro órgão ou entidade, até seu adequado aproveitamento. CAPÍTULO IV DA SUBSTITUIÇÃO.",
-  "item": "O servidor que não for redistribuído ou colocado em disponibilidade poderá ser mantido sob responsabilidade do órgão central do SIPEC, e ter exercício provisório, em outro órgão ou entidade, até seu adequado aproveitamento. CAPÍTULO IV DA SUBSTITUIÇÃO.",
+  "trecho": "O servidor que não for redistribuído ou colocado em disponibilidade poderá ser mantido sob responsabilidade do órgão central do SIPEC, e ter exercício provisório, em outro órgão ou entidade, até seu adequado aproveitamento.",
+  "item": "O servidor que não for redistribuído ou colocado em disponibilidade poderá ser mantido sob responsabilidade do órgão central do SIPEC, e ter exercício provisório, em outro órgão ou entidade, até seu adequado aproveitamento.",
   "g": "C",
-  "explicacao": "Certo. O item reproduz fielmente o art. 37 da Lei n.º 8.112/1990: “O servidor que não for redistribuído ou colocado em disponibilidade poderá ser mantido sob responsabilidade do órgão central do SIPEC, e ter exercício provisório, em outro órgão ou entidade, até seu adequado aproveitamento. CAPÍTULO IV DA SUBSTITUIÇÃO.”"
+  "explicacao": "Certo. O item reproduz fielmente o art. 37 da Lei n.º 8.112/1990: “O servidor que não for redistribuído ou colocado em disponibilidade poderá ser mantido sob responsabilidade do órgão central do SIPEC, e ter exercício provisório, em outro órgão ou entidade, até seu adequado aproveitamento.”"
  },
  {
   "materia_lei": "l8112",
@@ -6312,10 +6312,10 @@
   "origem": "lei_seca_hd",
   "status": "pendente",
   "ctx": "Julgue o item a seguir com base na Lei n.º 8.112/1990.",
-  "trecho": "Da revisão do processo não poderá resultar agravamento de penalidade. TÍTULO VI DA SEGURIDADE SOCIAL DO SERVIDOR.",
-  "item": "Da revisão do processo não deverá resultar agravamento de penalidade. TÍTULO VI DA SEGURIDADE SOCIAL DO SERVIDOR.",
+  "trecho": "Da revisão do processo não poderá resultar agravamento de penalidade.",
+  "item": "Da revisão do processo não deverá resultar agravamento de penalidade.",
   "g": "E",
-  "explicacao": "Errado. O art. 182 da Lei n.º 8.112/1990 diz “poderá”, e não “deverá”. Texto da lei: “Da revisão do processo não poderá resultar agravamento de penalidade. TÍTULO VI DA SEGURIDADE SOCIAL DO SERVIDOR.”"
+  "explicacao": "Errado. O art. 182 da Lei n.º 8.112/1990 diz “poderá”, e não “deverá”. Texto da lei: “Da revisão do processo não poderá resultar agravamento de penalidade.”"
  },
  {
   "materia_lei": "l9784",
@@ -7352,10 +7352,10 @@
   "origem": "lei_seca_hd",
   "status": "pendente",
   "ctx": "Julgue o item a seguir com base na Lei n.º 11.340/2006 (Lei Maria da Penha).",
-  "trecho": "Na hipótese do inciso II do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente. TÍTULO IV DOS PROCEDIMENTOS.",
-  "item": "Na hipótese do inciso II do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente. TÍTULO IV DOS PROCEDIMENTOS.",
+  "trecho": "Na hipótese do inciso II do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente.",
+  "item": "Na hipótese do inciso II do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente.",
   "g": "C",
-  "explicacao": "Certo. O item reproduz fielmente o art. 12-D da Lei n.º 11.340/2006 (Lei Maria da Penha): “Na hipótese do inciso II do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente. TÍTULO IV DOS PROCEDIMENTOS.”"
+  "explicacao": "Certo. O item reproduz fielmente o art. 12-D da Lei n.º 11.340/2006 (Lei Maria da Penha): “Na hipótese do inciso II do caput deste artigo, o juiz será comunicado no prazo máximo de 24 (vinte e quatro) horas e decidirá, em igual prazo, sobre a manutenção ou a revogação da medida aplicada, devendo dar ciência ao Ministério Público concomitantemente.”"
  },
  {
   "materia_lei": "l11340",
