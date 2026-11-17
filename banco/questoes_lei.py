@@ -14,7 +14,7 @@ import lei_seca_itens as L
 LEIS = {  # lei: (como citar, matéria, faixas de artigos)
     "lep": ("a Lei n.º 7.210/1984 (Lei de Execução Penal)", "Execução Penal", None),
     "cp": ("o Código Penal", "Direito Penal", [(1, 361)]),
-    "cpp": ("o Código de Processo Penal", "Direito Processual Penal", [(1, 23), (155, 250), (282, 350)]),
+    "cpp": ("o Código de Processo Penal", "Direito Processual Penal", [(1, 62), (69, 91), (155, 250), (282, 350)]),
     "cf": ("a Constituição Federal de 1988", "Direito Constitucional", [(1, 17), (37, 41), (136, 144)]),
     "l8112": ("a Lei n.º 8.112/1990", "Direito Administrativo", [(1, 182)]),
     "l9784": ("a Lei n.º 9.784/1999", "Direito Administrativo", None),
@@ -62,7 +62,8 @@ def escreve(tipo, v, un, ext):
 
 
 def lacuna(d, lei, mat, art, rng):
-    tk = tokens(d)
+    faixas = [(m.start(), m.end()) for m in RANGE.finditer(d)]
+    tk = [t for t in tokens(d) if not any(a <= t[0] < b for a, b in faixas)]
     if not tk: return None
     i, f, tipo, v, un, ext = rng.choice(tk)
     if tipo == "n":
@@ -103,6 +104,7 @@ def assinale(grupo, lei, mat, rng):
         if len(erradas) == 4: break
     if certa is None or len(erradas) < 4: return None
     alts = [certa[1]] + [x[1] for x in erradas]
+    if len({x[:50] for x in alts}) < 5: return None
     ordem = list(range(5)); rng.shuffle(ordem); alts = [alts[k] for k in ordem]; c = ordem.index(0)
     LET = "ABCDE"
     expl = ["Correta: %s, que reproduz o art. %s." % (LET[c], certa[0])]
@@ -212,7 +214,9 @@ def main():
             if not L.no_intervalo(a, faixas): continue
             for d in L.dispositivos(txt):
                 d = re.sub(r"\s+(?:T[ÍI]TULO|CAP[ÍI]TULO|SE[ÇC][ÃA]O|Se[çc][ãa]o|Subse[çc][ãa]o|LIVRO)\b.*$", "", d)
-                if len(d) >= 60: disp.append((a, d))
+                d = re.sub(r"^(?:\d+\s*)?[º°ª]\.?\s+", "", d).strip()
+                if len(d) < 60 or not d[:1].isupper() or re.match(r"(Deste|Desta|Do |Da |Este |Esta )", d): continue
+                disp.append((a, d))
         n0 = len(out)
         for a, d in disp:                                   # modelo 1 (lacunas: valor, órgão, pena)
             for fn in (lacuna, lacuna_orgao, lacuna_pena):
