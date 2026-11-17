@@ -20,7 +20,9 @@ jobs:
           for e in d.get("encoding",[]): print("DIAG ENC",json.dumps(e,ensure_ascii=False)[:600])
           for e in d.get("encoding",[]):
               u=e.get("contentUrl") or e.get("url")
+              print("DIAG JSONENC",json.dumps(e,ensure_ascii=False)[600:1400])
               if not u: continue
+              u=u.replace("/api/binario/","/api/public/binario/")
               try:
                   t=time.time(); x=requests.get(u,headers={"User-Agent":"Mozilla/5.0"},timeout=90); x.encoding=x.apparent_encoding
                   tx=re.sub(r"\s+"," ",re.sub(r"<[^>]+>"," ",x.text))
