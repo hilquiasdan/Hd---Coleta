@@ -1,0 +1,121 @@
+{
+ "resumo": {
+  "fgv": {
+   "aviso": "",
+   "provas aproveitadas": 1279,
+   "itens coletados": 85227,
+   "descartado: figura/linha do texto": 2712,
+   "itens em revisar": 26734,
+   "gravadas": 8281,
+   "fora das matérias do curso": 25968,
+   "duplicatas ignoradas": 16666,
+   "descartado: português sem o texto": 1653,
+   "itens sem gabarito/anulados": 1418,
+   "descartado: informática fora do nível": 1503,
+   "provas com falha": 1695,
+   "falha: sem gabarito compatível": 226,
+   "falha: versão do caderno ambígua": 932,
+   "falha: itens não separados": 195,
+   "descartado: item cortado": 289,
+   "provas fora do perfil": 1146,
+   "falha: PDF ilegível": 292,
+   "falha: menos de 90% dos itens extraídos": 50,
+   "descartado: outra língua": 2,
+   "descartado: texto de site misturado": 1
+  },
+  "aocp": {
+   "aviso": ""
+  },
+  "fepese": {
+   "aviso": ""
+  },
+  "upenet": {
+   "aviso": "",
+   "provas com falha": 67,
+   "falha: versão do caderno ambígua": 53,
+   "falha: sem gabarito compatível": 8,
+   "falha: itens não separados": 2,
+   "provas fora do perfil": 26,
+   "falha: PDF ilegível": 2,
+   "falha: menos de 90% dos itens extraídos": 2
+  }
+ },
+ "exemplos": {
+  "fgv": [
+   {
+    "materia": "Língua Portuguesa",
+    "resp": "D",
+    "enunciado": "Assinale a opção que apresenta a frase cuja palavra sublinhada só tem uma grafia possível.",
+    "alts": [
+     "“Aborígines são gente de valor escasso que atravanca o solo ",
+     "“Sem pontos de parada, / solto nas ruas como um táxi, / sem ",
+     "“Os bêbados têm ligações profundas com a verdade.” (anônimo)",
+     "“A cozinha brasileira é de extremos: ou os pratos carregadís",
+     "“Tudo o que vejo lá fora respira vida, a cabra que rumina ao"
+    ]
+   },
+   {
+    "materia": "Língua Portuguesa",
+    "resp": "E",
+    "enunciado": "Assinale a frase em que a substituição da locução sublinhada por um adjetivo é feita de forma adequada.",
+    "alts": [
+     "“A saudade é a memória do coração” (Coelho Neto) / cardíaca.",
+     "“O casamento é como a pessoa que quer tomar um copo de leite",
+     "“Um sintoma de liberdade é o som de uma gargalhada” (anônimo",
+     "“Lembre-se de que o segredo da felicidade está na liberdade”",
+     "“O riso é o sol que afugenta o inverno do rosto do homem” Vi"
+    ]
+   },
+   {
+    "materia": "Língua Portuguesa",
+    "resp": "B",
+    "enunciado": "Assinale a frase em que a grafia da palavra sublinhada está correta.",
+    "alts": [
+     "“A razão porque pessoas culpam as gerações anteriores é que ",
+     "“Pais se perguntam por que os rios são amargos, quando eles ",
+     "“Não há nenhum dever na arte por que a arte é livre.”",
+     "“A dança deve sua existência à música, porquê?”",
+     "“Eu sei que a poesia é indispensável, mas não sei por que.” "
+    ]
+   },
+   {
+    "materia": "Direito Administrativo",
+    "resp": "A",
+    "enunciado": "O Prefeito do Município Alfa pretende indicar um administrador para a empresa pública municipal XYZ. Para tanto, analisou os currículos de três pessoas, quais sejam: I. João tem experiência profissional de sete anos no s",
+    "alts": [
+     "Caio e Mário, apenas.",
+     "João e Caio, apenas.",
+     "João, Caio e Mário.",
+     "Mário, apenas.",
+     "João, apenas."
+    ]
+   },
+   {
+    "materia": "Noções de Direitos Humanos e Participação Social",
+    "resp": "A",
+    "enunciado": "João é potencial beneficiário de um direito social de estatura constitucional, que foi introduzido na Constituição da República pela Emenda Constitucional nº X. Apesar do decurso de quinze anos desde a promulgação da ref",
+    "alts": [
+     "Os efeitos da decisão podem ser estendidos a ele por decisão",
+     "Em razão dos limites subjetivos da coisa julgada, a decisão ",
+     "Os efeitos da decisão somente podem ser estendidos a ele cas",
+     "A decisão proferida em sede de mandado de injunção beneficia",
+     "A decisão pode ser utilizada como reforço argumentativo, mas"
+    ]
+   },
+   {
+    "materia": "Noções de Direitos Humanos e Participação Social",
+    "resp": "D",
+    "enunciado": "Em razão de diversos contratos celebrados, com outros entes federativos e com diversas sociedades empresárias, em montantes superiores à receita corrente líquida, a dívida pública do Município Alfa cresceu exponencialmen",
+    "alts": [
+     "o não pagamento da dívida fundada, desde que por mais de doi",
+     "a assunção de obrigações em montante superior à receita corr",
+     "o não pagamento da dívida flutuante, sem motivo de força mai",
+     "o não pagamento da dívida consolidada, sem motivo de força m",
+     "o não pagamento da dívida pública, flutuante ou fundada, sem"
+    ]
+   }
+  ]
+ },
+ "provas_novas": 785,
+ "questoes_novas": 7853
+}
