@@ -1,0 +1,26 @@
+# Matérias do curso Polícia Penal PE (sem Raciocínio Lógico e sem direito civil).
+# cabecalhos: título de seção do caderno -> matéria. As palavras-chave por matéria ficam em lib/classif.py.
+aceitas:
+  - Execução Penal
+  - Direito Penal
+  - Direito Processual Penal
+  - Direito Constitucional
+  - Direito Administrativo
+  - Legislação Especial
+  - Noções de Direitos Humanos e Participação Social
+  - Ética no Serviço Público
+  - Língua Portuguesa
+  - Noções de Informática
+cabecalhos:
+  'EXECU[ÇC][ÃA]O PENAL|\bLEP\b': Execução Penal
+  'PROCESSO PENAL|PROCESSUAL PENAL': Direito Processual Penal
+  'DIREITO PENAL|C[ÓO]DIGO PENAL': Direito Penal
+  'CONSTITUCIONAL': Direito Constitucional
+  'ADMINISTRATIVO': Direito Administrativo
+  'LEGISLA[ÇC][ÃA]O (PENAL )?ESPECIAL|LEGISLA[ÇC][ÃA]O EXTRAVAGANTE': Legislação Especial
+  'DIREITOS HUMANOS': Noções de Direitos Humanos e Participação Social
+  '[ÉE]TICA': Ética no Serviço Público
+  'L[ÍI]NGUA PORTUGUESA|PORTUGU[ÊE]S': Língua Portuguesa
+  'INFORM[ÁA]TICA': Noções de Informática
+secoes_fora: 'RACIOC|MATEM[ÁA]TICA|CONHECIMENTOS GERAIS|ATUALIDADES|HIST[ÓO]RIA|GEOGRAFIA|LEGISLA[ÇC][ÃA]O ESTADUAL|LEGISLA[ÇC][ÃA]O MUNICIPAL|REALIDADE|CONTABILIDADE|ESTAT[ÍI]STICA|ADMINISTRA[ÇC][ÃA]O GERAL|ARQUIVOLOGIA|ECONOMIA|L[ÍI]NGUA (INGLESA|ESPANHOLA)|INGL[ÊE]S|ESPANHOL'
+fora: 'a[çc][ãa]o c[íi]vel|ju[íi]zo c[íi]vel|processo c[íi]vel|processo civil|\bCPC\b|c[óo]digo civil|direito civil|trabalhist|\bCLT\b|justi[çc]a do trabalho|tribut[áa]ri|previdenci[áa]ri|empresarial|fal[êe]ncia|eleitoral|or[çc]ament|financeir|contabil|consumidor|urban[íi]st|agr[áa]ri|honor[áa]rios|execu[çc][ãa]o fiscal|usucapi|div[óo]rcio|heran[çc]a|invent[áa]rio'

@@ -1,0 +1,73 @@
+name: comenta
+on:
+  push:
+    branches: [main]
+    paths: ['banco/comenta_pedido.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    outputs:
+      nome: ${{ steps.s.outputs.nome }}
+      entrada: ${{ steps.s.outputs.entrada }}
+      partes: ${{ steps.s.outputs.partes }}
+      matriz: ${{ steps.s.outputs.matriz }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: s
+        run: |
+          n=$(sed -n 's/^partes: *//p' banco/comenta_pedido.txt); n=${n:-1}
+          echo "nome=$(sed -n 's/^nome: *//p' banco/comenta_pedido.txt)" >> $GITHUB_OUTPUT
+          echo "entrada=$(sed -n 's/^entrada: *//p' banco/comenta_pedido.txt)" >> $GITHUB_OUTPUT
+          echo "partes=$n" >> $GITHUB_OUTPUT
+          echo "matriz=$(python3 -c "import json;print(json.dumps(list(range($n))))")" >> $GITHUB_OUTPUT
+  gera:
+    needs: prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        parte: ${{ fromJson(needs.prep.outputs.matriz) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: ~/.ollama/models
+          key: ollama-qwen25-14b
+      - run: pip install requests
+      - run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          (ollama serve > /tmp/ollama.log 2>&1 &) ; sleep 8
+          ollama pull qwen2.5:14b
+      - run: |
+          cd banco && mkdir -p comentarios
+          LIMITE_SEG=18500 python comenta.py ${{ needs.prep.outputs.entrada }} comentarios/parte_${{ matrix.parte }}.json ${{ matrix.parte }} ${{ needs.prep.outputs.partes }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: com-${{ matrix.parte }}
+          path: banco/comentarios/parte_${{ matrix.parte }}.json
+  junta:
+    needs: [prep, gera]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: art
+      - run: |
+          mkdir -p banco/comentarios
+          python3 -c "
+          import json,glob
+          v=[]
+          for f in glob.glob('art/*/*.json'): v+=json.load(open(f))
+          json.dump(v,open('banco/comentarios/saida_${{ needs.prep.outputs.nome }}.json','w'),ensure_ascii=False)
+          print('total',len(v),'ok',sum(x['status']=='ok' for x in v),'cego',sum(x['acordo_cego'] for x in v))"
+          git config user.name "HD Concursos"; git config user.email "hilquiasdan@users.noreply.github.com"
+          git add banco/comentarios/saida_${{ needs.prep.outputs.nome }}.json
+          git commit -m "comentarios: ${{ needs.prep.outputs.nome }}" || echo nada
+          for i in 1 2 3; do git pull --rebase -q origin main && git push && break; sleep 5; done

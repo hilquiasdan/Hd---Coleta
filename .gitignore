@@ -1,0 +1,4 @@
+__pycache__/
+banco/cache/
+banco/coleta/
+*.sqlite

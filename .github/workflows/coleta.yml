@@ -1,0 +1,149 @@
+name: coleta
+# Coleta de provas oficiais (uma máquina por banca) com continuação automática.
+# Dispara ao mudar banco/lote.txt:  nome: X / sites: a b c / rodada: N / de_run: ID
+# Quando todas as bancas terminam (ou na 8ª rodada), o processamento roda em 4 partes paralelas
+# e o resultado vai para banco/saidas/saida_<nome>.json.
+on:
+  push:
+    branches: [main]
+    paths: ['banco/lote.txt']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+jobs:
+  prepara:
+    runs-on: ubuntu-latest
+    outputs:
+      sites: ${{ steps.s.outputs.sites }}
+      lista: ${{ steps.s.outputs.lista }}
+      nome: ${{ steps.s.outputs.nome }}
+      derun: ${{ steps.s.outputs.derun }}
+      rodada: ${{ steps.s.outputs.rodada }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: s
+        run: |
+          L=$(sed -n 's/^sites: *//p' banco/lote.txt); N=$(sed -n 's/^nome: *//p' banco/lote.txt); R=$(sed -n 's/^rodada: *//p' banco/lote.txt)
+          echo "sites=$(python3 -c "import json,sys;print(json.dumps(sys.argv[1].split()))" "$L")" >> $GITHUB_OUTPUT
+          echo "lista=$L" >> $GITHUB_OUTPUT; echo "nome=$N" >> $GITHUB_OUTPUT; echo "rodada=${R:-1}" >> $GITHUB_OUTPUT
+          echo "derun=$(sed -n 's/^de_run: *//p' banco/lote.txt)" >> $GITHUB_OUTPUT
+  coleta:
+    needs: prepara
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    strategy:
+      fail-fast: false
+      matrix:
+        site: ${{ fromJson(needs.prepara.outputs.sites) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        if: needs.prepara.outputs.derun != ''
+        continue-on-error: true
+        with:
+          name: coleta-${{ matrix.site }}
+          path: anterior
+          run-id: ${{ needs.prepara.outputs.derun }}
+          github-token: ${{ github.token }}
+      - run: |
+          mkdir -p banco/cache banco/coleta
+          [ -d anterior/cache ] && cp -rn anterior/cache/* banco/cache/ || true
+          [ -d anterior/coleta ] && cp -n anterior/coleta/*.json banco/coleta/ 2>/dev/null || true
+          echo "páginas e PDFs já baixados: $(ls banco/cache | wc -l)"
+      - run: pip install requests beautifulsoup4 pyyaml pymupdf playwright && python -m playwright install --with-deps chromium
+      - run: cd banco && timeout 18500 python coletor_pdf.py ${{ matrix.site }} || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coleta-${{ matrix.site }}
+          path: |
+            banco/cache
+            banco/coleta/${{ matrix.site }}*.json
+          retention-days: 14
+  avalia:
+    needs: [prepara, coleta]
+    if: always()
+    runs-on: ubuntu-latest
+    outputs:
+      processar: ${{ steps.a.outputs.processar }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {path: art, pattern: 'coleta-*'}
+      - id: a
+        run: |
+          F=$(python3 -c "
+          import json,glob
+          print(' '.join(f.split('/')[-1][:-12] for f in glob.glob('art/*/coleta/*_estado.json') if not json.load(open(f)).get('completo')))")
+          SEL=""; for s in ${{ needs.prepara.outputs.lista }}; do case " $F " in *" $s "*) SEL="$SEL $s";; esac; done
+          R=${{ needs.prepara.outputs.rodada }}
+          echo "faltam:$SEL (rodada $R)"
+          if [ -n "$SEL" ] && [ "$R" -lt 8 ]; then
+            git config user.name "HD Concursos"; git config user.email "hilquiasdan@users.noreply.github.com"
+            printf 'nome: ${{ needs.prepara.outputs.nome }}\nsites:%s\nrodada: %s\nde_run: %s\n' "${{ needs.prepara.outputs.lista }}" $((R+1)) "${{ github.run_id }}" > banco/lote.txt
+            git add banco/lote.txt; git commit -m "coleta: continua ${{ needs.prepara.outputs.nome }} (rodada $((R+1)))"
+            for i in 1 2 3; do git pull --rebase -q origin main && git push && break; sleep 5; done
+            gh workflow run coleta.yml --ref main
+            echo "processar=nao" >> $GITHUB_OUTPUT
+          else
+            echo "processar=sim" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}
+  processa:
+    needs: [prepara, avalia]
+    if: needs.avalia.outputs.processar == 'sim'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        parte: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {path: art, pattern: 'coleta-*'}
+      - run: |
+          mkdir -p banco/cache banco/coleta
+          for d in art/*/; do cp -rn "$d"cache/* banco/cache/ 2>/dev/null || true; cp "$d"coleta/*.json banco/coleta/ 2>/dev/null || true; done
+          ls banco/coleta
+      - run: pip install requests beautifulsoup4 pyyaml pymupdf
+      - run: cd banco && PARTE=${{ matrix.parte }} PARTES=4 SO_PROCESSA=1 SAIDA=parte_${{ matrix.parte }}.json RELATORIO=rel_${{ matrix.parte }}.json timeout 20500 python run_all.py ${{ needs.prepara.outputs.lista }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: parte-${{ matrix.parte }}
+          path: |
+            banco/parte_${{ matrix.parte }}.json
+            banco/rel_${{ matrix.parte }}.json
+  junta:
+    needs: [prepara, processa]
+    if: always() && needs.processa.result != 'skipped'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: {path: partes, pattern: 'parte-*'}
+      - run: |
+          mkdir -p banco/saidas
+          python3 - <<'PY'
+          import json,glob
+          out={}; rel={}
+          for f in glob.glob('partes/*/parte_*.json'): out.update(json.load(open(f)))
+          def soma(a,b):
+              for k,v in b.items():
+                  if isinstance(v,(int,float)) and not isinstance(v,bool): a[k]=a.get(k,0)+v
+                  elif isinstance(v,dict): a[k]=soma(a.get(k,{}),v)
+                  elif isinstance(v,list): a[k]=(a.get(k,[])+v)[:6]
+                  else: a.setdefault(k,v)
+              return a
+          for f in glob.glob('partes/*/rel_*.json'): rel=soma(rel,json.load(open(f)))
+          n='${{ needs.prepara.outputs.nome }}'
+          json.dump(out,open('banco/saidas/saida_%s.json'%n,'w'),ensure_ascii=False)
+          json.dump(rel,open('banco/saidas/relatorio_%s.json'%n,'w'),ensure_ascii=False,indent=1)
+          print('provas',len(out),'questoes',sum(len(p['j']['q']) for p in out.values()))
+          PY
+          git config user.name "HD Concursos"; git config user.email "hilquiasdan@users.noreply.github.com"
+          git add banco/saidas; git commit -m "coleta: resultado ${{ needs.prepara.outputs.nome }}" || echo nada
+          for i in 1 2 3; do git pull --rebase -q origin main && git push && break; sleep 5; done

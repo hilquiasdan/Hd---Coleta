@@ -1,0 +1,128 @@
+# Fontes de provas (PDF oficial das bancas). Para incluir uma banca nova, copie um bloco e ajuste.
+# tipo: api_cebraspe | rastreio (segue links do site atrás de PDFs de prova e gabarito)
+cebraspe:
+  tipo: api_cebraspe
+  banca: Cebraspe
+fgv:
+  tipo: rastreio
+  banca: FGV
+  inicio: [https://conhecimento.fgv.br/concursos]
+  dominio: 'conhecimento\.fgv\.br'
+  seguir: 'concursos\?|page=|encerrad|anteriores|/concursos/[a-z0-9-]+$|/concursos/[a-z0-9-]+/'
+  max_paginas: 3000
+aocp:
+  tipo: rastreio
+  banca: AOCP
+  inicio: [https://www.institutoaocp.org.br/]
+  dominio: 'institutoaocp\.org\.br'
+  seguir: 'concurso|encerrad|page=|pagina'
+  max_paginas: 500
+idecan:
+  ativo: false   # respondeu 403 ao robô em 16/11/2026: fora até liberar
+  tipo: rastreio
+  banca: IDECAN
+  inicio: [https://www.idecan.org.br/]
+  dominio: 'idecan\.org\.br'
+  seguir: 'concurso|encerrad|page=|pagina|ConcursoSelecionado|Concursos'
+  max_paginas: 500
+upenet:
+  tipo: rastreio
+  banca: UPENET/IAUPE
+  inicio: [https://www.upenet.com.br/]
+  dominio: 'upenet\.com\.br'
+  seguir: 'concurso|selecao|sele%C3%A7%C3%A3o|encerrad|anterior|page='
+  max_paginas: 400
+selecon:
+  tipo: rastreio
+  banca: Selecon
+  inicio: [https://selecon.org.br/concursos/]
+  dominio: 'selecon\.org\.br|selecao\.net\.br'
+  seguir: 'concurso|encerrad|page=|/categoria/|informacoes|arquivos'
+  max_paginas: 400
+fepese:
+  tipo: rastreio
+  banca: Fepese
+  inicio: [https://fepese.org.br/concursos/]
+  dominio: 'fepese\.org\.br'
+  seguir: 'concurso|encerrad|\?go=|page='
+  max_paginas: 400
+copeve_ufal:
+  tipo: rastreio
+  banca: COPEVE/UFAL
+  inicio: ['https://copeve.ufal.br/index.php?opcao=todosConcursos']
+  dominio: 'copeve\.ufal\.br'
+  seguir: 'opcao=concurso|todosConcursos'
+  max_paginas: 1500
+ibade:
+  tipo: rastreio
+  banca: IBADE
+  inicio: [https://www.ibade.org.br/]
+  dominio: 'ibade\.org\.br'
+  seguir: 'concurso|sele|edital|prova|encerrad|anterior|page=|pagina'
+  max_paginas: 1500
+cops_uel:
+  tipo: rastreio
+  banca: COPS/UEL
+  inicio: ['https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2026/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2025/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2024/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2023/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2022/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2021/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2020/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2019/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2018/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2017/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2016/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2015/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2014/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2013/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2012/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2011/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2010/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2009/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2008/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2007/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2006/tipo/C', 'https://www.cops.uel.br/v2/Selecao/ListarSelecoes/ano/2005/tipo/C']
+  dominio: 'cops\.uel\.br'
+  seguir: 'Selecao/(ListarSelecoes|DetalharSelecao|Arquivos)|Arquivo|Documento'
+  max_paginas: 2500
+fundep:
+  tipo: rastreio
+  banca: FUNDEP
+  inicio: ['https://www.gestaodeconcursos.com.br/site/AnexosConcursos.aspx']
+  dominio: 'gestaodeconcursos\.com\.br'
+  seguir: 'Anexo|Concurso|concurso|Arquivo'
+  max_paginas: 2000
+fcm:
+  ativo: false   # o domínio fcm.org.br não é a banca (é federação de motociclismo)
+  tipo: rastreio
+  banca: FCM/CEFET
+  inicio: ['https://fcm.org.br/']
+  dominio: 'x'
+  seguir: 'x'
+  max_paginas: 1
+ibam:
+  ativo: false   # documentos misturados numa página só, sem como parear prova e gabarito com segurança
+  tipo: rastreio
+  banca: IBAM
+  inicio: [https://www.ibam-concursos.org.br/]
+  dominio: 'ibam-concursos\.org\.br'
+  seguir: 'concurso|sele|edital|prova|encerrad|anterior|page=|pagina|documento'
+  max_paginas: 1500
+verbena:
+  tipo: rastreio
+  banca: Instituto Verbena/UFG
+  inicio: ['https://sistemas.institutoverbena.ufg.br/cms/home']
+  dominio: 'institutoverbena\.ufg\.br'
+  seguir: 'cms|/20\d\d/|concurso|arquivos|sistema'
+  max_paginas: 2000
+nc_ufpr:
+  tipo: rastreio_js
+  banca: NC-UFPR
+  inicio: [https://servicos.nc.ufpr.br/PortalNC/Concursos]
+  dominio: 'nc\.ufpr\.br'
+  seguir: 'Concurso|concurso|documentos|Selecao|sele'
+  max_paginas: 800
+acafe:
+  ativo: false   # PDFs com questões de espanhol e textos de outros sites misturados
+  tipo: rastreio_js
+  banca: ACAFE
+  inicio: [https://acafe.org.br/]
+  dominio: 'acafe\.org\.br'
+  seguir: 'concurso|sele|edital|prova|encerrad|anterior'
+  max_paginas: 800
+cev_uece:
+  tipo: rastreio_js
+  banca: CEV/UECE
+  inicio: [https://www.uece.br/cev/]
+  dominio: 'uece\.br'
+  seguir: 'cev|concurso|sele|edital|prova|encerrad|anterior'
+  max_paginas: 800
+iades:
+  tipo: rastreio_js
+  banca: IADES
+  inicio: [https://www.iades.com.br/]
+  dominio: 'iades\.com\.br'
+  seguir: 'concurso|inscricao|sele|edital|prova|encerrad|anterior|detalhe'
+  max_paginas: 800
