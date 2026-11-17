@@ -16,14 +16,15 @@ jobs:
           import json
           H={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) Chrome/124","Accept":"application/json"}
           r=requests.get("https://normas.leg.br/api/public/normas?urn=urn:lex:br:federal:lei:1984-07-11;7210&tipo_documento=maior-detalhe",headers=H,timeout=60)
-          print("DIAG NORMAS",re.sub(r"\s+"," ",r.text)[:4700])
-          r=requests.get("https://legis.senado.leg.br/dadosabertos/legislacao/urn?urn=urn:lex:br:federal:lei:1984-07-11;7210",headers=H,timeout=90)
           d=r.json()
-          def anda(o,c=""):
-              if isinstance(o,dict):
-                  for k,v in o.items(): anda(v,c+"/"+k)
-              elif isinstance(o,list):
-                  print("DIAG LISTA",c,len(o)); anda(o[0] if o else None,c+"[0]")
-              elif isinstance(o,str) and ("http" in o or len(o)>200): print("DIAG CAMPO",c,o[:160])
-          anda(d)
+          for e in d.get("encoding",[]): print("DIAG ENC",json.dumps(e,ensure_ascii=False)[:600])
+          for e in d.get("encoding",[]):
+              u=e.get("contentUrl") or e.get("url")
+              if not u: continue
+              try:
+                  t=time.time(); x=requests.get(u,headers={"User-Agent":"Mozilla/5.0"},timeout=90); x.encoding=x.apparent_encoding
+                  tx=re.sub(r"\s+"," ",re.sub(r"<[^>]+>"," ",x.text))
+                  print("DIAG BAIXOU",x.status_code,round(time.time()-t,1),"s",x.headers.get("content-type","")[:40],len(x.text),"chars",len(re.findall(r"Art\.\s*\d",tx)),"art",u[:150])
+                  m=re.search(r"Art\.\s*112",tx); print("DIAG ART112",tx[m.start():m.start()+400] if m else "-")
+              except Exception as ex: print("DIAG ERRO",str(ex)[:100],u[:120])
           PY
