@@ -231,6 +231,55 @@ def num_art(a):
     m = re.match(r"\d+", a); return int(m.group()) if m else 0
 
 
+def distorce(d, rng):
+    e = L.errado(d, rng)
+    if not e:
+        op = trocas(d)
+        if op: i, f, novo, velho = rng.choice(op); e = (d[:i] + novo + d[f:], velho, novo)
+    return e
+
+
+COMBOS = [(0,), (1,), (0, 1), (0, 2), (1, 2), (1, 3), (2, 3), (0, 3), (0, 1, 2), (0, 1, 3), (0, 2, 3), (1, 2, 3)]
+ROM = ["I", "II", "III", "IV"]
+
+
+def txt_combo(cb):
+    if len(cb) == 1: return "Apenas o item %s está certo." % ROM[cb[0]]
+    return "Apenas os itens " + ", ".join(ROM[i] for i in cb[:-1]) + " e " + ROM[cb[-1]] + " estão certos."
+
+
+def assertivas(grupo, lei, mat, rng):
+    """modelo difícil: quatro assertivas de artigos próximos, 1 ou 2 com detalhe alterado (prazo, número, órgão, termo)"""
+    cand = [(a, d) for a, d in grupo if 60 <= len(d) <= 260]
+    if len(cand) < 6: return None
+    rng.shuffle(cand)
+    nerr = rng.choice([1, 2, 2]); itens = []; erros = []
+    for a, d in cand:
+        if len(itens) == 4: break
+        if len(erros) < nerr:
+            e = distorce(d, rng)
+            if e: itens.append((a, e[0], False, e[1], e[2])); erros.append(len(itens) - 1); continue
+        if len(itens) - len(erros) < 4 - nerr: itens.append((a, d, True, "", ""))
+    if len(itens) < 4 or len(erros) != nerr: return None
+    rng.shuffle(itens)
+    certos = tuple(i for i, x in enumerate(itens) if x[2])
+    if certos not in COMBOS: return None
+    outros = [cb for cb in COMBOS if cb != certos and len(cb) in (len(certos), len(certos) + 1, len(certos) - 1)]
+    rng.shuffle(outros); ops = [certos] + outros[:4]
+    if len(ops) < 5: return None
+    rng.shuffle(ops); c = ops.index(certos)
+    enun = "Com base no que dispõe %s, julgue os itens a seguir.\n\n" % lei + "\n".join("%s %s" % (ROM[i], x[1]) for i, x in enumerate(itens)) + "\n\nAssinale a opção correta."
+    expl = ["Gabarito: %s." % "ABCDE"[c]]
+    for i, x in enumerate(itens):
+        expl.append("%s %s (art. %s)%s" % (ROM[i], "certo" if x[2] else "errado", x[0], "" if x[2] else ": a lei diz “%s”, e não “%s”" % (x[3], x[4])) + ".")
+    return [mat, enun, [txt_combo(cb) for cb in ops], c, " ".join(expl)]
+
+
+def _sh(t):
+    w = re.sub(r"[^a-z0-9à-ú]+", " ", t.lower()).split()
+    return {" ".join(w[i:i + 3]) for i in range(max(1, len(w) - 2))}
+
+
 def main():
     sai = sys.argv[1]; rng = random.Random(2026); out = []; por = {}
     for k, (lei, mat, faixas) in LEIS.items():
@@ -244,23 +293,28 @@ def main():
                 if len(d) < 60 or not d[:1].isupper() or re.match(r"(Deste|Desta|Do |Da |Este |Esta )", d): continue
                 disp.append((a, d))
         n0 = len(out)
-        for a, d in disp:                                   # modelo 1 (lacunas: valor, órgão, pena)
-            for q in lacunas(d, lei, mat, a, rng): out.append(q + [k, a])
-            for fn in (lacuna_orgao, lacuna_pena):
-                q = fn(d, lei, mat, a, rng)
-                if q: out.append(q + [k, a])
-        for i in range(0, len(disp), 3):                     # modelo 2: janelas de artigos vizinhos
-            q = assinale(disp[max(0, i - 6):i + 12], lei, mat, rng)
-            if q: out.append(q + [k, disp[i][0]])
-            q = incorreta(disp[max(0, i - 6):i + 12], lei, mat, rng)
+        for a, d in disp:                                   # modelo 1: uma única lacuna por dispositivo (pena > órgão > valor)
+            q = lacuna_pena(d, lei, mat, a, rng) or lacuna_orgao(d, lei, mat, a, rng)
+            if not q:
+                lq = lacunas(d, lei, mat, a, rng); q = lq[0] if lq else None
+            if q: out.append(q + [k, a])
+        for i in range(0, len(disp), 12):                    # modelo 2: janelas sem sobreposição
+            jan = disp[i:i + 14]
+            for fn in (assinale, incorreta):
+                q = fn(jan, lei, mat, rng)
+                if q: out.append(q + [k, disp[i][0]])
+        for i in range(6, len(disp), 10):                    # modelo 3 (difícil): assertivas I a IV
+            q = assertivas(disp[i:i + 12], lei, mat, rng)
             if q: out.append(q + [k, disp[i][0]])
         por[k] = len(out) - n0
         print(k, len(arts), "artigos,", len(disp), "dispositivos,", por[k], "questões", flush=True)
-    vistos = set(); fim = []
+    vistos = set(); fim = []; shs = []            # tira idênticas e parecidas (>= 55% de trechos em comum)
     for q in out:
         ch = q[1] + "|" + q[2][q[3]]
         if ch in vistos: continue
-        vistos.add(ch); fim.append(q)
+        s1 = _sh(q[1] + " " + q[2][q[3]])
+        if any(len(s1 & s2) / max(1, len(s1 | s2)) >= 0.55 for s2 in shs[-400:]): continue
+        vistos.add(ch); fim.append(q); shs.append(s1)
     json.dump(fim, open(sai, "w"), ensure_ascii=False)
     print("RESUMO questoes=%d por_lei=%s" % (len(fim), json.dumps(por)))
 
