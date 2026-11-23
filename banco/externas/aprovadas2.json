@@ -773,7 +773,7 @@
 "ano": 2019,
 "materia": "Direito Processual Penal",
 "num": 62,
-"enunciado": "João, por força de divergência ideológica, publicou, em 03 de fevereiro de 2019, artigo ofensivo à honra de Mário, dizendo que este, quando no exercício de função pública na Prefeitura do município de São Caetano, desviou verba da educação em benefício de empresas de familiares. Mário, inconformado com a falsa notícia, apresentou queixa-crime em face de João, sendo a inicial recebida em 02 de maio de 2019. Após observância do procedimento adequado, o juiz designou data para a realização da audiência de instrução e julgamento, sendo as partes regularmente intimadas. No dia da audiência, apenas o querelado João e sua defesa técnica compareceram. Diante da ausência injustificada do querelante, poderá a defesa de João requerer ao juiz o reconhecimento",
+"enunciado": "João, por força de divergência ideológica, publicou, em 03 de fevereiro de 2019, artigo ofensivo à honra de Mário, dizendo que este, quando no exercício de função pública na Prefeitura do município de São Caetano, desviou verba da educação em benefício de empresas de familiares. Mário, inconformado com a falsa notícia, apresentou queixa-crime em face de João, sendo a inicial recebida em 02 de maio de 2019. Após observância do procedimento adequado, o juiz designou data para a realização da audiência de instrução e julgamento, sendo as partes regularmente intimadas. No dia da audiência, apenas o querelado João e sua defesa técnica compareceram. Diante da ausência injustificada do querelante, poderá a defesa de João requerer ao juiz o reconhecimento A) da decadência, que é causa de extinção da punibilidade. B) do perdão do ofendido, que é causa de extinção da punibilidade. C) do perdão judicial, que é causa de exclusão da culpabilidade. D) da perempção, que é causa de extinção da punibilidade.",
 "alternativas": [
 "da decadência, que é causa de extinção da punibilidade.",
 "do perdão do ofendido, que é causa de extinção da punibilidade.",
@@ -901,7 +901,7 @@
 "ano": 2020,
 "materia": "Direito Penal",
 "num": 62,
-"enunciado": "Yuri foi denunciado pela suposta prática de crime de estupro qualificado em razão da idade da vítima, porque teria praticado conjunção carnal contra a vontade de Luana, de 15 anos, mediante emprego de grave ameaça. No curso da instrução, Luana mudou sua versão e afirmou que, na realidade, havia consentido na prática do ato sexual, sendo a informação confirmada por Yuri em seu interrogatório. Considerando apenas as informações expostas, no momento de apresentar alegações finais, a defesa técnica de Yuri deverá pugnar por sua absolvição, sob o fundamento de que o consentimento da suposta ofendida, na hipótese, funciona como",
+"enunciado": "Yuri foi denunciado pela suposta prática de crime de estupro qualificado em razão da idade da vítima, porque teria praticado conjunção carnal contra a vontade de Luana, de 15 anos, mediante emprego de grave ameaça. No curso da instrução, Luana mudou sua versão e afirmou que, na realidade, havia consentido na prática do ato sexual, sendo a informação confirmada por Yuri em seu interrogatório. Considerando apenas as informações expostas, no momento de apresentar alegações finais, a defesa técnica de Yuri deverá pugnar por sua absolvição, sob o fundamento de que o consentimento da suposta ofendida, na hipótese, funciona como A) causa supressora de exclusão da ilicitude. B) causa legal de exclusão da ilicitude. C) fundamento para reconhecimento da atipicidade da conduta. D) causa supressora de exclusão da culpabilidade.",
 "alternativas": [
 "causa supressora de exclusão da ilicitude.",
 "causa legal de exclusão da ilicitude.",
@@ -933,7 +933,7 @@
 "ano": 2021,
 "materia": "Direito Constitucional",
 "num": 13,
-"enunciado": "No dia 19 de janeiro de 2015, foi eleito o Presidente da República Alfa, para um mandato de quatro anos. Pouco depois, já no exercício do cargo, foi denunciado pelo Ministério Público de Alfa por ter sido flagrado cometendo o crime (comum) de lesão corporal contra um parente. Embarco o referido crime não guarda nenhuma relação com o exercício da função, o Presidente da República Alfa mostra-se temeroso com a possibilidade de ser imediatamente afastado do exercício do presidência e preso. Se a situação ocorrida na República Alfa acontecesse no Brasil, segundo o sistema jurídico-constitucional brasileiro, dor-se-ia",
+"enunciado": "No dia 19 de janeiro de 2015, foi eleito o Presidente da República Alfa, para um mandato de quatro anos. Pouco depois, já no exercício do cargo, foi denunciado pelo Ministério Público de Alfa por ter sido flagrado cometendo o crime (comum) de lesão corporal contra um parente. Embarco o referido crime não guarda nenhuma relação com o exercício da função, o Presidente da República Alfa mostra-se temeroso com a possibilidade de ser imediatamente afastado do exercício do presidência e preso. Se a situação ocorrida na República Alfa acontecesse no Brasil, segundo o sistema jurídico-constitucional brasileiro, dor-se-ia A) ao afastamento do Presidente da República e o Senado Federal deliberasse dessa maneira por maioria absoluta. B) a permanência do Presidente da República no exercício da função, embora tenha que responder pelo crime cometido após a finalização de seu mandato. C) o afastamento do Presidente da República se, após autorização da Câmara dos Deputados, houvesse sua condenação pelo Supremo Tribunal Federal. D) a autorização para que o Presidente da República finalizasse seu mandato, caso o Senado Federal assim decidisse, após manifestação da Câmara dos Deputados.",
 "alternativas": [
 "ao afastamento do Presidente da República e o Senado Federal deliberasse dessa maneira por maioria absoluta.",
 "a permanência do Presidente da República no exercício da função, embora tenha que responder pelo crime cometido após a finalização de seu mandato.",
@@ -992,22 +992,6 @@
 "topico": "5 Organização do Estado"
 },
 {
-"id": "oab2:2021-01-17",
-"fonte": "Exame de Ordem 2021-01 (OAB/FGV)",
-"ano": 2021,
-"materia": "Direito Constitucional",
-"num": 17,
-"enunciado": "Deputados Federais da oposição articularam-se na Câmara dos Deputados e obtiveram apoio de 1/3 (um terço) dos respectivos membros para instaurarem Comissão Parlamentar de Inquérito (CPI), visando apurar supostos ilícitos praticados pelo Presidente da República. Para evitar que integrantes da base governista se imiscuíssem e atrapalhassem investigações, foi deliberado que somente integrantes dos partidos oposicionais comporiam a Comissão.\nDiante do caso hipotético narrado, com base na ordem constitucional vigente, assinale a afirmativa correta.",
-"alternativas": [
-"O procedimento encontra-se viciado porque não atingido o quórum mínimo de maioria simples, exigido pela Constituição de 1988, para a instauração da Comissão Parlamentar de Inquérito.",
-"O procedimento encontra-se viciado em razão da inobservância do quórum mínimo exigido, de maioria absoluta.",
-"O procedimento narrado não apresenta quaisquer vícios de ordem material e formal, estando de acordo com os preceitos da Constituição de 1988.",
-"O procedimento encontra-se viciado porque não assegurou a representação proporcional dos partidos ou blocos parlamentares que participam da Casa Legislativa."
-],
-"gabarito": 1,
-"topico": "7 Organização dos poderes no Estado"
-},
-{
 "id": "oab2:2021-01-28",
 "fonte": "Exame de Ordem 2021-01 (OAB/FGV)",
 "ano": 2021,
@@ -1061,7 +1045,7 @@
 "ano": 2021,
 "materia": "Direito Penal",
 "num": 61,
-"enunciado": "Após uma discussão em razão de futebol, Paulo efetua um disparo de arma de fogo no peito de Armando, pretendendo causar sua morte, empreendendo fuga em seguida. Levado para o hospital por familiares, Armando não é atendido pelo médico plantonista Ismael, que presenciou o estado grave do paciente, mas alegava estar em greve. Armando vem a falecer enquanto aguardava atendimento em uma maca, ficando demonstrado que o não atendimento médico contribuiu para o resultado morte. Revoltados com o resultado, os familiares de Armando procuram você para assistência jurídica, destacando o interesse na habilitação como futuro assistente de acusação. Indagado sobre a responsabilidade penal de Paulo e Ismael, você deverá esclarecer que",
+"enunciado": "Após uma discussão em razão de futebol, Paulo efetua um disparo de arma de fogo no peito de Armando, pretendendo causar sua morte, empreendendo fuga em seguida. Levado para o hospital por familiares, Armando não é atendido pelo médico plantonista Ismael, que presenciou o estado grave do paciente, mas alegava estar em greve. Armando vem a falecer enquanto aguardava atendimento em uma maca, ficando demonstrado que o não atendimento médico contribuiu para o resultado morte. Revoltados com o resultado, os familiares de Armando procuram você para assistência jurídica, destacando o interesse na habilitação como futuro assistente de acusação. Indagado sobre a responsabilidade penal de Paulo e Ismael, você deverá esclarecer que A) Paulo deverá responder por tentativa de homicídio doloso e Ismael, por homicídio doloso consumado em razão da omissão. B) Paulo deverá responder por homicídio doloso consumado e Ismael, por omissão de socorro qualificada pelo resultado morte. C) Paulo deverá responder por homicídio doloso consumado, e Ismael não praticou conduta típica. D) Paulo e Ismael deverão responder por homicídio doloso consumado.",
 "alternativas": [
 "Paulo deverá responder por tentativa de homicídio doloso e Ismael, por homicídio doloso consumado em razão da omissão.",
 "Paulo deverá responder por homicídio doloso consumado e Ismael, por omissão de socorro qualificada pelo resultado morte.",
@@ -1086,22 +1070,6 @@
 ],
 "gabarito": 3,
 "topico": "5 Competência"
-},
-{
-"id": "oab2:2021-01-69",
-"fonte": "Exame de Ordem 2021-01 (OAB/FGV)",
-"ano": 2021,
-"materia": "Direito Processual Penal",
-"num": 69,
-"enunciado": "Em 14/01/2021, Valentim, reincidente, foi denunciado como incursos nas sanções penais do Art. 14 da Lei n° 10.826/03, cuja pena prevista é de reclusão, de 2 a 4 anos, tornando a denúncia que, em 10/01/2017, o denunciado portava, em via pública, arma de fogo de uso permitido. Após reiteração da denúncia e apresentação de resposta à acusação, o magistrado, verificando que a única outra anotação que constava da Folha de Antecedentes Criminais era referente a delito da mesma natureza, decretou, apesar da ausência de requerimento, a prisão preventiva do denunciado, destacando o risco de reiteração delitiva. Ao tomar conhecimento dos fatos, sob o ponto de vista técnico, a defesa de Valentim deve argumentar que a prisão é inadequada porque",
-"alternativas": [
-"não poderia ter sido decretada de ofício pela ausência de contemporaneidade, apesar de a pena máxima, por si só, não impedir o decreto prisional na situação diante da reincidência.",
-"não poderia ter sido decretada de ofício, não havia contemporaneidade e porque, considerando a pena máxima, os pressupostos legais não estariam preenchidos.",
-"não haveria contemporaneidade, apesar da possibilidade de decreto de ofício pelo momento processual e com base na reincidência.",
-"não haveria contemporaneidade e considerando a pena máxima prevista para o delito, apesar de, pelo momento processual, ser possível a decretação de ofício."
-],
-"gabarito": 0,
-"topico": "9 Prisão"
 },
 {
 "id": "oab2:2021-02-11",
@@ -1157,7 +1125,7 @@
 "ano": 2021,
 "materia": "Direito Constitucional",
 "num": 17,
-"enunciado": "João, considerado suspeito de ter comercializado drogas ilícitas em festa realizada há duas semanas em badalada praia do Município Delta, após investigação policial, teve localizado seu endereço. Os policiais, em perda de tempo, resolvem se dirigir para o referido endereço, e lá chegando, às 22h, mesmo sem permissão, entram na casa de João e realizam uma busca por provas e evidências. Segundo o sistema jurídico-constitucional brasileiro, a ação policial",
+"enunciado": "João, considerado suspeito de ter comercializado drogas ilícitas em festa realizada há duas semanas em badalada praia do Município Delta, após investigação policial, teve localizado seu endereço. Os policiais, em perda de tempo, resolvem se dirigir para o referido endereço, e lá chegando, às 22h, mesmo sem permissão, entram na casa de João e realizam uma busca por provas e evidências. Segundo o sistema jurídico-constitucional brasileiro, a ação policial A) respeitou o direito à inviolabilidade domiciliar, já que a Constituição da República dispensa a necessidade de mandado judicial em situações nas quais esteja em questão a possibilidade de obtenção de provas para investigação criminal em curso. B) desrespeitou o direito à inviolabilidade domiciliar, já que, como a Constituição da República não prevê explicitamente qualquer exceção a este direito, o ingresso na casa alheia, contra a vontade do morador, sempre exige ordem judicial. C) respeitou o direito à inviolabilidade domiciliar, já que o sistema jurídico brasileiro considera que a plena fruição desse direito somente pode ser relativizada em situações nas quais o seu exercício venha a conceder proteção a alguma ação criminosa. D) desrespeitou o direito à inviolabilidade domiciliar, já que, embora esse direito não seja absoluto e possua restrições expressas no próprio texto constitucional, a atuação dos agentes estatais não se deu no âmbito destas exceções.",
 "alternativas": [
 "respeitou o direito à inviolabilidade domiciliar, já que a Constituição da República dispensa a necessidade de mandado judicial em situações nas quais esteja em questão a possibilidade de obtenção de provas para investigação criminal em curso.",
 "desrespeitou o direito à inviolabilidade domiciliar, já que, como a Constituição da República não prevê explicitamente qualquer exceção a este direito, o ingresso na casa alheia, contra a vontade do morador, sempre exige ordem judicial.",
@@ -1189,7 +1157,7 @@
 "ano": 2021,
 "materia": "Direito Administrativo",
 "num": 30,
-"enunciado": "Luciano, proprietário de um terreno localizado no Município Ômega, viajou para o exterior, pelo período de 8 meses, para realizar curso de especialização profissional. Quando retornou de viagem, verificou que o Município, sem esperar qualquer notificação, de forma irregular e ilícita, invadiu sua propriedade e construiu uma escola, em verdadeiro apassamento administrativo. As aulas na nova escola municipal já se iniciaram há dois meses e verifica-se a evidente impossibilidade de se reverter a situação sem ensejar prejuízos aos interesses da coletividade. Ao buscar assistência jurídica junto a conhecido escritório de advocacia, foi manejada em favor de Luciano ação de",
+"enunciado": "Luciano, proprietário de um terreno localizado no Município Ômega, viajou para o exterior, pelo período de 8 meses, para realizar curso de especialização profissional. Quando retornou de viagem, verificou que o Município, sem esperar qualquer notificação, de forma irregular e ilícita, invadiu sua propriedade e construiu uma escola, em verdadeiro apassamento administrativo. As aulas na nova escola municipal já se iniciaram há dois meses e verifica-se a evidente impossibilidade de se reverter a situação sem ensejar prejuízos aos interesses da coletividade. Ao buscar assistência jurídica junto a conhecido escritório de advocacia, foi manejada em favor de Luciano ação de A) indenização por precocessário, por abuso de poder da municipalidade, que gera direito à justa e imediata indenização, exigível quando do trânsito em julgado da ação. B) indenização por desapropriação indireta, que visa a justa e posterior indenização, a ser paga por meio de precatório. C) reintegração de posse por desvio de finalidade, que visa a justa e posterior indenização, a ser paga por meio de precatório. D) interdito proibitório por desvio de finalidade, que gera direito à justa e imediata indenização, exigível quando do trânsito em julgado da ação.",
 "alternativas": [
 "indenização por precocessário, por abuso de poder da municipalidade, que gera direito à justa e imediata indenização, exigível quando do trânsito em julgado da ação.",
 "indenização por desapropriação indireta, que visa a justa e posterior indenização, a ser paga por meio de precatório.",
@@ -1269,7 +1237,7 @@
 "ano": 2022,
 "materia": "Direito Constitucional",
 "num": 17,
-"enunciado": "João Santos, eleito para o cargo de governador do Estado Delta, em cumprimento de uma promessa de campanha, resolve realizar reforma administrativa, de modo a melhorar as condições econômico-financeiras do Estado Delta. Para tanto, entre várias propostas, sugere a extinção da Defensoria Pública do Estado, sendo que a Procuradoria Geral do Estado passará a ter, então, a incumbência de exercer as atribuições da instituição a ser extinta. Segundo a ordem jurídico-constitucional brasileira, o governador está",
+"enunciado": "João Santos, eleito para o cargo de governador do Estado Delta, em cumprimento de uma promessa de campanha, resolve realizar reforma administrativa, de modo a melhorar as condições econômico-financeiras do Estado Delta. Para tanto, entre várias propostas, sugere a extinção da Defensoria Pública do Estado, sendo que a Procuradoria Geral do Estado passará a ter, então, a incumbência de exercer as atribuições da instituição a ser extinta. Segundo a ordem jurídico-constitucional brasileira, o governador está A) correto, pois os interesses públicos primários e secundários são coincidentes, não havendo motivos para que mais de um órgão venha a ter a competência concorrente de tutelar a ambos. B) equivocado, pois a atuação da Defensoria Pública teria, por consequência automática, o repasse das atribuições do órgão a ser extinto para o Ministério Público do Estado Delta. C) correto, pois a organização da estrutura administrativa do Estado Delta é atribuição do Governador do Estado, como decorrência natural do princípio federativo. D) equivocado, sendo que sua proposta viola a Constituição Federal, já que a Defensoria Pública, como instituição permanente, é essencial à função jurisdicional do Estado.",
 "alternativas": [
 "correto, pois os interesses públicos primários e secundários são coincidentes, não havendo motivos para que mais de um órgão venha a ter a competência concorrente de tutelar a ambos.",
 "equivocado, pois a atuação da Defensoria Pública teria, por consequência automática, o repasse das atribuições do órgão a ser extinto para o Ministério Público do Estado Delta.",
@@ -1317,7 +1285,7 @@
 "ano": 2022,
 "materia": "Direito Administrativo",
 "num": 32,
-"enunciado": "O Parque de Diversões Alegrías ABC obteve legalmente autorização do Município Alfa para uso de bem público, de maneira a montar suas instalações e exercer suas atividades em determinada praça pública, pelo período de três meses. Um mês após a edição do ato de autorização de uso, sobreveio legislação municipal, alterando o plano diretor da cidade, tornando aquela área residencial e proibindo expressamente sua autorização de uso para fins recreativos, como a instalação de parques de diversão. No caso em tela, houve extinção do ato administrativo de autorização de uso inicialmente válido por meio da",
+"enunciado": "O Parque de Diversões Alegrías ABC obteve legalmente autorização do Município Alfa para uso de bem público, de maneira a montar suas instalações e exercer suas atividades em determinada praça pública, pelo período de três meses. Um mês após a edição do ato de autorização de uso, sobreveio legislação municipal, alterando o plano diretor da cidade, tornando aquela área residencial e proibindo expressamente sua autorização de uso para fins recreativos, como a instalação de parques de diversão. No caso em tela, houve extinção do ato administrativo de autorização de uso inicialmente válido por meio da A) cassação, devendo a autoridade municipal que emitiu o ato revogar-o expressamente para o fiel cumprimento da lei e o Parque de Diversões Alegrías ABC não tem direito à indenização. B) caducidade, por força da ilegalidade superveniente causada pela alteração legislativa, sem culpa do beneficiário do ato Parque de Diversões Alegrías ABC. C) anulação, que ocorre de forma tática, em razão de fato do princípio superveniente, consistente na alteração do plano diretor da cidade, com direito de indenização ao Parque de Diversões Alegrías ABC. D) contraposição, por força de ilegalidade superveniente decorrente da nova lei municipal editada, devendo ser perquirida eventual culpa do Parque de Diversões Alegrías ABC.",
 "alternativas": [
 "cassação, devendo a autoridade municipal que emitiu o ato revogar-o expressamente para o fiel cumprimento da lei e o Parque de Diversões Alegrías ABC não tem direito à indenização.",
 "caducidade, por força da ilegalidade superveniente causada pela alteração legislativa, sem culpa do beneficiário do ato Parque de Diversões Alegrías ABC.",
@@ -1326,22 +1294,6 @@
 ],
 "gabarito": 1,
 "topico": "7 Bens públicos"
-},
-{
-"id": "oab2:2022-01-34",
-"fonte": "Exame de Ordem 2022-01 (OAB/FGV)",
-"ano": 2022,
-"materia": "Direito Constitucional",
-"num": 34,
-"enunciado": "A Constituição da República dispõe que são reconhecidos aos índios sua organização social, costumes, línguas, crenças e tradições, e os direitos originários sobre as terras que tradicionalmente ocupam. Do ponto de vista histórico e cultural, percebe-se que a comunidade indígena está intimamente ligada ao meio ambiente, inclusive colaborando em sua defesa e preservação. Nesse contexto, de acordo com o texto constitucional, a pesquisa e a lavra das riquezas minerais em terras indígenas",
-"alternativas": [
-"só podem ser efetivadas com autorização do Congresso Nacional, ouvidas as comunidades afetadas, ficando-lhes assegurada participação nos resultados da lavra, na forma da lei.",
-"só podem ser efetivadas com autorização de todos os órgãos que integram o SISNAMA (Sistema Nacional do Meio Ambiente), na forma da lei.",
-"não podem ser efetivadas em qualquer hipótese, eis que são terras inalienáveis e indisponíveis, e devem ser exploradas nos limites de atividades de subsistência para os índios.",
-"não podem ser efetivadas em qualquer hipótese, diante de expressa vedação constitucional, para não descaracterizar a área de relevante interesse social."
-],
-"gabarito": 1,
-"topico": "17 Direitos e interesses das populações indígenas"
 },
 {
 "id": "oab2:2022-01-63",
@@ -1525,7 +1477,7 @@
 "ano": 2022,
 "materia": "Direito Penal",
 "num": 58,
-"enunciado": "Para satisfazer sentimento pessoal, já que tinha grande relação de amizade com Joana, Alan, na condição de funcionário público, deixou de praticar ato de ofício em benefício da amiga. O supervisor de Alan, todavia, identificou o ocorrido e praticou o ato que Alan havia omitido, informando os fatos em procedimento administrativo próprio. Após a conclusão do procedimento administrativo, o Ministério Público denunciou Alan pelo crime de corrupção passiva consumado, destacando que a vantagem obtida poderia ser de qualquer natureza para tipificação do delito. Confirmados os fatos durante a instrução, caberá à defesa técnica de Alan pleitear sob o ponto de vista técnico, no momento das alegações finais,",
+"enunciado": "Para satisfazer sentimento pessoal, já que tinha grande relação de amizade com Joana, Alan, na condição de funcionário público, deixou de praticar ato de ofício em benefício da amiga. O supervisor de Alan, todavia, identificou o ocorrido e praticou o ato que Alan havia omitido, informando os fatos em procedimento administrativo próprio. Após a conclusão do procedimento administrativo, o Ministério Público denunciou Alan pelo crime de corrupção passiva consumado, destacando que a vantagem obtida poderia ser de qualquer natureza para tipificação do delito. Confirmados os fatos durante a instrução, caberá à defesa técnica de Alan pleitear sob o ponto de vista técnico, no momento das alegações finais, A) o reconhecimento da tentativa em relação ao crime de corrupção passiva. B) a desclassificação para o crime de prevaricação, na forma tentada. C) a desclassificação para o crime de prevaricação, na forma consumada. D) o reconhecimento da prática do crime de condescendência criminosa, na forma consumada.",
 "alternativas": [
 "o reconhecimento da tentativa em relação ao crime de corrupção passiva.",
 "a desclassificação para o crime de prevaricação, na forma tentada.",
@@ -1541,7 +1493,7 @@
 "ano": 2022,
 "materia": "Direito Constitucional",
 "num": 11,
-"enunciado": "Dois Estados de determinada região do Brasil foram atingidos por chuvas de tal magnitude que o fenômeno foi identificado como calamidade de grandes proporções na natureza. A ocorrência gerou graves ameaças à ordem pública, e o Presidente da República, após ouvir o Conselho da República e o de Defesa Nacional, decretou o estado de defesa, a fim de restabelecer a paz social. No decreto instituído, indicou, como medida coercitiva, a ocupação e o uso temporário de bens e serviços públicos dos Estados atingidos, sem direito a qualquer ressarcimento ou indenização por danos e custos decorrentes. Segundo o sistema jurídico-constitucional brasileiro, no caso em análise,",
+"enunciado": "Dois Estados de determinada região do Brasil foram atingidos por chuvas de tal magnitude que o fenômeno foi identificado como calamidade de grandes proporções na natureza. A ocorrência gerou graves ameaças à ordem pública, e o Presidente da República, após ouvir o Conselho da República e o de Defesa Nacional, decretou o estado de defesa, a fim de restabelecer a paz social. No decreto instituído, indicou, como medida coercitiva, a ocupação e o uso temporário de bens e serviços públicos dos Estados atingidos, sem direito a qualquer ressarcimento ou indenização por danos e custos decorrentes. Segundo o sistema jurídico-constitucional brasileiro, no caso em análise, A) houve violação ao princípio federativo, já que o uso e a ocupação de tal medida importam em violação à autonomia dos Estados atingidos pela calamidade natural de grandes proporções. B) a medida coercitiva é constitucional, pois a decretação de estado de defesa confere à União poderes amplos para combater, durante o prazo máximo de noventa dias, as causas geradoras da crise. C) a medida coercitiva em tela viola a ordem constitucional, pois a União deve ser responsabilizada pelos danos e custos decorrentes da ocupação e uso temporário de bens e serviços de outros entes. D) a medida coercitiva, nos termos aqui apresentados, somente será constitucional se houver prévia e expressa autorização de ambas as casas do Congresso Nacional.",
 "alternativas": [
 "houve violação ao princípio federativo, já que o uso e a ocupação de tal medida importam em violação à autonomia dos Estados atingidos pela calamidade natural de grandes proporções.",
 "a medida coercitiva é constitucional, pois a decretação de estado de defesa confere à União poderes amplos para combater, durante o prazo máximo de noventa dias, as causas geradoras da crise.",
@@ -1573,7 +1525,7 @@
 "ano": 2022,
 "materia": "Direito Constitucional",
 "num": 13,
-"enunciado": "Antônio foi condenado em definitivo pela prática de diversos crimes em concurso material. Além da privação da liberdade, também foi condenado, cumulativamente, à pena de multa e à obrigação de ressarcir os danos causados às vítimas das práticas criminosas. Em seu raciocínio de condenação, Antônio, com base no seu direito constitucional, o correto afirmar que,",
+"enunciado": "Antônio foi condenado em definitivo pela prática de diversos crimes em concurso material. Além da privação da liberdade, também foi condenado, cumulativamente, à pena de multa e à obrigação de ressarcir os danos causados às vítimas das práticas criminosas. Em seu raciocínio de condenação, Antônio, com base no seu direito constitucional, o correto afirmar que, A) a exceção das penas privativas de liberdade, todas as demais obrigações podem ser transferidas aos sucessores de Antônio até o limite do valor do patrimônio transferido. B) pelo princípio da intransmissibilidade da pena, nenhuma das obrigações ou penas decorrentes da prática criminosa pode ser transferida aos sucessores de Antônio. C) a pena e a multa e obrigações de cunho patrimonial podem ser estendidas aos sucessores de Antônio até o limite do valor do patrimônio transferido. D) a obrigação de reparar os danos causados às vítimas por este estendida aos sucessores de Antônio e contra eles executada até o limite do valor do patrimônio transferido.",
 "alternativas": [
 "a exceção das penas privativas de liberdade, todas as demais obrigações podem ser transferidas aos sucessores de Antônio até o limite do valor do patrimônio transferido.",
 "pelo princípio da intransmissibilidade da pena, nenhuma das obrigações ou penas decorrentes da prática criminosa pode ser transferida aos sucessores de Antônio.",
@@ -1605,7 +1557,7 @@
 "ano": 2022,
 "materia": "Direito Constitucional",
 "num": 15,
-"enunciado": "O atual governador do Estado Delta entende que, de acordo com a CRFB/88, a matéria enfrentada pela Lei X, de 15 de agosto de 2017, aprovada pela Assembleia Legislativa do Estado, seria de iniciativa privativa do Chefe do Poder Executivo estadual. Porém, na oportunidade, o projeto de lei foi proposto por um deputado estadual. Sem saber como proceder, o atual Chefe do Poder Executivo buscou auxílio junto ao Procurador-geral do Estado Delta, que, com base no sistema jurídico-constitucional brasileiro, afirmou que o Governador",
+"enunciado": "O atual governador do Estado Delta entende que, de acordo com a CRFB/88, a matéria enfrentada pela Lei X, de 15 de agosto de 2017, aprovada pela Assembleia Legislativa do Estado, seria de iniciativa privativa do Chefe do Poder Executivo estadual. Porém, na oportunidade, o projeto de lei foi proposto por um deputado estadual. Sem saber como proceder, o atual Chefe do Poder Executivo buscou auxílio junto ao Procurador-geral do Estado Delta, que, com base no sistema jurídico-constitucional brasileiro, afirmou que o Governador A) poderá ter somente ajuizar ação pela difusa de controle de constitucionalidade, pois, no caso em tela, não possui legitimidade para propor ação pela via concentrada. B) poderá, pela via política, requisitar ao Poder Legislativo do Estado Delta que suspenda a eficácia da referida Lei X, porque, no âmbito jurídico, nada pode ser feito. C) poderá propor uma ação direta de inconstitucionalidade perante o Supremo Tribunal Federal, alegando vício de iniciativa, já que possui legitimidade para tanto. D) não poderá ajuizar qualquer ação pela concentrada, já que apenas a Mesa da Assembleia Legislativa de Delta possuiria legitimidade constitucional para tanto.",
 "alternativas": [
 "poderá ter somente ajuizar ação pela difusa de controle de constitucionalidade, pois, no caso em tela, não possui legitimidade para propor ação pela via concentrada.",
 "poderá, pela via política, requisitar ao Poder Legislativo do Estado Delta que suspenda a eficácia da referida Lei X, porque, no âmbito jurídico, nada pode ser feito.",
@@ -1941,7 +1893,7 @@
 "ano": 2024,
 "materia": "Direito Constitucional",
 "num": 23,
-"enunciado": "O Presidente da República se ficou inerte quanto à elaboração e ao envio do projeto de Lei Orçamentária Anual (LO",
+"enunciado": "O Presidente da República se ficou inerte quanto à elaboração e ao envio do projeto de Lei Orçamentária Anual (LOA) da União para aprovação do Congresso Nacional no prazo estabelecido pela CRFB/88. O Presidente do Congresso Nacional, então, assumiu a responsabilidade de elaborar o referido projeto de Lei e de enviá-lo para tramitação e aprovação de ambas as Casas do Congresso Nacional. Nesse caso, é correto afirmar que:",
 "alternativas": [
 "caso aprovado, a referida LOA será inconstitucional por vício de iniciativa, já que é competência privativa do Presidente da República sua elaboração e seu envio ao Congresso Nacional, não podendo o Presidente do Congresso Nacional realizar tal elaboração nem mesmo em caráter excepcional.",
 "comprovada a inércia do Presidente da República, admite-se, de forma subsidiária, que a iniciativa de referido projeto de LOA seja exercida por pessoa diversa, a exemplo do Presidente do Congresso Nacional.",
@@ -2117,7 +2069,7 @@
 "ano": 2024,
 "materia": "Direito Constitucional",
 "num": 24,
-"enunciado": "O Presidente da República deve enviar, todo ano, o Projeto de Lei de Diretrizes Orçamentárias (PLDO) da União ao Congresso Nacional para ser apreciado e votado. Como projeto de lei, o PLDO é, pois, especificado em seu regime de tramitação. A CRFB/88 estabelece que o PLDO, ao chegar ao Poder Legislativo, deve ser encaminhado ao(a)",
+"enunciado": "O Presidente da República deve enviar, todo ano, o Projeto de Lei de Diretrizes Orçamentárias (PLDO) da União ao Congresso Nacional para ser apreciado e votado. Como projeto de lei, o PLDO é, pois, especificado em seu regime de tramitação. A CRFB/88 estabelece que o PLDO, ao chegar ao Poder Legislativo, deve ser encaminhado ao(a) (A) Plenário do Congresso Nacional, para apreciação e votação única do PLDO em sessão conjunta de ambas as casas. (B) Plenário da Câmara dos Deputados, para apreciação e votação em turno único, e posterior remessa ao Plenário do Senado Federal para votação do PLDO. (C) Comissão Mista de Planos, Orçamentos Públicos e Fiscalização – CMO, para examinar e emitir parecer sobre o PLDO. (D) Comissão de Constituição e Justiça e de Cidadania – CCJ, para examinar e emitir parecer sobre o PLDO.",
 "alternativas": [
 "Plenário do Congresso Nacional, para apreciação e votação única do PLDO em sessão conjunta de ambas as casas.",
 "Plenário da Câmara dos Deputados, para apreciação e votação em turno único, e posterior remessa ao Plenário do Senado Federal para votação do PLDO.",
@@ -2165,7 +2117,7 @@
 "ano": 2024,
 "materia": "Direito Processual Penal",
 "num": 64,
-"enunciado": "A República Federativa AlFha reconhece o Poder Judiciário como um dos poderes independentes da República. Em AlFha há um órgão de acusação independente e diferente do Judiciário, responsável por formular acusações criminais, tendo a iniciativa probatória. Em AlFha, um acusado seria um sujeito de direitos no âmbito do processo penal, e os princípios democráticos do processo penal, tais como o princípio do Juiz Natural e a presunção de inocência, são reconhecidos. A partir dos dados fornecidos, o país AlFha adota o sistema processual com traços mais marcantes do sistema",
+"enunciado": "A República Federativa AlFha reconhece o Poder Judiciário como um dos poderes independentes da República. Em AlFha há um órgão de acusação independente e diferente do Judiciário, responsável por formular acusações criminais, tendo a iniciativa probatória. Em AlFha, um acusado seria um sujeito de direitos no âmbito do processo penal, e os princípios democráticos do processo penal, tais como o princípio do Juiz Natural e a presunção de inocência, são reconhecidos. A partir dos dados fornecidos, o país AlFha adota o sistema processual com traços mais marcantes do sistema (A) acusatório. (B) inquisitivo. (C) misto. (D) consensual.",
 "alternativas": [
 "acusatório.",
 "inquisitivo.",
@@ -2176,28 +2128,12 @@
 "topico": "3 Processo criminal: finalidade, pressupostos e sistemas"
 },
 {
-"id": "oab2:2025-01-12",
-"fonte": "Exame de Ordem 2025-01 (OAB/FGV)",
-"ano": 2025,
-"materia": "Direito Constitucional",
-"num": 12,
-"enunciado": "A Comissão Parlamentar Permanente da Câmara dos Deputados convocou um Ministro de Estado para prestar esclarecimentos sobre um episódio ocorrido em sua pasta. O Ministro consultou você, na condição de profissional designado(a) para prestar assessoria jurídica à pasta, e se deveria mesmo ir, já que não se tratava de uma Comissão Parlamentar de Inquérito (CPI), que possuiria poderes de investigação próprios das autoridades judiciais. Com base na situação descrita e no sistema jurídico-constitucional brasileiro de 1988, assinale a alternativa correta.",
-"alternativas": [
-"O Ministro de Estado deve comparecer, mesmo não se tratando de uma convocação realizada por CPI, pois a Comissão Parlamentar Permanente da Câmara dos Deputados tem, de acordo com a CRFB/88, competência para convocá-lo.",
-"A CRFB/88 estabelece que o Ministro de Estado, como autoridade do Poder Executivo Federal, não pode ser convocado para prestar esclarecimentos à Comissão Parlamentar Permanente, sob pena de afronta ao princípio da separação dos Poderes.",
-"Assiste razão ao Ministro de Estado, porque, para prestar esclarecimentos a respeito de episódio ocorrido em sua pasta, ele só pode ser convocado por CPI, que possui poderes próprios das autoridades judiciais, incluindo o de tomar depoimentos de autoridades.",
-"Como o Ministro de Estado goza das mesmas imunidades do Presidente da República, já que atua por delegação desse último agente, não pode ser convocado por Comissão Parlamentar Permanente para prestar esclarecimentos sobre episódio ocorrido em sua pasta."
-],
-"gabarito": 1,
-"topico": "7 Organização dos poderes no Estado"
-},
-{
 "id": "oab2:2025-01-21",
 "fonte": "Exame de Ordem 2025-01 (OAB/FGV)",
 "ano": 2025,
 "materia": "Direito Constitucional",
 "num": 21,
-"enunciado": "O projeto da Lei Orçamentária Anual (LO",
+"enunciado": "O projeto da Lei Orçamentária Anual (LOA) é determinado entre federal, encaminhado ao Poder Legislativo pelo Poder Executivo, prevê apenas o orçamento fiscal do referido ente. Na mensagem de encaminhamento do projeto de LOA, está esclarecido que o orçamento de investimentos das empresas em que o ente, direta ou indiretamente, detém a maioria do capital social com direito a voto, bem como o orçamento da seguridade social do ente, serão encaminhados individualmente por meio de outros projetos. Diante desse cenário, sobre esse procedimento assinale a afirmativa correta.",
 "alternativas": [
 "Viola a regra constitucional de que o orçamento da seguridade social deve integrar a Lei de Diretrizes Orçamentárias.",
 "Não atende à regra constitucional de que a LOA compreenderá também o orçamento de investimentos e o orçamento da seguridade social.",
@@ -2213,7 +2149,7 @@
 "ano": 2025,
 "materia": "Direito Penal",
 "num": 57,
-"enunciado": "João mora em Ipanema e, há dois anos, faz aula de futevôlei na praia do Leblon, três vezes por semana. João sempre realiza tal trajeto em sua bicicleta elétrica, da marca bike legal, cor preta com banco de couro marrom. No mês passado, ao final do treino, João pegou uma bicicleta elétrica idêntica à sua e voltou para casa. Dias depois, João foi intimado a comparecer à Delegacia de Polícia para prestar declarações sobre um possível crime de furto, uma vez que o circuito de câmeras permitiu identificar que João havia levado a bicicleta de uma moça de nome Fernanda. No caso narrado, é correto afirmar que João agiu diante de",
+"enunciado": "João mora em Ipanema e, há dois anos, faz aula de futevôlei na praia do Leblon, três vezes por semana. João sempre realiza tal trajeto em sua bicicleta elétrica, da marca bike legal, cor preta com banco de couro marrom. No mês passado, ao final do treino, João pegou uma bicicleta elétrica idêntica à sua e voltou para casa. Dias depois, João foi intimado a comparecer à Delegacia de Polícia para prestar declarações sobre um possível crime de furto, uma vez que o circuito de câmeras permitiu identificar que João havia levado a bicicleta de uma moça de nome Fernanda. No caso narrado, é correto afirmar que João agiu diante de (A) erro de tipo essencial. (B) erro de tipo acidental. (C) estado de necessidade. (D) erro de proibição direto.",
 "alternativas": [
 "erro de tipo essencial.",
 "erro de tipo acidental.",
