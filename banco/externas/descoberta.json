@@ -1,0 +1,1612 @@
+{
+ "hf": {
+  "Fazzioni/concursos_2.3M_with_gpt-oss": {
+   "downloads": 702,
+   "likes": 4,
+   "tags": [
+    "size_categories:1M<n<10M"
+   ],
+   "desc": ""
+  },
+  "Fazzioni/all_concursos_thinking": {
+   "downloads": 883,
+   "likes": 0,
+   "tags": [
+    "size_categories:1M<n<10M"
+   ],
+   "desc": ""
+  },
+  "LucasGiraldi/concursos-publicos-brasil": {
+   "downloads": 1076,
+   "likes": 0,
+   "tags": [
+    "task_categories:tabular-classification",
+    "language:pt",
+    "license:cc-by-4.0",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tBrazilian Public Service Exams (Concursos Públicos), 2015–2026\n\t\n\nStructured records of Brazilian public service exam notices (\"concursos\npúblicos\"), organized from official sources and published as a single CSV.\nMaintained by Radar de Concurso.\nFull methodology, coverage limits, and the"
+  },
+  "Victorhnb/Questoes-victor": {
+   "downloads": 53,
+   "likes": 0,
+   "tags": [
+    "license:mit"
+   ],
+   "desc": ""
+  },
+  "milktruck/OABTcleaned": {
+   "downloads": 14,
+   "likes": 0,
+   "tags": [
+    "license:apache-2.0",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "eduagarcia/oab_exams": {
+   "downloads": 1546,
+   "likes": 7,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "eduagarcia-temp/oab_exams_no_train": {
+   "downloads": 21,
+   "likes": 0,
+   "tags": [],
+   "desc": "This repository contains the bar exams from the Ordem dos Advogados do Brasil (OAB) in Brazil from 2010 to 2018.\nIn Brazil, all legal professionals must demonstrate their knowledge of the law and its application by passing the OAB exams, the national bar exams. The OAB exams therefore provide an exc"
+  },
+  "celsowm/oab_gemini": {
+   "downloads": 45,
+   "likes": 0,
+   "tags": [
+    "task_categories:question-answering",
+    "language:pt",
+    "license:apache-2.0",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "LiruiZhao/OABench": {
+   "downloads": 62,
+   "likes": 4,
+   "tags": [
+    "task_categories:image-to-image",
+    "language:en",
+    "license:apache-2.0",
+    "size_categories:10K<n<100K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tDiffree's dataset: OABench (Object Addition Benchmark)\n\t\n\n\n  [🌐Project Page]\n  &nbsp;&nbsp;&nbsp;\n  [🎥 Video]\n  &nbsp;&nbsp;&nbsp;\n  [🔍 Code]\n  &nbsp;&nbsp;&nbsp;\n  [📜 Arxiv]\n  &nbsp;&nbsp;&nbsp;\n  [🤗 Hugging Face Demo]\n\n\nDiffree is a diffusion model that enables the addition of new obje"
+  },
+  "OA-Biswajit/OdiaCharactersDigitsCsv": {
+   "downloads": 8,
+   "likes": 0,
+   "tags": [
+    "license:mit"
+   ],
+   "desc": ""
+  },
+  "felipeoes/oab_bench": {
+   "downloads": 40,
+   "likes": 1,
+   "tags": [
+    "task_categories:question-answering",
+    "language:pt",
+    "license:mit",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tOABench: Brazilian Bar Exams Benchmark Dataset\n\t\n\n\n\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tOverview\n\t\n\nOABench is a benchmark dataset designed to evaluate the performance of Large Language Models (LLMs) on Brazilian legal exams. It is based on the Unified Bar Exam of the Brazilian Bar Association (OAB), a compre"
+  },
+  "celsowm/simulado_oab": {
+   "downloads": 46,
+   "likes": 1,
+   "tags": [
+    "task_categories:question-answering",
+    "language:pt",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "celsowm/codigo_etica_e_disciplina_oab": {
+   "downloads": 24,
+   "likes": 0,
+   "tags": [
+    "language:pt",
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "arturmatos/oab-eval": {
+   "downloads": 7,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "maritaca-ai/oab-bench": {
+   "downloads": 309,
+   "likes": 7,
+   "tags": [
+    "task_categories:text-generation",
+    "language:pt",
+    "license:apache-2.0",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tOAB-Bench\n\t\n\n| Paper | Code |\nOAB-Bench is a benchmark for evaluating Large Language Models (LLMs) on legal writing tasks from the Brazilian Bar Examination (OAB) Phase 2. The benchmark comprises 210 questions across seven areas of law from six editions (39–44) of the exam.\n\nEvaluates LL"
+  },
+  "paulo-andrade/OAB-Exams-numbers-pt": {
+   "downloads": 14,
+   "likes": 0,
+   "tags": [
+    "task_categories:feature-extraction",
+    "language:pt",
+    "license:mit",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tOAB Exams Numbers Dataset\n\t\n\nEste dataset contém dados estatísticos sobre os participantes e resultados das instituições de ensino nos exames da Ordem dos Advogados do Brasil (OAB) desde 2010.\n\n\t\n\t\t\n\t\n\t\n\t\tDescrição\n\t\n\nOs dados foram extraídos de relatórios oficiais da OAB, convertidos de"
+  },
+  "russ7/oab_exams_2018_2025_fixed": {
+   "downloads": 6,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "russ7/oab_exams_2011_2025_combined": {
+   "downloads": 170,
+   "likes": 4,
+   "tags": [
+    "task_categories:feature-extraction",
+    "task_categories:question-answering",
+    "language:pt",
+    "license:mit",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "oabai/Darija": {
+   "downloads": 32,
+   "likes": 1,
+   "tags": [
+    "license:apache-2.0",
+    "size_categories:10K<n<100K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for Dataset Name\n\t\n\n\n\nThis dataset card aims to be a base template for new datasets. It has been generated using this raw template.\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Details\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Description\n\t\n\n\n\n\n\n\nCurated by: [More Information Needed]\nFunded by [optional]: [More Inform"
+  },
+  "eliasjacob/agu_enem_oab_trf1": {
+   "downloads": 25,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "oabai/morocco_tourism_darija": {
+   "downloads": 22,
+   "likes": 0,
+   "tags": [
+    "task_categories:text-generation",
+    "language:ar",
+    "license:apache-2.0",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\t🇲🇦 Moroccan Tourism Darija Dialogues (maroc_tourism_darja)\n\t\n\nRepository | datasets/maroc_tourism_darjaSize | 1 000 dialogues (≈ 14 k turns)Language | Darija&nbsp;(Moroccan&nbsp;Arabic)Topics | Transport · Accommodation · Culture · GastronomyLicense | CC‑BY‑4.0Format | JSONL&nbsp;(one di"
+  },
+  "DiggerUFBA/OABench-Consumidor": {
+   "downloads": 26,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tOABench-Consumidor\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tResumo do Dataset\n\t\n\nO OABench-Consumidor é um benchmark em português projetado para avaliar a capacidade de modelos de linguagem em compreender e aplicar o raciocínio jurídico brasileiro. O dataset é composto exclusivamente por questões de múltipla esco"
+  },
+  "oabai/CodeReviewDataset": {
+   "downloads": 20,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "lamialam/oAbCMS990": {
+   "downloads": 1,
+   "likes": 0,
+   "tags": [],
+   "desc": ""
+  },
+  "Arquimedes-msc/oab-constitucional-assistente-dataset": {
+   "downloads": 4,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "Arquimedes-msc/artemisia-oab-constitucional": {
+   "downloads": 13,
+   "likes": 1,
+   "tags": [
+    "task_categories:text-generation",
+    "task_categories:question-answering",
+    "language:pt",
+    "license:mit",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tArtemísia — Dataset OAB 2ª Fase (Direito Constitucional)\n\t\n\nDataset de treinamento para a Artemísia, tutora de IA especializada na preparação para a 2ª fase da OAB em Direito Constitucional (banca FGV).\n\n\t\n\t\t\n\t\n\t\n\t\tSobre o Dataset\n\t\n\n\n\t\n\t\t\nCampo\nValor\n\n\n\t\t\nTotal de exemplos\n5,000\n\n\nModel"
+  },
+  "nicholasKluge/oab_exams": {
+   "downloads": 51,
+   "likes": 0,
+   "tags": [
+    "task_categories:text-generation",
+    "language:pt",
+    "license:other",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tOAB Exam\n\t\n\nOAB Exams is a dataset of more than 2,000 questions from the Brazilian Bar Association's exams, from 2010 to 2018. This task evaluates models on the multiple-choice questions from these exams. The model is given a question in Portuguese together with its answer choices and mu"
+  },
+  "juliadollis/oab-comentadas-leisllmv1": {
+   "downloads": 14,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "natekolly/cod-warzone-enemy-detection": {
+   "downloads": 17,
+   "likes": 0,
+   "tags": [
+    "license:odc-by"
+   ],
+   "desc": ""
+  },
+  "shawarmas/enemy-pronouns": {
+   "downloads": 5,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "dominguesm/canarim-enem2022-tests": {
+   "downloads": 29,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for \"canarim-enem2022-tests\"\n\t\n\nMore Information needed\n"
+  },
+  "tiagoblima/enem-tc-aqg": {
+   "downloads": 11,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for \"enem-tc-aqg\"\n\t\n\nMore Information needed\n"
+  },
+  "dominguesm/enem-2023-dia-1": {
+   "downloads": 29,
+   "likes": 3,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for \"enem-2023-dia-1\"\n\t\n\nMore Information needed\n"
+  },
+  "dominguesm/enem-2023-dia-2": {
+   "downloads": 24,
+   "likes": 2,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for \"enem-2023-dia-2\"\n\t\n\nMore Information needed\n"
+  },
+  "maritaca-ai/enem": {
+   "downloads": 3439,
+   "likes": 18,
+   "tags": [
+    "task_categories:visual-question-answering",
+    "task_categories:multiple-choice",
+    "language:pt",
+    "license:apache-2.0",
+    "size_categories:n<1K"
+   ],
+   "desc": "The ENEM 2022, 2023 and 2024 datasets encompass all multiple-choice questions from the last two editions of the Exame Nacional do Ensino Médio (ENEM), the main standardized entrance examination adopted by Brazilian universities. The datasets have been created to allow the evaluation of both textual-"
+  },
+  "gueleilo/enem-llm-UFG-en": {
+   "downloads": 10,
+   "likes": 1,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "gueleilo/enemtrain": {
+   "downloads": 63,
+   "likes": 2,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "gueleilo/enemcontext": {
+   "downloads": 16,
+   "likes": 0,
+   "tags": [],
+   "desc": ""
+  },
+  "gueleilo/enemtest": {
+   "downloads": 7,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "douglasrolins/enem-sample": {
+   "downloads": 16,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tDescrição do Dataset Description\n\t\n\nDataset com questões do ENEM (Exame Nacional do Ensino Médio) de diversos anos e áreas de conhecimento.\nDataset utilizado para atividades da disciplina de Processamento de Linguagem Natural em 2023/2 no INF/UFG.\n\n\t\n\t\t\n\t\n\t\n\t\tEstrutura do Dataset\n\t\n\n\ncon"
+  },
+  "kamel-usp/aes_enem_dataset": {
+   "downloads": 626,
+   "likes": 9,
+   "tags": [
+    "task_categories:text-classification",
+    "language:pt",
+    "license:apache-2.0",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tAutomated Essay Score (AES) ENEM Dataset\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tUse Case and Creators\n\t\n\n\nIntended Use: Estimate Essay Score\nCreators: Igor Cataneo Silveira, André Barbosa and Denis Deratani Mauá\nContact Information:  igorcs@ime.usp.br; andre.barbosa@ime.usp.br\n\n\n\t\n\t\t\n\t\n\t\n\t\tLicensing Information"
+  },
+  "manishiitg/en-embeddings-bge": {
+   "downloads": 81,
+   "likes": 0,
+   "tags": [
+    "size_categories:100K<n<1M"
+   ],
+   "desc": ""
+  },
+  "TheOriginalMarcelo/dataset_nlp_enem_2k23": {
+   "downloads": 6,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "eduagarcia/enem_challenge": {
+   "downloads": 3971,
+   "likes": 4,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "fonsecovizk/enem-essay-correction-2018-2024": {
+   "downloads": 28,
+   "likes": 1,
+   "tags": [
+    "language:pt",
+    "license:apache-2.0",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "carlosalbertoufs/enem": {
+   "downloads": 4,
+   "likes": 0,
+   "tags": [],
+   "desc": ""
+  },
+  "diegolaterza/enem-2022-survey": {
+   "downloads": 20,
+   "likes": 0,
+   "tags": [
+    "license:mit"
+   ],
+   "desc": ""
+  },
+  "orion-research/ENEM-2022": {
+   "downloads": 10,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "LuanaMARD/enem": {
+   "downloads": 9,
+   "likes": 0,
+   "tags": [
+    "license:mit",
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "letmarchezi/ENEM_Brazil_National_High_School_Exam_2022_to_2024": {
+   "downloads": 45,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "AndreMitri/ENEM_multimodal_2021_to_2022": {
+   "downloads": 153,
+   "likes": 0,
+   "tags": [
+    "task_categories:text-classification",
+    "task_categories:table-question-answering",
+    "language:pt",
+    "size_categories:n<1K"
+   ],
+   "desc": "It contains 6 tests, with \"Reaplication\" and the standard test for that year. The test  question order \"Yellow\" has been chosen.\nENEM - High School exam\n\nTests:\n  '2021_2aplication_day2' : 'https://download.inep.gov.br/enem/provas_e_gabaritos/2021_PV_reaplicacao_PPL_D2_CD5.pdf',\n  '2021_2aplication_"
+  },
+  "open-llm-leaderboard/MagusCorp__grpo_lora_enem_llama3_7b-details": {
+   "downloads": 50,
+   "likes": 0,
+   "tags": [
+    "size_categories:10K<n<100K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for Evaluation run of MagusCorp/grpo_lora_enem_llama3_7b\n\t\n\n\n\nDataset automatically created during the evaluation run of model MagusCorp/grpo_lora_enem_llama3_7b\nThe dataset is composed of 38 configuration(s), each one corresponding to one of the evaluated task.\nThe dataset "
+  },
+  "arturmatos/enem-2024-lm-eval-format": {
+   "downloads": 12,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "SaruMan64/enem": {
+   "downloads": 8,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "EdwardSJ151/enem-lighteval": {
+   "downloads": 9,
+   "likes": 0,
+   "tags": [
+    "language:pt",
+    "size_categories:n<1K"
+   ],
+   "desc": "ENEM dataset of the tests from years 2022, 2023 and 2024 for personal use on lighteval, with the get_mcq_prompt_function func\nOriginal is from maritaca-ai/enem\n"
+  },
+  "EdwardSJ151/enem-lighteval-fewshot": {
+   "downloads": 12,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "arturmatos/enem-eval": {
+   "downloads": 15,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "MrDragonFox/EN_Emilia_Yodas_616h": {
+   "downloads": 375,
+   "likes": 10,
+   "tags": [
+    "language:en",
+    "license:cc-by-4.0",
+    "size_categories:100K<n<1M"
+   ],
+   "desc": "the dataset is 616h out of the English part from https://huggingface.co/datasets/amphion/Emilia-Dataset ( Emilia Yodas - cc by 4.0)\naudio event classified via scribe v1 (elevenlabs stt/asr)\nfacebook audio aestetics to be used as prefilter\nthe dataset is very much at a v1 -\nif you want to help - lets"
+  },
+  "MrDragonFox/EN_Emilia_Yodas_616h_raw_timestamps": {
+   "downloads": 16,
+   "likes": 0,
+   "tags": [
+    "license:cc-by-nc-4.0"
+   ],
+   "desc": "additional files for https://huggingface.co/datasets/MrDragonFox/EN_Emilia_Yodas_616h\nword timestamps with events raw as from elevenlabs scribe v1\nused as companion to the main dataset\nNC licensed\n"
+  },
+  "Andre13Filho/enem_tests_editions": {
+   "downloads": 365,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "suchievement/sft_from_8b_0_and_enemies": {
+   "downloads": 11,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "adilet11/en_emo_speech": {
+   "downloads": 38,
+   "likes": 0,
+   "tags": [
+    "size_categories:10K<n<100K"
+   ],
+   "desc": ""
+  },
+  "juliadollis/cemig_case_regulatorio_200_5corretas_prompt2_wrong_answers_enem": {
+   "downloads": 11,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "juliadollis/cemig_case_regulatorio_200_5corretas_prompt2_wrong_answers_enem_aval": {
+   "downloads": 13,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "juliadollis/cemig_caseregulatorio_100_4erradas_enem": {
+   "downloads": 11,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "juliadollis/cemig_caseregulatorio_100semfilt_4erradas_enem": {
+   "downloads": 15,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "juliadollis/cemig_caseregulatorio_100semfilt_4erradas_enem_aval_sampling_temperatures": {
+   "downloads": 11,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "juliadollis/cemig_caseregulatorio_100semfilt_4erradas_enem_eval_llama3_2_1b_instruct": {
+   "downloads": 19,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "juliadollis/cemig_caseregulatorio_100semfilt_4erradas_enem_eval_llama3_1_8b_instruct": {
+   "downloads": 8,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "juliadollis/cemig_caseregulatorio_100semfilt_4erradas_enem_eval_qwen2_5_7b_instruct": {
+   "downloads": 10,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "laisnuto/self-collected-ENEM-dataset": {
+   "downloads": 24,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "eliasjacob/simulados_enem": {
+   "downloads": 151,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "enemy77/klmcustomer": {
+   "downloads": 5,
+   "likes": 0,
+   "tags": [],
+   "desc": "KLM™ Customer Help & Support Center – Open 24/7\nHow do I speak to a Klm Representative?\nTo speak with a Klm Representative, call +44-186-434-0173 (UK) or +1-866-829-1265 (US). These numbers connect you directly to live customer service for bookings, flight changes, or general assistance. For faster "
+  },
+  "enemy77/klm-customer-help-and-support-center-open-247": {
+   "downloads": 5,
+   "likes": 0,
+   "tags": [],
+   "desc": "KLM™ Customer Help & Support Center – Open 24/7\nHow do I speak to a Klm Representative?\nTo speak with a Klm Representative, call +44-186-434-0173 (UK) or +1-866-829-1265 (US). These numbers connect you directly to live customer service for bookings, flight changes, or general assistance. For faster "
+  },
+  "enemy77/klm-customer-assistance-and-support-hub-open-247": {
+   "downloads": 6,
+   "likes": 0,
+   "tags": [],
+   "desc": "KLM™ Customer Assistance & Support Hub – Open 24/7\nHow do I speak to a Klm Representative?\nTo speak with a Klm Representative, call +44-186-434-0173 (UK) or +1-866-829-1265 (US). These numbers connect you directly to live customer service for bookings, flight changes, or general assistance. For fast"
+  },
+  "enemy77/lufthansa-help-center-help-desk-support": {
+   "downloads": 6,
+   "likes": 0,
+   "tags": [],
+   "desc": "Lufthansa™Help Center - Help Desk - Support\nHow do I speak to a Lufthansa Representative?\nTo speak with a Lufthansa Representative, call +44-186-434-0173 (UK) or +1-866-829-1265 (US). These numbers connect you directly to live customer service for bookings, flight changes, or general assistance. For"
+  },
+  "enemy77/lufthansa-contact-now-help-center-247-help": {
+   "downloads": 7,
+   "likes": 0,
+   "tags": [],
+   "desc": "Lufthansa™ Contact Now - Help Center - 24/7 Help\nHow do I speak to a Lufthansa Representative?\nTo speak with a Lufthansa Representative, call +44-186-434-0173 (UK) or +1-866-829-1265 (US). These numbers connect you directly to live customer service for bookings, flight changes, or general assistance"
+  },
+  "enemy77/fasfafggafgagag-segsgsgsgs": {
+   "downloads": 8,
+   "likes": 0,
+   "tags": [],
+   "desc": "fasfafggafgagag-segsgsgsgsfasfafggafgagag-segsgsgsgsfasfafggafgagag-segsgsgsgsfasfafggafgagag-segsgsgsgsfasfafggafgagag-segsgsgsgsfasfafggafgagag-segsgsgsgsfasfafggafgagag-segsgsgsgs\n"
+  },
+  "enemy77/sfafafaffg": {
+   "downloads": 7,
+   "likes": 0,
+   "tags": [],
+   "desc": "Passw0rd@dminPassw0rd@dminPassw0rd@dminPassw0rd@dminPassw0rd@dminPassw0rd@dmin\n"
+  },
+  "laisnuto/enem-essays-collected": {
+   "downloads": 6,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "EdwardSJ151/enem_2023_2024": {
+   "downloads": 9,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "adalberto-temp/enem-synth-dpo": {
+   "downloads": 25,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "laisnuto/self-collected-ENEM-dataset-with-prompts-and-text-support": {
+   "downloads": 24,
+   "likes": 1,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "Marasoft/enemy": {
+   "downloads": 1,
+   "likes": 0,
+   "tags": [],
+   "desc": ""
+  },
+  "Politus/en_emotions": {
+   "downloads": 9,
+   "likes": 0,
+   "tags": [
+    "size_categories:10K<n<100K"
+   ],
+   "desc": ""
+  },
+  "kadirnar/EN_Emilia_Yodas_616h_annotated": {
+   "downloads": 77,
+   "likes": 0,
+   "tags": [
+    "size_categories:100K<n<1M"
+   ],
+   "desc": ""
+  },
+  "kadirnar/EN_Emilia_Yodas_616h_pretokenized": {
+   "downloads": 109,
+   "likes": 0,
+   "tags": [
+    "size_categories:100K<n<1M"
+   ],
+   "desc": ""
+  },
+  "CEIA-POSITIVO/vestibular-gen_qa": {
+   "downloads": 1087,
+   "likes": 0,
+   "tags": [
+    "size_categories:10K<n<100K"
+   ],
+   "desc": ""
+  },
+  "MedOtter/Vestibular-Schwannoma-SEG": {
+   "downloads": 1556,
+   "likes": 0,
+   "tags": [
+    "task_categories:image-segmentation",
+    "license:cc-by-4.0",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tVestibular-Schwannoma-SEG\n\t\n\nContrast-enhanced T1 (ceT1) and high-resolution T2 (hrT2) brain MRI of 242 consecutive\npatients with a unilateral sporadic vestibular schwannoma treated with Gamma Knife\nstereotactic radiosurgery (Queen Square Radiosurgery Centre, London, 2012–2018), with the"
+  },
+  "skaliy/vestibular-schwannoma-corrected-masks": {
+   "downloads": 16,
+   "likes": 0,
+   "tags": [
+    "license:cc-by-4.0"
+   ],
+   "desc": ""
+  },
+  "Emulated-Inc/sci-vestibular-schwannoma-volume": {
+   "downloads": 86,
+   "likes": 0,
+   "tags": [
+    "license:cc-by-4.0"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tVestibular schwannoma MRI with tumour outlines\n\t\n\ntrain.tar holds contrast-enhanced T1-weighted and T2-weighted MRI of patients with a vestibular schwannoma,\nwith expert tumour outlines, as NIfTI files and an index (train/images.csv: exam, patient, source, sequence,\nimage, outline, and i"
+  },
+  "marlontosta/direitodigital": {
+   "downloads": 9,
+   "likes": 1,
+   "tags": [
+    "task_categories:token-classification",
+    "language:pt"
+   ],
+   "desc": ""
+  },
+  "celsowm/verbetes_vademecum_direito": {
+   "downloads": 26,
+   "likes": 0,
+   "tags": [
+    "task_categories:text-generation",
+    "language:pt",
+    "size_categories:10K<n<100K"
+   ],
+   "desc": "Original source: https://vademecumbrasil.com.br/dicionario-juridico/\n"
+  },
+  "celsowm/jurisprudencias_por_area_do_direito": {
+   "downloads": 33,
+   "likes": 0,
+   "tags": [
+    "task_categories:text-classification",
+    "language:pt",
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "celsowm/direito_br_16_capacidades": {
+   "downloads": 151,
+   "likes": 1,
+   "tags": [
+    "size_categories:1M<n<10M"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tdireito_br_16_capacidades\n\t\n\nDataset de treino (LoRA) e eval congelado para os 16 registros de capacidade aplicados a\n8 diplomas do direito brasileiro:\n\ncf88 — Constituição Federal de 1988: 10 capítulos\ncc2002 — Código Civil (Lei 10.406/2002): 9 capítulos\ncpc2015 — Código de Processo Civ"
+  },
+  "maserra/jurisprudencias_por_area_do_direito": {
+   "downloads": 24,
+   "likes": 0,
+   "tags": [
+    "task_categories:text-classification",
+    "language:pt",
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "celsowm/ambito_juridico_artigos": {
+   "downloads": 44,
+   "likes": 3,
+   "tags": [
+    "task_categories:text-classification",
+    "task_categories:summarization",
+    "language:pt",
+    "size_categories:10K<n<100K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for \"ambito_juridico_artigos\"\n\t\n\nMore Information needed\n"
+  },
+  "celsowm/meu_site_juridico_perguntas_e_respostas": {
+   "downloads": 19,
+   "likes": 3,
+   "tags": [
+    "task_categories:question-answering",
+    "language:pt",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for \"meu_site_juridico_perguntas_e_respostas\"\n\t\n\nMore Information needed\n"
+  },
+  "Danielbrdz/Barcenas-Juridico-Mexicano-Dataset": {
+   "downloads": 24,
+   "likes": 1,
+   "tags": [
+    "language:es",
+    "license:cc-by-nc-4.0",
+    "size_categories:10K<n<100K"
+   ],
+   "desc": "Barcenas Juridico Mexicano\nEste dataset totalmente en español esta hecho con base 50 documentos de la Suprema Corte de Justicia de la Nación de México (SCJN).\nContiene 22,789 preguntas y respuestas con contenido variado y de alta calidad de la SCJN.\nEste dataset fue hecho de manera sintética con Lla"
+  },
+  "FrancophonIA/Regime_Juridico_Inqueritos_Parlamentares": {
+   "downloads": 9,
+   "likes": 0,
+   "tags": [
+    "task_categories:translation",
+    "language:por",
+    "language:eng",
+    "language:fra"
+   ],
+   "desc": "\n[!NOTE]\nDataset origin: https://live.european-language-grid.eu/catalogue/corpus/19419\n\n\n\t\n\t\t\n\t\n\t\n\t\tCitation\n\t\n\nRegime Jurídico dos Inquéritos Parlamentares (2023). Version unspecified. [Dataset (Text corpus)]. Source: European Language Grid. https://live.european-language-grid.eu/catalogue/corpus/2"
+  },
+  "SamuelMauli/parity-juridico-dataset": {
+   "downloads": 39,
+   "likes": 0,
+   "tags": [
+    "task_categories:text-retrieval",
+    "task_categories:sentence-similarity",
+    "language:pt",
+    "license:apache-2.0",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tparity-juridico-dataset\n\t\n\nDataset de fine-tuning para retrieval semântico em domínio jurídico\nbrasileiro (licitações públicas, jurisprudência TCU, Lei 14.133/21).\nCurado a partir do banco de conhecimento da plataforma Parity\n(parity.doublethree.com.br).\n\n\t\n\t\t\n\t\n\t\n\t\tEstrutura\n\t\n\n\n\t\n\t\t\nAr"
+  },
+  "SamuelMauli/parity-juridico-dataset-v2": {
+   "downloads": 75,
+   "likes": 0,
+   "tags": [
+    "task_categories:text-retrieval",
+    "task_categories:sentence-similarity",
+    "task_categories:text-classification",
+    "language:pt",
+    "license:apache-2.0",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tparity-juridico-dataset-v2\n\t\n\nDataset agregado para retrieval jurídico brasileiro. v2 = união de fontes\nHF públicas + corpus curado Parity + (opcional) scrapings TCU/PNCP.\n\n\t\n\t\t\n\t\n\t\n\t\tVolume\n\t\n\n\nTriplets: 2366 (anchor, positive, negative)\nPairs: 7317 (texto_a, texto_b, label∈{0,1})\nCorpu"
+  },
+  "SamuelMauli/parity-juridico-dataset-v3": {
+   "downloads": 30,
+   "likes": 0,
+   "tags": [
+    "task_categories:text-retrieval",
+    "task_categories:sentence-similarity",
+    "language:pt",
+    "license:apache-2.0",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tparity-juridico-dataset-v3\n\t\n\nDataset jurídico brasileiro PURO — 100% texto jurídico de domínio,\nsem ruído de NLI genérico ou frases não-jurídicas.\n\n\t\n\t\t\n\t\n\t\n\t\tVolume\n\t\n\n\nTriplets: 195\nPairs: 445\nCorpus: 957 textos jurídicos brutos\n\n\n\t\n\t\t\n\t\n\t\n\t\tDiferenças do v2\n\t\n\n\nREMOVIDO: ASSIN2 (NLI "
+  },
+  "SamuelMauli/parity-juridico-dataset-v4": {
+   "downloads": 29,
+   "likes": 0,
+   "tags": [
+    "task_categories:text-retrieval",
+    "task_categories:sentence-similarity",
+    "language:pt",
+    "license:apache-2.0",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tparity-juridico-dataset-v4\n\t\n\nDataset DOMÍNIO PARITY PURO — apenas triplets gerados a partir de:\n\n131 acórdãos/súmulas TCU curados manualmente (v1)\nMining agressivo dos 832 editais Parity em prod\n(top-K cosine + match de setor/modalidade/tipoAnalise + hard negatives)\n\n\n\t\n\t\t\n\t\n\t\n\t\tPor que"
+  },
+  "underpop/juridico1": {
+   "downloads": 7,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": "\nJuridico1\nMade with ❤️ using 🦥 Unsloth Studio\n\n\n\nDataset juridico valenciano y nules was generated with Unsloth Recipe Studio. It contains 6983 generated records.\n\n\n\t\n\t\t\n\t\n\t\n\t\t🚀 Quick Start\n\t\n\nfrom datasets import load_dataset\n\n# Load the main dataset\ndataset = load_dataset(\"underpop/juridico1\", \"d"
+  },
+  "underpop/juridico2": {
+   "downloads": 17,
+   "likes": 0,
+   "tags": [
+    "size_categories:10K<n<100K"
+   ],
+   "desc": "\nJuridico2\nMade with ❤️ using 🦥 Unsloth Studio\n\n\n\nJuridico2 was generated with Unsloth Recipe Studio. It contains 13.968 generated records.\n\n\n\t\n\t\t\n\t\n\t\n\t\t🚀 Quick Start\n\t\n\nfrom datasets import load_dataset\n\n# Load the main dataset\ndataset = load_dataset(\"underpop/juridico2\", \"data\", split=\"train\")\ndf "
+  },
+  "underpop/juridico2_limpio": {
+   "downloads": 15,
+   "likes": 0,
+   "tags": [
+    "language:es",
+    "license:other",
+    "size_categories:10K<n<100K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Jurídico Limpio — underpop/juridico2_limpio\n\t\n\nDataset de pares pregunta / razonamiento / respuesta sobre textos\njurídicos españoles, limpiado y filtrado automáticamente.\n\n\t\n\t\t\n\t\n\t\n\t\tEstadísticas tras el filtrado\n\t\n\n\n\t\n\t\t\nMétrica\nValor\n\n\n\t\t\nRegistros antes del filtrado\n41,868\n\n\nR"
+  },
+  "filipwx/dataset-juridico-br": {
+   "downloads": 52,
+   "likes": 1,
+   "tags": [
+    "task_categories:text-generation",
+    "language:pt",
+    "license:mit",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Juridico Brasileiro - Q&A para Fine-Tuning (v2)\n\t\n\nDataset de perguntas e respostas juridicas em portugues, gerado para fine-tuning de modelos de IA especializados em direito brasileiro.\n\n\t\n\t\t\n\t\n\t\n\t\tComposicao\n\t\n\nO dataset combina 3 fontes de dados usando estrategia hibrida com g"
+  },
+  "tardellirs/brazilian-legal-tax-qa-synthetic": {
+   "downloads": 60,
+   "likes": 2,
+   "tags": [
+    "task_categories:text-retrieval",
+    "task_categories:sentence-similarity",
+    "language:pt",
+    "license:cc-by-4.0",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tBrazilian Legal & Tax QA — synthetic retrieval pairs (PT-BR)\n\t\n\n4,278 (query, positive-passage) pairs for training/evaluating Portuguese legal & tax retrieval. Queries are\ncontrolled-diversity synthetic questions; positive passages are Brazilian federal law (public domain). Built for\nthe"
+  },
+  "rodrigop07/brazilian-legal-tax-qa-synthetic-jua": {
+   "downloads": 151,
+   "likes": 0,
+   "tags": [
+    "task_categories:text-retrieval",
+    "task_categories:sentence-similarity",
+    "language:pt",
+    "license:cc-by-4.0",
+    "size_categories:10K<n<100K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tBrazilian Legal & Tax QA — synthetic retrieval pairs (PT-BR)\n\t\n\n4,278 (query, positive-passage) pairs for training/evaluating Portuguese legal & tax retrieval. Queries are\ncontrolled-diversity synthetic questions; positive passages are Brazilian federal law (public domain). Built for\nthe"
+  },
+  "Fernandosr85/adaption-brazilian-civil-law-rulings": {
+   "downloads": 11,
+   "likes": 0,
+   "tags": [
+    "language:pt",
+    "size_categories:n<1K"
+   ],
+   "desc": "\nThis dataset is a remastered version prepared using Adaption's Adaptive Data platform.\n\n\t\n\t\t\n\t\n\t\n\t\tbrazilian_civil_law_rulings\n\t\n\nThis dataset contains samples of Brazilian civil law court decisions, specifically focusing on appeals, special recourse agravo, and consumer protection cases handled by"
+  },
+  "tardellirs/brazilian-federal-law-corpus": {
+   "downloads": 182,
+   "likes": 5,
+   "tags": [
+    "task_categories:text-retrieval",
+    "task_categories:fill-mask",
+    "task_categories:feature-extraction",
+    "language:pt",
+    "license:cc-by-4.0",
+    "size_categories:10K<n<100K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tBrazilian Federal Law Corpus (PT-BR)\n\t\n\n41,526 passages of Brazilian federal legislation (laws and decrees — articles, titles, ementas) scraped from\nplanalto.gov.br. Official Brazilian legal texts are public domain (Lei 9.610/1998, art. 8). A clean corpus for\nPortuguese legal IR / RAG / "
+  },
+  "portuguese-benchmark-datasets/BLUEX": {
+   "downloads": 3028,
+   "likes": 13,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tBLUEX\n\t\n\nThere is a repository with the minimal code for using this dataset available here. If you use this dataset for research, please cite the paper:\n@misc{almeida2023bluex,\n      title={BLUEX: A benchmark based on Brazilian Leading Universities Entrance eXams}, \n      author={Thales "
+  },
+  "eduagarcia-temp/BLUEX_without_images": {
+   "downloads": 1248,
+   "likes": 1,
+   "tags": [
+    "language:pt",
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "portuguese-benchmark-datasets/BLUEX_test": {
+   "downloads": 31,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "arturmatos/bluex-eval": {
+   "downloads": 22,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "portuguese-benchmark-datasets/BLUEX_temp_placeholder": {
+   "downloads": 22,
+   "likes": 0,
+   "tags": [
+    "size_categories:1K<n<10K"
+   ],
+   "desc": ""
+  },
+  "EdwardSJ151/bluex_noimg_2023_2024": {
+   "downloads": 17,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "cemig-ceia/bluex_raw_noimg_2022_2023": {
+   "downloads": 18,
+   "likes": 0,
+   "tags": [
+    "size_categories:n<1K"
+   ],
+   "desc": ""
+  },
+  "Cryzmire/Bluexira": {
+   "downloads": 2,
+   "likes": 0,
+   "tags": [],
+   "desc": ""
+  },
+  "philiplai/red-cube-blueX_1-120eps_20260518_161044": {
+   "downloads": 55,
+   "likes": 0,
+   "tags": [
+    "task_categories:robotics",
+    "license:apache-2.0",
+    "size_categories:10K<n<100K"
+   ],
+   "desc": "This dataset was created using LeRobot.\n\n\n\n\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Structure\n\t\n\nmeta/info.json:\n{\n    \"codebase_version\": \"v3.0\",\n    \"fps\": 30,\n    \"features\": {\n        \"action\": {\n            \"dtype\": \"float32\",\n            \"names\": [\n                \"shoulder_pan.pos\",\n                \"shoulder_l"
+  },
+  "Tropic-AI/BLUEX-v2": {
+   "downloads": 221,
+   "likes": 1,
+   "tags": [
+    "task_categories:question-answering",
+    "task_categories:text-generation",
+    "language:pt",
+    "license:cc-by-4.0",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tBLUEX-v2: Benchmarking LLMs on Open-Ended Questions from Brazilian University Entrance Exams\n\t\n\nBLUEX-v2 is a benchmark for evaluating Large Language Models on open-ended (discursive) questions from two of Brazil's most prestigious university entrance exams:\n\nUNICAMP (Comvest) — Universi"
+  },
+  "nicholasKluge/BLUEX_without_images": {
+   "downloads": 98,
+   "likes": 0,
+   "tags": [
+    "task_categories:text-generation",
+    "language:pt",
+    "license:other",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tBLUEX: A benchmark based on Brazilian Leading Universities Entrance eXams\n\t\n\nBLUEX is a multimodal dataset consisting of the two leading university entrance exams conducted in Brazil: Convest (Unicamp) and Fuvest (USP), spanning from 2018 to 2024. The benchmark comprises 724 questions th"
+  },
+  "Bluexxx/robocasa365_kitchen18": {
+   "downloads": 318,
+   "likes": 0,
+   "tags": [
+    "task_categories:robotics",
+    "license:cc-by-nc-sa-4.0",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tRoboCasa365 Kitchen-18 (stereo agentview pair)\n\t\n\nThe Kitchen-18 protocol of the paper Enhancing Vision-Language-Action Models for Precise\nManipulation via Stereo Lifting: the 18 atomic target tasks of the RoboCasa365 Target50 benchmark\nwith 100 human demonstrations per task, drawn from "
+  },
+  "Bluexxx/SemMSA-data": {
+   "downloads": 1384,
+   "likes": 2,
+   "tags": [
+    "language:en",
+    "language:zh",
+    "license:other",
+    "size_categories:10K<n<100K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tSemMSA-data\n\t\n\nProcessed features of CMU-MOSI, CMU-MOSEI and CH-SIMS used by\nSemMSA: Latent Semantic-Aided Robust Multimodal Sentiment Analysis with Incomplete Data\n(paper, code,\nproject page).\nThese are the processed (unaligned) features released with MMSA, which are also used\nby LNLN a"
+  },
+  "Bluexxx/MR-Bench-H": {
+   "downloads": 270,
+   "likes": 1,
+   "tags": [
+    "task_categories:text-classification",
+    "language:en",
+    "language:zh",
+    "license:cc-by-nc-4.0",
+    "size_categories:n<1K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tMR-Bench-H\n\t\n\n900 human-validated clips in which a shortcut channel suggests the wrong sentiment.\nMR-Bench-H is the human-validated part of MR-Bench, introduced in Words Speak Louder? Exploring the Language Shortcut of LLM-Driven Incomplete Multimodal Learning. It contains 620 language-s"
+  },
+  "Bluexxx/LIBERO-PoseShift": {
+   "downloads": 217,
+   "likes": 1,
+   "tags": [
+    "task_categories:robotics",
+    "language:en",
+    "license:apache-2.0",
+    "size_categories:100K<n<1M"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tLIBERO-PoseShift\n\t\n\nBenchmark assets of LIBERO-PoseShift and of WACO (world-anchored canonicalization), from the paper\nTowards Pose-Robust Few-Shot Vision-Language-Action Models.\nProject page · Code · Model\nWenhao Li, Zhongyi Han, Yuhao Wei, Liang Han, Yilong Yin, Liqiang Nie\n(Shandong U"
+  },
+  "vinyteles/enem-bluex-taxonomy-annotations": {
+   "downloads": 65,
+   "likes": 0,
+   "tags": [
+    "language:pt",
+    "size_categories:1K<n<10K"
+   ],
+   "desc": "\n\t\n\t\t\n\t\n\t\n\t\tENEM and BLUEX Taxonomy Annotations\n\t\n\nPublic research snapshot of 1,715 Portuguese multiple-choice exam questions with\nmodel-generated subject, topic, and subtopic annotations. Each record includes the\noriginal prepared question, answer choices, reference answer, annotation paths,\nsourc"
+  },
+  "provaslimofficial/provaslim": {
+   "downloads": 5,
+   "likes": 0,
+   "tags": [],
+   "desc": ""
+  },
+  "SOARM1/provas": {
+   "downloads": 43,
+   "likes": 0,
+   "tags": [
+    "task_categories:robotics",
+    "license:apache-2.0"
+   ],
+   "desc": "This dataset was created using LeRobot.\n\n\n\n\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Structure\n\t\n\nmeta/info.json:\n{\n    \"codebase_version\": \"v3.0\",\n    \"robot_type\": \"so_follower\",\n    \"total_episodes\": 0,\n    \"total_frames\": 0,\n    \"total_tasks\": 0,\n    \"chunks_size\": 1000,\n    \"data_files_size_in_mb\": 100,\n    \"vide"
+  }
+ },
+ "gh": {
+  "feliperjj/Banco-Questoes": {
+   "stars": 2,
+   "license": null,
+   "desc": "Um banco de questões próprio para a resolução de questões de concurso.",
+   "size": 32470,
+   "pushed": "2026-11-04"
+  },
+  "bachega8/CP-CEM-Marinha-Banco": {
+   "stars": 2,
+   "license": "GPL-3.0",
+   "desc": "Banco de Questões para auxiliar nos estudos para o concurso público dos engenheiros da marinha",
+   "size": 5820,
+   "pushed": "2020-07-15"
+  },
+  "K-ai-86/banco-de-quest-es": {
+   "stars": 0,
+   "license": null,
+   "desc": "questoes de concursos de turismo",
+   "size": 36,
+   "pushed": "2026-07-24"
+  },
+  "gontijogabriel/Quest-API": {
+   "stars": 11,
+   "license": null,
+   "desc": "O Quest API é uma API REST que dá acesso a um banco com mais de 1.000.000 de questões de concursos públicos brasileiros, organizadas por banca, ano, matéria e prova. Ela foi criada para Desenvolvedore",
+   "size": 43,
+   "pushed": "2026-08-11"
+  },
+  "liedsonfps1337-ship-it/QUESTOES": {
+   "stars": 0,
+   "license": null,
+   "desc": "BANCO DE QUESTÕES DE CONCURSOS ",
+   "size": 8,
+   "pushed": "2026-09-29"
+  },
+  "humbertomatheuz/banco_questoes": {
+   "stars": 0,
+   "license": null,
+   "desc": "Banco de questões de concursos da ",
+   "size": 0,
+   "pushed": "2024-11-18"
+  },
+  "denismmartins-web/banco-questoes-concursos": {
+   "stars": 0,
+   "license": null,
+   "desc": "Repositório de questões para estudo",
+   "size": 0,
+   "pushed": "2026-11-07"
+  },
+  "Wiserjr/SimuladosConcursos": {
+   "stars": 0,
+   "license": null,
+   "desc": "Banco de questões para concursos",
+   "size": 33160,
+   "pushed": "2026-08-05"
+  },
+  "bizuap/papirotatico": {
+   "stars": 0,
+   "license": null,
+   "desc": "Banco de questões para concursos",
+   "size": 3117,
+   "pushed": "2026-05-09"
+  },
+  "Larigou-cmd/larigou-questoes": {
+   "stars": 0,
+   "license": null,
+   "desc": "Larigou Questões — banco de questões para concursos",
+   "size": 4206,
+   "pushed": "2026-11-20"
+  },
+  "Thiagosn1/banco-questoes-api": {
+   "stars": 0,
+   "license": null,
+   "desc": "API para gerenciamento de questões de concursos.",
+   "size": 515,
+   "pushed": "2025-12-02"
+  },
+  "VinnyDev-Br/Banco-de-Questoes": {
+   "stars": 0,
+   "license": null,
+   "desc": "Banco de questões voltado para o Concursos Militares",
+   "size": 413,
+   "pushed": "2026-10-21"
+  },
+  "grabel7/concurso": {
+   "stars": 0,
+   "license": null,
+   "desc": "Treino para concursos em Python, com dez questões aleatórias de um banco com 20 questões pegas de concursos reais.",
+   "size": 12,
+   "pushed": "2023-01-12"
+  },
+  "lnbentes/ConcursoAPI": {
+   "stars": 1,
+   "license": null,
+   "desc": "API com CRUD completo para armazenar em um banco de dados questões de concurso",
+   "size": 127,
+   "pushed": "2022-09-05"
+  },
+  "heveiga/banco-quest-es-provas-concursos-p-blicos": {
+   "stars": 0,
+   "license": null,
+   "desc": "sistema de banco de questões de provas para concursos públicos",
+   "size": 96,
+   "pushed": "2012-09-03"
+  },
+  "mjrtor-bot/concursos-app": {
+   "stars": 0,
+   "license": null,
+   "desc": "Plataforma de estudos, simulados e banco de questões para concursos públicos",
+   "size": 12010,
+   "pushed": "2026-10-22"
+  },
+  "marcosdativo/plataforma-geo-concurso": {
+   "stars": 0,
+   "license": null,
+   "desc": "Plataforma gamificada de estudo por banco de questoes - Geografia concurso militar",
+   "size": 102,
+   "pushed": "2026-07-31"
+  },
+  "mervy/trt-concurso-questoes": {
+   "stars": 0,
+   "license": null,
+   "desc": "Banco de questões para resolver para o concurso do TRT",
+   "size": 330,
+   "pushed": "2026-11-18"
+  },
+  "CelsoAugusto514/Sistema-de-questoes-sesrj": {
+   "stars": 0,
+   "license": null,
+   "desc": "Projeto de banco de questões para o concurso SES-RJ",
+   "size": 440,
+   "pushed": "2026-10-12"
+  },
+  "matheusdiniz111111-lang/emq-concursos-militares": {
+   "stars": 0,
+   "license": null,
+   "desc": "Plataforma de cursos para concursos militares com banco de questões e painel de desempenho.",
+   "size": 54,
+   "pushed": "2026-10-13"
+  },
+  "caiogomesfontoura/banco_questoes": {
+   "stars": 0,
+   "license": null,
+   "desc": "Esse código tem como objetivo guardar questões de concurso público para fins de estudo. ",
+   "size": 0,
+   "pushed": "2025-08-22"
+  },
+  "IsaacDeMelo/Questoes-Banco-do-Brasil": {
+   "stars": 0,
+   "license": "MIT",
+   "desc": "Plataforma de resolução de questões do concurso do Banco do Brasil de uso livre.",
+   "size": 2166,
+   "pushed": "2026-09-23"
+  },
+  "Gustavo-Vieira151/AgenteConcurso-BancodoBrasil-BancodeDados-notebooklm": {
+   "stars": 0,
+   "license": null,
+   "desc": "Um segundo cérebro especializado em Banco de Dados para concursos de TI,  reunindo teoria, questões comentadas, resumos e exemplos práticos,  com o objetivo de facilitar o aprendizado,  acelerar as re",
+   "size": 555,
+   "pushed": "2026-07-01"
+  },
+  "kerebis/SQL-QuestoesParaConcurso": {
+   "stars": 0,
+   "license": null,
+   "desc": "Um banco de dados completo com procedures para inserir os dados, destinado para criação de um banco de questões de prova para concurso.",
+   "size": 3,
+   "pushed": "2024-07-05"
+  },
+  "lnbentes/QuestoesConcurso": {
+   "stars": 0,
+   "license": null,
+   "desc": "Um site que adiciona questões de concurso no banco de dados e te desafia a respondelas randomicamente",
+   "size": 273,
+   "pushed": "2022-09-05"
+  },
+  "larissapineliandre-star/simula": {
+   "stars": 0,
+   "license": "Apache-2.0",
+   "desc": "Aplicativo Android Simula para organização de concursos, banco de questões e simulados.",
+   "size": 14,
+   "pushed": "2026-09-21"
+  },
+  "emanuellayorio/banco-de-quest-es-concurso-serop-dica": {
+   "stars": 0,
+   "license": null,
+   "desc": "Banco com 100 mil questões relacionadas ao conteudo programatico do edital da camara de seropédica voltado ao cargo de assistente administrativo.",
+   "size": 0,
+   "pushed": "2026-06-13"
+  },
+  "ErickGeovane0706/treino-concursos": {
+   "stars": 0,
+   "license": null,
+   "desc": "Banco de questões para concursos públicos: gratuito, sem limite e sem cadastro. Spring Boot + Thymeleaf + React (ilhas).",
+   "size": 2176,
+   "pushed": "2026-11-12"
+  },
+  "seugirdur/AgenteTecnologia": {
+   "stars": 0,
+   "license": null,
+   "desc": "Questões do Concurso para Agente de Tecnologia 2023 do Banco do Brasil ",
+   "size": 4,
+   "pushed": "2023-08-28"
+  },
+  "Melinh0/Study_Concursos": {
+   "stars": 0,
+   "license": null,
+   "desc": "Aplicação de estudo para concursos públicos, com interface moderna (customtkinter) e extração automática de questões do QConcursos. Suporta vários concursos ao mesmo tempo, cada um com seu banco de qu",
+   "size": 2101,
+   "pushed": "2026-10-17"
+  },
+  "hitsu3r/questoes-auditoria-cespe": {
+   "stars": 0,
+   "license": null,
+   "desc": "",
+   "size": 543,
+   "pushed": "2025-06-07"
+  },
+  "Samio-Santos/Sistema_Questoes_Django": {
+   "stars": 0,
+   "license": "MIT",
+   "desc": "O projeto sistema de questões contendo as mais variada questões das bancas: Cespe/Cebraspe e Vunesp por exemplo. Pojeto em construção sendo desenvolvolvido com Pytho/Django, HTML, CSS e Javascript pur",
+   "size": 33724,
+   "pushed": "2025-03-30"
+  },
+  "henferuz/estudo-concursos": {
+   "stars": 2,
+   "license": null,
+   "desc": "Site local para estudar para concursos: caderno de questões, simulados, flashcards, refazer erros, resumos e lei seca.",
+   "size": 5496,
+   "pushed": "2026-11-20"
+  },
+  "Gilbert-Cloud/simulado-imam": {
+   "stars": 0,
+   "license": null,
+   "desc": "Questões de concurso",
+   "size": 0,
+   "pushed": "2026-05-03"
+  },
+  "lucianogaleski-maker/SIMULADO-CONCURSOS": {
+   "stars": 0,
+   "license": null,
+   "desc": "TESTE COM QUESTÕES PARA CONCURSOS",
+   "size": 222,
+   "pushed": "2026-03-17"
+  },
+  "DanielLopesReis/Simulado-PRODERJ": {
+   "stars": 0,
+   "license": null,
+   "desc": "Gerador de questões para concurso",
+   "size": 63,
+   "pushed": "2026-02-07"
+  },
+  "soarezsamilla-alt/Prep-IA---2026": {
+   "stars": 2,
+   "license": null,
+   "desc": "Assistente de IA para concursos públicos com simulados infinitos e resolução de questões por foto.",
+   "size": 140,
+   "pushed": "2026-02-24"
+  },
+  "grokdani6/simulado-concurso1": {
+   "stars": 0,
+   "license": null,
+   "desc": "Sistema de simulados para concursos com questões, gabarito e correção automática.",
+   "size": 0,
+   "pushed": "2026-05-18"
+  },
+  "jofredogivan/SIMULADOR-IBGE": {
+   "stars": 0,
+   "license": null,
+   "desc": "SIMULADOR DE QUESTÕES DE PARA CONCURSO IBGE",
+   "size": 54,
+   "pushed": "2026-01-13"
+  },
+  "Danfluz/simconcursos-PM": {
+   "stars": 1,
+   "license": null,
+   "desc": "Gera simulados com questões de concursos para Polícia Militar.",
+   "size": 4115,
+   "pushed": "2022-08-29"
+  },
+  "Iury0franca/simulador-concurso": {
+   "stars": 0,
+   "license": null,
+   "desc": "Simulador interativo para preparação em concursos públicos, com questões comentadas, correção de respostas, revisão de erros e acompanhamento de desempenho.",
+   "size": 5,
+   "pushed": "2026-11-03"
+  },
+  "AdleyRodrigues/concurso-quiz-api": {
+   "stars": 0,
+   "license": "MIT",
+   "desc": "API backend em Node.js para questões, simulados e desempenho em cursos preparatórios para concursos.",
+   "size": 2,
+   "pushed": "2026-06-08"
+  },
+  "ArthurYvens/gabarito": {
+   "stars": 0,
+   "license": null,
+   "desc": "Simulados, questões comentadas, aulas e redação para ENEM, concursos e OAB",
+   "size": 7562,
+   "pushed": "2026-11-20"
+  },
+  "Chavesz/aprovo-app": {
+   "stars": 0,
+   "license": null,
+   "desc": "Mentor com IA para concursos: questões do edital, simulados e desempenho.",
+   "size": 7112,
+   "pushed": "2026-11-20"
+  },
+  "themouron/sales-analysis-dashboard": {
+   "stars": 0,
+   "license": null,
+   "desc": "Sistema de simulados para concursos com questões, gabarito e correção automática.",
+   "size": 236,
+   "pushed": "2026-08-12"
+  },
+  "leucocephalus/estudo-concursos": {
+   "stars": 0,
+   "license": null,
+   "desc": "Site local para estudar para concursos: caderno de questões, simulados, flashcards, refazer erros, resumos e lei seca.",
+   "size": 5496,
+   "pushed": "2026-11-20"
+  },
+  "Isaque123/SIPO-SIMULADO-PORTUARIO": {
+   "stars": 0,
+   "license": null,
+   "desc": "Um aplicativo que simula uma prova de concurso do OGMO com questões baseadas na banca IDCAP . Concurso (Estiva e Capatazia)",
+   "size": 4955,
+   "pushed": "2026-06-21"
+  },
+  "juniorbrenow/simulador-concurso": {
+   "stars": 0,
+   "license": null,
+   "desc": "Simulador completo para concursos públicos com **1000 questões únicas** (sem repetição), abrangendo 8 disciplinas. Sistema com backend em Node.js, banco de dados SQLite e frontend responsivo. Ideal pa",
+   "size": 74,
+   "pushed": "2026-05-17"
+  },
+  "Ruanggd123/concurso-meruoca": {
+   "stars": 0,
+   "license": null,
+   "desc": "Plataforma de estudos, cronograma e simulados com gerador de questões para o Concurso da Câmara de Meruoca-CE",
+   "size": 221843,
+   "pushed": "2026-10-17"
+  },
+  "assistenciavirtualbr-max/aprovaquest": {
+   "stars": 0,
+   "license": null,
+   "desc": "Plataforma de estudos para concursos públicos por questões comentadas e simulados (100% gratuita).",
+   "size": 1937,
+   "pushed": "2026-11-20"
+  },
+  "alanoversystem/simulado-educacao-infantil": {
+   "stars": 0,
+   "license": null,
+   "desc": "Simulado fiel de concursos publicos para Professor de Educacao Infantil - 40 questoes com gabarito e explicacoes detalhadas",
+   "size": 420,
+   "pushed": "2026-10-06"
+  },
+  "miguel-simas/questoes-pro": {
+   "stars": 0,
+   "license": null,
+   "desc": "Um aplicativo para questões de concursos que criei para ajudar minha esposa com os simulados.",
+   "size": 36,
+   "pushed": "2026-03-10"
+  },
+  "juniorxam/concurso-enfermeiro-study": {
+   "stars": 0,
+   "license": null,
+   "desc": "Plataforma de preparação para concurso de Enfermeiro baseada no conteúdo programático anexado, com trilhas, aulas, questões, simulados e monitor de desempenho. · Construído com Manus",
+   "size": 386,
+   "pushed": "2026-08-21"
+  },
+  "maxrsantana-cyber/Aprovaxconcurso": {
+   "stars": 0,
+   "license": null,
+   "desc": "Aprovax Concursos: sua aprovação acelerada. Questões, caderno de erros, simulados e desempenho em um só lugar.",
+   "size": 0,
+   "pushed": "2026-06-02"
+  },
+  "jpabaetetuba-capitao/farol-do-saber": {
+   "stars": 1,
+   "license": null,
+   "desc": "Plataforma de estudos para concursos públicos com banco de questões, simulados, estatísticas e caderno de erros.",
+   "size": 230698,
+   "pushed": "2026-09-23"
+  },
+  "duailibi/simulador-ale-rr": {
+   "stars": 0,
+   "license": null,
+   "desc": "Apenas um teste de um simulador de questões de regimento interno para o concurso da ALE-RR (Assembleia Legislativa de Roraima).",
+   "size": 3545,
+   "pushed": "2026-04-05"
+  },
+  "enfermeironataniel-bit/Simulado-minha-2026": {
+   "stars": 0,
+   "license": "GPL-3.0",
+   "desc": "📝 Simulado Concurso Angola — Plataforma de preparação para concursos públicos, com simulados de 100 perguntas, 1 minuto por questão, questões aleatórias sem repetição, várias áreas de estudo, pontuaçã",
+   "size": 14,
+   "pushed": "2026-08-13"
+  },
+  "Lyiu-10/escola": {
+   "stars": 0,
+   "license": null,
+   "desc": "Estudo guiado para concursos: aulas grátis em ordem, cronograma com revisão espaçada, questões reais de prova e simulados.",
+   "size": 2644,
+   "pushed": "2026-10-31"
+  },
+  "Carlosjunior2215/estudos-petrobras": {
+   "stars": 0,
+   "license": null,
+   "desc": "Material de estudo para concurso Petrobras/Transpetro - Engenharia Mecanica: guia de conceitos, 140 questoes comentadas e simulado offline",
+   "size": 312,
+   "pushed": "2026-08-15"
+  },
+  "diaslui/enem-extractor": {
+   "stars": 37,
+   "license": "MIT",
+   "desc": "Um CLI que extrai questões de provas do ENEM em JSON.",
+   "size": 14614,
+   "pushed": "2025-02-16"
+  },
+  "Alexsantossp71/desafio_enem": {
+   "stars": 2,
+   "license": "NOASSERTION",
+   "desc": "Banco de 1.868 questões oficiais do ENEM (2009–2023) em JSON — pronto para apps de estudo",
+   "size": 52811,
+   "pushed": "2026-08-15"
+  },
+  "arquivo-ifrs/questoes-enem-json": {
+   "stars": 0,
+   "license": null,
+   "desc": "Questões do ENEM adaptadas em JSON",
+   "size": 290,
+   "pushed": "2022-12-27"
+  },
+  "GustavoDMentz/Simulador-enem": {
+   "stars": 2,
+   "license": null,
+   "desc": "Pipeline de extração e simulador de questões do ENEM (2017–2025). Processa PDFs das provas oficiais, estrutura questões em JSON/JSONL com suporte a múltiplas cores de caderno, carrega em ArangoDB e ex",
+   "size": 301189,
+   "pushed": "2026-11-17"
+  },
+  "marinaferrazarmelin-star/Test-question-extractor": {
+   "stars": 0,
+   "license": null,
+   "desc": "Ferramenta que extrai questões e imagens de PDFs estilo ENEM e gera QuestionBank.json",
+   "size": 4,
+   "pushed": "2025-11-04"
+  },
+  "moonvives/enem-plataforma-GERAL": {
+   "stars": 1,
+   "license": "MIT",
+   "desc": "Aplicação web para consulta, filtragem e análise de questões do ENEM. O projeto organiza itens por ano, disciplina, competência, habilidade, dificuldade estimada e parâmetros TRI, oferecendo páginas d",
+   "size": 499627,
+   "pushed": "2026-10-28"
+  },
+  "robsonfs28pcgo-byte/deltatracker": {
+   "stars": 0,
+   "license": null,
+   "desc": "App para controle de horas líquidas estudadas das matérias do núcleo duro de concursos para Delegado de Polícia Civil. Baseado em 4 frentes: teoria, questões, jurisprudência e lei seca.",
+   "size": 19,
+   "pushed": "2026-01-13"
+  }
+ }
+}
